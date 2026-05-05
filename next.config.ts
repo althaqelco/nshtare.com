@@ -31,9 +31,12 @@ const nextConfig: NextConfig = {
       // 1. Core Pages
       { source: '/wishlist/:path*', destination: '/', permanent: true },
       { source: '/author/admin/:path*', destination: '/', permanent: true },
-      { source: encodeURI('/اتصل-بنا'), destination: '/', permanent: true },
-      { source: encodeURI('/سياسة-الشحن-والتوصيل'), destination: '/', permanent: true },
-      { source: encodeURI('/الأسئلة-الشائعة-faq'), destination: '/', permanent: true },
+      { source: encodeURI('/اتصل-بنا'), destination: '/contact', permanent: true },
+      { source: encodeURI('/سياسة-الضمان-الذهبي'), destination: '/warranty', permanent: true },
+      { source: encodeURI('/سياسة-الشحن'), destination: '/shipping', permanent: true },
+      { source: encodeURI('/سياسة-الاستبدال-و-الاسترجاع'), destination: '/faq', permanent: true },
+      { source: encodeURI('/سياسة-الشحن-والتوصيل'), destination: '/shipping', permanent: true },
+      { source: encodeURI('/الأسئلة-الشائعة-faq'), destination: '/faq', permanent: true },
 
       // 2. Old WooCommerce Categories (Catching Pagination with :path*)
       { source: '/product-category/electric-scooters/:path*', destination: '/electric-scooter', permanent: true },
