@@ -14,7 +14,7 @@ export default function CategoryGrid() {
       title: isEn ? "Commuter Scooters" : "السكوتر العملي",
       desc: isEn ? "For daily transport" : "للمشاوير اليومية والتنقل السريع",
       image: "/images/categories/electric-scooter.png",
-      href: "/categories/commuter",
+      href: "/electric-scooter",
       colSpan: "col-span-1 md:col-span-2 lg:col-span-2",
       bg: "bg-blue-50 dark:bg-blue-900/20"
     },
@@ -22,7 +22,7 @@ export default function CategoryGrid() {
       title: isEn ? "Smart Scooters" : "السكوتر الذكي",
       desc: isEn ? "App connected, high tech" : "شاشات ديجيتال واتصال بالتطبيق",
       image: "/images/categories/smart-scooter.png",
-      href: "/categories/smart",
+      href: "/smart-scooter",
       colSpan: "col-span-1",
       bg: "bg-indigo-50 dark:bg-indigo-900/20"
     },
@@ -30,7 +30,7 @@ export default function CategoryGrid() {
       title: isEn ? "Off-Road & Drift" : "سكوتر درفت وطرق وعرة",
       desc: isEn ? "Extreme power and suspension" : "وحش البر والتفحيط القوي",
       image: "/images/categories/drift-scooter.png",
-      href: "/categories/offroad",
+      href: "/drift-scooter",
       colSpan: "col-span-1 md:col-span-2 lg:col-span-1",
       bg: "bg-orange-50 dark:bg-orange-900/20"
     },
@@ -38,7 +38,7 @@ export default function CategoryGrid() {
       title: isEn ? "Kids Scooters" : "سكوتر الأطفال",
       desc: isEn ? "Safe and fun" : "آمن، ملون، ومناسب للأعمار الصغيرة",
       image: "/images/categories/kids-scooter.png",
-      href: "/categories/kids",
+      href: "/kids-scooter",
       colSpan: "col-span-1",
       bg: "bg-pink-50 dark:bg-pink-900/20"
     },
@@ -46,7 +46,7 @@ export default function CategoryGrid() {
       title: isEn ? "Accessories" : "إكسسوارات",
       desc: isEn ? "Helmets, bags, lights" : "خوذات، شنط، وإضاءات",
       image: "/images/categories/accessories.png",
-      href: "/categories/accessories",
+      href: "/scooter-accessories",
       colSpan: "col-span-1",
       bg: "bg-gray-100 dark:bg-gray-800"
     },
@@ -54,7 +54,7 @@ export default function CategoryGrid() {
       title: isEn ? "Spare Parts" : "قطع الغيار",
       desc: isEn ? "Tires, brakes, batteries" : "كفرات، فحمات، بطاريات",
       image: "/images/categories/spare-parts.png",
-      href: "/categories/parts",
+      href: "/spare-parts",
       colSpan: "col-span-1",
       bg: "bg-slate-100 dark:bg-slate-800"
     }
