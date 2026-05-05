@@ -6,6 +6,7 @@ import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import { CartProvider } from "@/context/CartContext";
 import CartSidebar from "@/components/cart/CartSidebar";
 import OrganizationSchema from "@/components/seo/OrganizationSchema";
+import SpeculationRules from "@/components/performance/SpeculationRules";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function EnglishLayout({
     <html lang="en" dir="ltr">
       <head>
         <OrganizationSchema />
+        <SpeculationRules />
       </head>
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <CartProvider>
