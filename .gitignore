@@ -42,3 +42,6 @@ next-env.d.ts
 firebase.md
 plans/
 old-links.md
+
+.firebase
+firebase-debug.log

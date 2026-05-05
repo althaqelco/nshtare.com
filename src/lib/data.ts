@@ -2,6 +2,8 @@
 
 export const categories = [
   { slug: "electric-scooter", nameAr: "سكوتر كهربائي", nameEn: "Electric Scooter", icon: "⚡", descAr: "للمشاوير اليومية والتنقل السريع", descEn: "For daily commuting and fast transport" },
+  { slug: "xiaomi-scooter", nameAr: "سكوترات شاومي", nameEn: "Xiaomi Scooters", icon: "📱", descAr: "أفضل سكوترات شاومي الأصلية بضمان الوكيل", descEn: "Original Xiaomi scooters with warranty" },
+  { slug: "adult-scooter", nameAr: "سكوترات للكبار", nameEn: "Adult Scooters", icon: "🧑", descAr: "سكوترات قوية تتحمل الأوزان العالية ومناسبة للمشاوير", descEn: "Heavy-duty scooters for adults" },
   { slug: "drift-scooter", nameAr: "سكوتر درفت", nameEn: "Drift Scooter", icon: "🏎️", descAr: "وحش التفحيط والمتعة القصوى", descEn: "Extreme drifting and fun" },
   { slug: "kids-scooter", nameAr: "سكوتر أطفال", nameEn: "Kids Scooter", icon: "👶", descAr: "آمن وملون ومناسب للأعمار الصغيرة", descEn: "Safe, colorful, and perfect for kids" },
   { slug: "smart-scooter", nameAr: "سكوتر ذكي", nameEn: "Smart Scooter", icon: "🧠", descAr: "شاشات ديجيتال واتصال بالتطبيق", descEn: "Digital display and app connectivity" },
@@ -11,12 +13,10 @@ export const categories = [
 
 export const subcategories = [
   // Electric Scooter Subcategories
-  { slug: "adults", parentSlug: "electric-scooter", nameAr: "سكوتر كهربائي للكبار", nameEn: "Adult Electric Scooters", icon: "🧑" },
   { slug: "kids", parentSlug: "electric-scooter", nameAr: "سكوتر كهربائي للأطفال", nameEn: "Kids Electric Scooters", icon: "👦" },
   { slug: "with-seat", parentSlug: "electric-scooter", nameAr: "سكوتر كهربائي بمقعد", nameEn: "Electric Scooters with Seat", icon: "💺" },
   { slug: "three-wheel", parentSlug: "electric-scooter", nameAr: "سكوتر كهربائي ثلاث عجلات", nameEn: "3-Wheel Electric Scooters", icon: "🔺" },
   { slug: "fast", parentSlug: "electric-scooter", nameAr: "سكوتر كهربائي سريع", nameEn: "Fast Electric Scooters", icon: "💨" },
-  { slug: "xiaomi", parentSlug: "electric-scooter", nameAr: "سكوتر شاومي", nameEn: "Xiaomi Scooters", icon: "📱" },
 
   // Drift Scooter Subcategories
   { slug: "36v", parentSlug: "drift-scooter", nameAr: "درفت 36 فولت", nameEn: "36V Drift Scooter", icon: "🔋" },
@@ -55,13 +55,13 @@ export const cities = [
 export const products = [
   // ──── Electric Scooters ────
   {
-    id: "p_1", slug: "ninebot-max", categorySlug: "electric-scooter", subcategorySlug: "adults",
+    id: "p_1", slug: "ninebot-max", categorySlug: "adult-scooter",
     name: "سكوتر كهربائي للكبار ناينبوت ماكس احترافي", nameEn: "Ninebot Max Professional Electric Scooter",
     price: 1899, originalPrice: 2499, image: "/images/products/product_ninebot_max_1777998751040.png",
     rating: 4.8, reviewsCount: 124,
   },
   {
-    id: "p_2", slug: "xiaomi-m365", categorySlug: "electric-scooter", subcategorySlug: "xiaomi",
+    id: "p_2", slug: "xiaomi-m365", categorySlug: "xiaomi-scooter",
     name: "سكوتر شاومي مي M365 العملي المطور", nameEn: "Xiaomi Mi M365 Commuter Scooter",
     price: 1299, originalPrice: 1599, image: "/images/products/product_xiaomi_m365_1777998736815.png",
     rating: 4.5, reviewsCount: 342,

@@ -40,11 +40,11 @@ const nextConfig: NextConfig = {
 
       // 2. Old WooCommerce Categories (Catching Pagination with :path*)
       { source: '/product-category/electric-scooters/:path*', destination: '/electric-scooter', permanent: true },
-      { source: '/product-category/xiaomi-scooter/:path*', destination: '/electric-scooter', permanent: true },
+      { source: '/product-category/xiaomi-scooter/:path*', destination: '/xiaomi-scooter', permanent: true },
       { source: '/product-category/monster-scooter/:path*', destination: '/drift-scooter', permanent: true },
       { source: '/product-category/scooter-drift/:path*', destination: '/drift-scooter', permanent: true },
       { source: '/product-category/electric-scooter-drift/:path*', destination: '/drift-scooter', permanent: true },
-      { source: '/product-category/electric-scooter-for-adults/:path*', destination: '/electric-scooter', permanent: true },
+      { source: '/product-category/electric-scooter-for-adults/:path*', destination: '/adult-scooter', permanent: true },
       { source: '/product-category/smart-scooter/:path*', destination: '/smart-scooter', permanent: true },
       { source: '/product-category/cheap-electric-scooter/:path*', destination: '/electric-scooter', permanent: true },
       { source: '/product-category/girls-scooter/:path*', destination: '/kids-scooter', permanent: true },
@@ -52,10 +52,10 @@ const nextConfig: NextConfig = {
       { source: '/product-category/:path*', destination: '/', permanent: true },
 
       // 3. Old Products
-      { source: '/product/' + encodeURI('سكوتر-كهربائي-الأداء-القوي-والتصميم') + '/:path*', destination: '/electric-scooter/ninebot-max', permanent: true },
+      { source: '/product/' + encodeURI('سكوتر-كهربائي-الأداء-القوي-والتصميم') + '/:path*', destination: '/adult-scooter/ninebot-max', permanent: true },
       { source: '/product/' + encodeURI('سكوتر-كهربائي-للأطفال-بتصميم-أنيق-وعم') + '/:path*', destination: '/kids-scooter/kids-spider', permanent: true },
       { source: '/product/' + encodeURI('سكوتر-كهربائي-ذكي-سكوتر-دريفت-آمن-وقو') + '/:path*', destination: '/drift-scooter/drift-36v', permanent: true },
-      { source: '/product/' + encodeURI('سكوتر-كهربائي-m365-pro-قوة،-أداء،-وسهولة-حمل') + '/:path*', destination: '/electric-scooter/xiaomi-m365', permanent: true },
+      { source: '/product/' + encodeURI('سكوتر-كهربائي-m365-pro-قوة،-أداء،-وسهولة-حمل') + '/:path*', destination: '/xiaomi-scooter/xiaomi-m365', permanent: true },
       { source: '/product/' + encodeURI('سكوتر-كهربائي-درفت-تريك-52-فولت-1500-واط-تج') + '/:path*', destination: '/drift-scooter/drift-36v', permanent: true },
       { source: '/product/' + encodeURI('سكوتر-كهربائي-بثلاث-عجلات') + '/:path*', destination: '/kids-scooter/kids-spider', permanent: true },
       { source: '/product/:path*', destination: '/', permanent: true },
