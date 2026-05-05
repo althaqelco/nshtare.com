@@ -23,12 +23,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/shipping`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/warranty`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/return-policy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/compare`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
+    // Blog Articles (AR)
+    { url: `${baseUrl}/blog/electric-scooter-buying-guide-saudi`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/blog/electric-scooter-vs-drift-scooter`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/blog/electric-scooter-maintenance-tips`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${baseUrl}/blog/electric-scooter-prices-saudi-2026`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     // Static Pages (EN)
     { url: `${baseUrl}/en/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/en/faq`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/en/contact`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/en/shipping`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.4 },
     { url: `${baseUrl}/en/warranty`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${baseUrl}/en/return-policy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${baseUrl}/en/compare`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${baseUrl}/en/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 },
   ];
 
   // 1. Categories
