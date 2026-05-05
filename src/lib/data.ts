@@ -1,12 +1,12 @@
 // Taxonomy and pSEO Data
 
 export const categories = [
-  { slug: "electric-scooter", nameAr: "سكوتر كهربائي", nameEn: "Electric Scooter", icon: "⚡" },
-  { slug: "drift-scooter", nameAr: "سكوتر درفت", nameEn: "Drift Scooter", icon: "🏎️" },
-  { slug: "kids-scooter", nameAr: "سكوتر أطفال", nameEn: "Kids Scooter", icon: "👶" },
-  { slug: "smart-scooter", nameAr: "سكوتر ذكي", nameEn: "Smart Scooter", icon: "🧠" },
-  { slug: "scooter-accessories", nameAr: "إكسسوارات سكوتر", nameEn: "Accessories", icon: "🔧" },
-  { slug: "spare-parts", nameAr: "قطع غيار", nameEn: "Spare Parts", icon: "⚙️" },
+  { slug: "electric-scooter", nameAr: "سكوتر كهربائي", nameEn: "Electric Scooter", icon: "⚡", descAr: "للمشاوير اليومية والتنقل السريع", descEn: "For daily commuting and fast transport" },
+  { slug: "drift-scooter", nameAr: "سكوتر درفت", nameEn: "Drift Scooter", icon: "🏎️", descAr: "وحش التفحيط والمتعة القصوى", descEn: "Extreme drifting and fun" },
+  { slug: "kids-scooter", nameAr: "سكوتر أطفال", nameEn: "Kids Scooter", icon: "👶", descAr: "آمن وملون ومناسب للأعمار الصغيرة", descEn: "Safe, colorful, and perfect for kids" },
+  { slug: "smart-scooter", nameAr: "سكوتر ذكي", nameEn: "Smart Scooter", icon: "🧠", descAr: "شاشات ديجيتال واتصال بالتطبيق", descEn: "Digital display and app connectivity" },
+  { slug: "scooter-accessories", nameAr: "إكسسوارات سكوتر", nameEn: "Accessories", icon: "🔧", descAr: "خوذات، شنط، وإضاءات", descEn: "Helmets, bags, and lights" },
+  { slug: "spare-parts", nameAr: "قطع غيار", nameEn: "Spare Parts", icon: "⚙️", descAr: "كفرات، فحمات، بطاريات", descEn: "Tires, brakes, batteries" },
 ];
 
 export const subcategories = [

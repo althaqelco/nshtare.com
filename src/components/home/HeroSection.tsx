@@ -57,14 +57,14 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 pt-4">
               <Link 
-                href={isEn ? "/en/shop" : "/shop"}
+                href={isEn ? "/en/electric-scooter" : "/electric-scooter"}
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 hover:shadow-xl hover:shadow-primary/25"
               >
                 {isEn ? "Shop Now" : "تسوق الآن"}
                 {isEn ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
               </Link>
               <Link 
-                href={isEn ? "/en/categories" : "/categories"}
+                href={isEn ? "/en/drift-scooter" : "/drift-scooter"}
                 className="inline-flex items-center justify-center gap-2 bg-white border-2 border-border hover:border-primary text-text px-8 py-4 rounded-xl font-bold text-lg transition-colors"
               >
                 {isEn ? "View Categories" : "تصفح الأقسام"}
