@@ -187,3 +187,8 @@ export function getSubcategoryBySlug(parentSlug: string, subSlug: string) {
 export function getProductsBySubcategory(categorySlug: string, subcategorySlug: string) {
   return products.filter(p => p.categorySlug === categorySlug && p.subcategorySlug === subcategorySlug);
 }
+
+export function getProductBySlug(slug: string) {
+  return products.find(p => p.slug === slug);
+}
+

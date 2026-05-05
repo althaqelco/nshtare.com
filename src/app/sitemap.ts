@@ -98,14 +98,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   products.forEach((product) => {
     // AR
     routes.push({
-      url: `${baseUrl}/product/${product.slug}`,
+      url: `${baseUrl}/${product.categorySlug}/${product.slug}`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,
     });
     // EN
     routes.push({
-      url: `${baseUrl}/en/product/${product.slug}`,
+      url: `${baseUrl}/en/${product.categorySlug}/${product.slug}`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.7,

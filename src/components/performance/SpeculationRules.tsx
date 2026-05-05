@@ -16,16 +16,18 @@ export default function SpeculationRules() {
           and: [
             {
               href_matches: [
-                '/product/*',
                 '/electric-scooter/*',
                 '/drift-scooter/*',
                 '/kids-scooter/*',
                 '/smart-scooter/*',
-                '/en/product/*',
+                '/scooter-accessories/*',
+                '/spare-parts/*',
                 '/en/electric-scooter/*',
                 '/en/drift-scooter/*',
                 '/en/kids-scooter/*',
                 '/en/smart-scooter/*',
+                '/en/scooter-accessories/*',
+                '/en/spare-parts/*',
               ],
             },
             {

@@ -1,14 +1,15 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { categories, cities, getCategoryBySlug, getCityBySlug, getSubcategoryBySlug, getSubcategoriesByParent, getProductsByCategory, getProductsBySubcategory } from '@/lib/data';
+import { categories, cities, getCategoryBySlug, getCityBySlug, getSubcategoryBySlug, getSubcategoriesByParent, getProductsByCategory, getProductsBySubcategory, getProductBySlug } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ShieldCheck, Zap, MapPin, Truck, ChevronRight } from 'lucide-react';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import ProductDetails from '@/components/product/ProductDetails';
 
 export async function generateStaticParams() {
   const params: { category: string; slug: string }[] = [];
-  const { subcategories } = await import('@/lib/data');
+  const { subcategories, products } = await import('@/lib/data');
 
   // Cities
   categories.forEach((cat) => {
@@ -22,14 +23,28 @@ export async function generateStaticParams() {
     params.push({ category: sub.parentSlug, slug: sub.slug });
   }
 
+  // Products
+  for (const product of products) {
+    params.push({ category: product.categorySlug, slug: product.slug });
+  }
+
   return params;
 }
 
-export async function generateMetadata({ params }: { params: { category: string; slug: string } }) {
-  const category = getCategoryBySlug(params.category);
+export async function generateMetadata({ params }: { params: Promise<{ category: string; slug: string }> }) {
+  const { category: catSlug, slug } = await params;
+  const category = getCategoryBySlug(catSlug);
   if (!category) return {};
 
-  const city = getCityBySlug(params.slug);
+  const product = getProductBySlug(slug);
+  if (product && product.categorySlug === catSlug) {
+    return {
+      title: `${product.name} | نشتري`,
+      description: `تسوق ${product.name} بأفضل سعر. ضمان سنة، شحن سريع لجميع مدن السعودية، والدفع عند الاستلام.`,
+    };
+  }
+
+  const city = getCityBySlug(slug);
   if (city) {
     const month = new Date().toLocaleString('ar-SA', { month: 'long' });
     const year = new Date().getFullYear();
@@ -39,7 +54,7 @@ export async function generateMetadata({ params }: { params: { category: string;
     };
   }
 
-  const sub = getSubcategoryBySlug(params.category, params.slug);
+  const sub = getSubcategoryBySlug(catSlug, slug);
   if (sub) {
     return {
       title: `${sub.nameAr} — أفضل الأسعار والعروض | نشتري`,
@@ -50,18 +65,25 @@ export async function generateMetadata({ params }: { params: { category: string;
   return {};
 }
 
-export default function CategorySlugPage({ params }: { params: { category: string; slug: string } }) {
-  const category = getCategoryBySlug(params.category);
+export default async function CategorySlugPage({ params }: { params: Promise<{ category: string; slug: string }> }) {
+  const { category: catSlug, slug } = await params;
+  const category = getCategoryBySlug(catSlug);
   if (!category) notFound();
 
-  const city = getCityBySlug(params.slug);
-  const sub = getSubcategoryBySlug(params.category, params.slug);
+  const product = getProductBySlug(slug);
+  if (product && product.categorySlug === catSlug) {
+    return <ProductDetails product={product} />;
+  }
+
+  const city = getCityBySlug(slug);
+  const sub = getSubcategoryBySlug(catSlug, slug);
 
   if (city) return <CityPage category={category} city={city} />;
   if (sub) return <SubcategoryPage category={category} sub={sub} />;
 
   notFound();
 }
+
 
 // ──── City Page ────
 function CityPage({ category, city }: { category: any; city: any }) {
@@ -174,7 +196,7 @@ function ProductGrid({ products, lang }: { products: any[]; lang: string }) {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
       {products.map((product: any) => (
         <div key={product.id} className="bg-surface border border-border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
-          <Link href={`/product/${product.slug}`} className="relative h-64 bg-bg w-full p-6 block overflow-hidden">
+          <Link href={`/${product.categorySlug}/${product.slug}`} className="relative h-64 bg-bg w-full p-6 block overflow-hidden">
             {product.originalPrice && (
               <div className="absolute top-3 right-3 z-10 bg-error text-white text-xs font-bold px-2 py-1 rounded shadow-sm flex items-center gap-1">
                 <Zap className="h-3 w-3 fill-current" />
@@ -189,7 +211,7 @@ function ProductGrid({ products, lang }: { products: any[]; lang: string }) {
               <span className="text-sm font-bold text-text">{product.rating}</span>
               <span className="text-xs text-text-secondary">({product.reviewsCount})</span>
             </div>
-            <Link href={`/product/${product.slug}`} className="hover:text-primary transition-colors">
+            <Link href={`/${product.categorySlug}/${product.slug}`} className="hover:text-primary transition-colors">
               <h3 className="font-bold text-text text-lg mb-2 line-clamp-2 leading-tight">{product.name}</h3>
             </Link>
             <div className="mt-auto pt-4 flex items-center justify-between">

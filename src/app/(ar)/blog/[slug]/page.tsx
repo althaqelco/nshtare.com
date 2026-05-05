@@ -165,8 +165,9 @@ export async function generateStaticParams() {
   return allSlugs.map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = blogData[params.slug];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogData[slug];
   if (!post) return {};
   return {
     title: `${post.title} | مدونة نشتري`,
@@ -174,8 +175,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = blogData[params.slug];
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogData[slug];
   if (!post) {
     return <div className="min-h-screen flex items-center justify-center text-text">المقال غير موجود</div>;
   }
@@ -183,7 +185,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const breadcrumbs = [
     { name: "الرئيسية", url: "/" },
     { name: "المدونة", url: "/blog" },
-    { name: post.title, url: `/blog/${params.slug}` },
+    { name: post.title, url: `/blog/${slug}` },
   ];
 
   return (

@@ -7,42 +7,7 @@ import { useCart } from "@/context/CartContext";
 import { Star, ShieldCheck, Truck, Zap, Plus, Minus, ShoppingCart, MessageCircle, Eye } from "lucide-react";
 import ProductSchema from "@/components/seo/ProductSchema";
 
-// Mock database fetching based on slug
-const mockProducts: Record<string, any> = {
-  "ninebot-max": {
-    id: "p_1",
-    slug: "ninebot-max",
-    name: "سكوتر كهربائي للكبار ناينبوت ماكس احترافي",
-    nameEn: "Ninebot Max Professional Electric Scooter",
-    price: 1899,
-    originalPrice: 2499,
-    image: "/images/products/product_ninebot_max_1777998751040.png",
-    rating: 4.8,
-    reviewsCount: 124,
-    featuresAr: ["سرعة قصوى 45 كم/س", "بطارية تدوم لمسافة 65 كم", "مقاومة للماء IPX5", "إطارات 10 إنش صلبة"],
-    featuresEn: ["Top speed 45 km/h", "65 km range battery", "IPX5 Water Resistant", "10 inch solid tires"],
-  },
-  "xiaomi-m365": {
-    id: "p_2",
-    slug: "xiaomi-m365",
-    name: "سكوتر شاومي مي M365 العملي المطور",
-    nameEn: "Xiaomi Mi M365 Commuter Scooter",
-    price: 1299,
-    originalPrice: 1599,
-    image: "/images/products/product_xiaomi_m365_1777998736815.png",
-    rating: 4.5,
-    reviewsCount: 342,
-    featuresAr: ["سرعة 25 كم/س", "مدى 30 كم", "خفيف الوزن 12.5 كجم", "قابل للطي بثواني"],
-    featuresEn: ["Speed 25 km/h", "30 km range", "Lightweight 12.5 kg", "Folds in seconds"],
-  }
-};
-
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  // Use React.use() to unwrap params in Next 15+ if needed, but in client components standard destructuring works for now, or we can use generic fallback.
-  // We'll unwrap it assuming it's available, or just mock it.
-  const slug = params?.slug || "ninebot-max";
-  const product = mockProducts[slug] || mockProducts["ninebot-max"];
-
+export default function ProductDetails({ product }: { product: any }) {
   const pathname = usePathname();
   const isEn = pathname.startsWith("/en");
   const { addToCart, openCart } = useCart();
@@ -52,8 +17,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
   // Navboost: Social Proof Engine (Plan 05)
   useEffect(() => {
+    if (!product?.slug) return;
     const hour = new Date().getHours();
-    const hash = Array.from(slug).reduce((a, c) => a + c.charCodeAt(0), 0);
+    const hash = Array.from(product.slug as string).reduce((a: number, c: string) => a + c.charCodeAt(0), 0);
     const isPeakHour = hour >= 9 && hour <= 23;
     const base = isPeakHour ? 15 : 5;
     setLiveViewers(base + (hash % 20));
@@ -63,7 +29,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
       setLiveViewers((prev) => prev + (Math.random() > 0.5 ? 1 : -1));
     }, 15000);
     return () => clearInterval(interval);
-  }, [slug]);
+  }, [product?.slug]);
+
+  if (!product) return null;
 
   const t = {
     addCart: isEn ? "Add to Cart" : "أضف للسلة",
@@ -105,8 +73,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         name={product.name}
         nameEn={product.nameEn}
         image={product.image}
-        description={product.featuresAr.join(" - ")}
+        description={product.name}
         sku={product.id}
+        url={isEn ? `/en/${product.categorySlug}/${product.slug}` : `/${product.categorySlug}/${product.slug}`}
         price={product.price}
         rating={product.rating}
         reviewsCount={product.reviewsCount}
@@ -182,19 +151,6 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                   {product.originalPrice.toLocaleString()} {t.sar}
                 </span>
               )}
-            </div>
-
-            {/* Features */}
-            <div className="mb-8">
-              <h3 className="font-bold text-lg text-text mb-4">{t.specs}</h3>
-              <ul className="space-y-2">
-                {(isEn ? product.featuresEn : product.featuresAr).map((feature: string, idx: number) => (
-                  <li key={idx} className="flex items-center gap-2 text-text-secondary">
-                    <div className="h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
             </div>
 
             {/* Desktop Actions */}

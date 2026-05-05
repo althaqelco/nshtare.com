@@ -66,7 +66,7 @@ export default function ComparePage() {
                       <div className="relative w-24 h-24 mx-auto mb-3">
                         <Image src={p.image} alt={p.name} fill className="object-contain" />
                       </div>
-                      <Link href={`/product/${p.slug}`} className="text-text font-bold hover:text-primary text-sm leading-tight block">{p.name}</Link>
+                      <Link href={`/${p.categorySlug}/${p.slug}`} className="text-text font-bold hover:text-primary text-sm leading-tight block">{p.name}</Link>
                     </th>
                   ))}
                 </tr>
@@ -112,7 +112,7 @@ export default function ComparePage() {
                   <td className="p-4 border border-border font-bold text-text bg-surface">اطلب الآن</td>
                   {selectedProducts.map((p: any) => (
                     <td key={p.slug} className="p-4 border border-border text-center">
-                      <Link href={`/product/${p.slug}`} className="inline-flex items-center gap-1 bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-lg font-bold text-sm transition-colors">
+                      <Link href={`/${p.categorySlug}/${p.slug}`} className="inline-flex items-center gap-1 bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-lg font-bold text-sm transition-colors">
                         عرض المنتج
                         <ArrowRight className="h-4 w-4 rotate-180" />
                       </Link>

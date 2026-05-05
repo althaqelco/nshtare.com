@@ -44,7 +44,7 @@ export default function FeaturedProducts() {
           {featured.map((product) => (
             <Link
               key={product.id}
-              href={isEn ? `/en/product/${product.slug}` : `/product/${product.slug}`}
+              href={isEn ? `/en/${product.categorySlug}/${product.slug}` : `/${product.categorySlug}/${product.slug}`}
               className="bg-surface border border-border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col"
             >
               <div className="relative aspect-square bg-bg p-4 md:p-6 overflow-hidden">

@@ -6,6 +6,7 @@ interface ProductSchemaProps {
   image: string;
   description: string;
   sku: string;
+  url: string;
   price: number;
   rating: number;
   reviewsCount: number;
@@ -19,6 +20,7 @@ export default function ProductSchema({
   image,
   description,
   sku,
+  url,
   price,
   rating,
   reviewsCount,
@@ -41,7 +43,7 @@ export default function ProductSchema({
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://nshtare.com/product/${sku}`,
+      "url": `https://nshtare.com${url}`,
       "priceCurrency": currency,
       "price": price,
       "priceValidUntil": "2027-12-31",

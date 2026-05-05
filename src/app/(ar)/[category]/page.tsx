@@ -13,8 +13,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { category: string } }) {
-  const category = getCategoryBySlug(params.category);
+export async function generateMetadata({ params }: { params: Promise<{ category: string }> }) {
+  const { category: categorySlug } = await params;
+  const category = getCategoryBySlug(categorySlug);
   if (!category) return {};
   
   return {
@@ -23,8 +24,9 @@ export async function generateMetadata({ params }: { params: { category: string 
   };
 }
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const category = getCategoryBySlug(params.category);
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category: categorySlug } = await params;
+  const category = getCategoryBySlug(categorySlug);
   if (!category) notFound();
 
   const products = getProductsByCategory(category.slug);
@@ -34,7 +36,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
       <CollectionSchema
         name={`أفضل ${category.nameAr} في السعودية`}
         url={`/${category.slug}`}
-        productUrls={products.map(p => `/product/${p.slug}`)}
+        productUrls={products.map(p => `/${p.categorySlug}/${p.slug}`)}
       />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -86,7 +88,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
               {products.map((product) => (
                 <div key={product.id} className="bg-surface border border-border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
                   
-                  <Link href={`/product/${product.slug}`} className="relative h-64 bg-bg w-full p-6 block overflow-hidden">
+                  <Link href={`/${product.categorySlug}/${product.slug}`} className="relative h-64 bg-bg w-full p-6 block overflow-hidden">
                     {product.originalPrice && (
                       <div className="absolute top-3 right-3 z-10 bg-error text-white text-xs font-bold px-2 py-1 rounded shadow-sm flex items-center gap-1">
                         <Zap className="h-3 w-3 fill-current" />
@@ -108,7 +110,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
                       <span className="text-xs text-text-secondary">({product.reviewsCount})</span>
                     </div>
 
-                    <Link href={`/product/${product.slug}`} className="hover:text-primary transition-colors">
+                    <Link href={`/${product.categorySlug}/${product.slug}`} className="hover:text-primary transition-colors">
                       <h3 className="font-bold text-text text-lg mb-2 line-clamp-2 leading-tight">
                         {product.name}
                       </h3>
