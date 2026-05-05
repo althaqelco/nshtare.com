@@ -3,6 +3,8 @@ import "@/app/globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
+import { CartProvider } from "@/context/CartContext";
+import CartSidebar from "@/components/cart/CartSidebar";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],
@@ -23,12 +25,15 @@ export default function ArabicLayout({
   return (
     <html lang="ar-SA" dir="rtl">
       <body className={`${tajawal.variable} font-sans antialiased min-h-screen flex flex-col`}>
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-        <FloatingWhatsApp />
+        <CartProvider>
+          <Header />
+          <CartSidebar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+          <FloatingWhatsApp />
+        </CartProvider>
       </body>
     </html>
   );

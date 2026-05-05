@@ -5,11 +5,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, ShoppingCart, Globe, Search, X } from 'lucide-react';
+import { useCart } from '@/context/CartContext';
 
 export default function Header() {
   const pathname = usePathname();
   const isEn = pathname.startsWith('/en');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { itemCount, openCart } = useCart();
 
   // Dictionaries for basic navigation
   const t = {
@@ -91,11 +93,17 @@ export default function Header() {
               <span>{isEn ? "عربي" : "EN"}</span>
             </Link>
 
-            <button aria-label={t.cart} className="relative p-2 text-text-secondary hover:text-primary transition-colors">
+            <button 
+              aria-label={t.cart} 
+              className="relative p-2 text-text-secondary hover:text-primary transition-colors"
+              onClick={openCart}
+            >
               <ShoppingCart className="h-5 w-5 sm:h-6 sm:w-6" />
-              <span className="absolute top-0 right-0 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white transform translate-x-1/4 -translate-y-1/4 bg-accent rounded-full">
-                0
-              </span>
+              {itemCount > 0 && (
+                <span className="absolute top-0 right-0 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white transform translate-x-1/4 -translate-y-1/4 bg-accent rounded-full animate-fade-in-up">
+                  {itemCount}
+                </span>
+              )}
             </button>
 
             {/* Mobile menu button */}

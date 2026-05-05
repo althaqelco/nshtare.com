@@ -3,6 +3,8 @@ import "@/app/globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
+import { CartProvider } from "@/context/CartContext";
+import CartSidebar from "@/components/cart/CartSidebar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,12 +24,15 @@ export default function EnglishLayout({
   return (
     <html lang="en" dir="ltr">
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-        <FloatingWhatsApp />
+        <CartProvider>
+          <Header />
+          <CartSidebar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+          <FloatingWhatsApp />
+        </CartProvider>
       </body>
     </html>
   );
