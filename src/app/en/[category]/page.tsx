@@ -1,9 +1,11 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { categories, getCategoryBySlug, getProductsByCategory } from '@/lib/data';
+import { categories, getCategoryBySlug, getProductsByCategory, getSubcategoriesByParent } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ShieldCheck, Zap } from 'lucide-react';
+import CollectionSchema from '@/components/seo/CollectionSchema';
+import RobinHoodLinks from '@/components/behavior/RobinHoodLinks';
 
 export async function generateStaticParams() {
   return categories.map((cat) => ({
@@ -29,6 +31,11 @@ export default function CategoryPageEn({ params }: { params: { category: string 
 
   return (
     <div className="bg-bg min-h-screen py-8 md:py-12" dir="ltr">
+      <CollectionSchema
+        name={`Best ${category.nameEn} in Saudi Arabia`}
+        url={`/en/${category.slug}`}
+        productUrls={products.map(p => `/en/product/${p.slug}`)}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Category Hero */}
@@ -42,6 +49,29 @@ export default function CategoryPageEn({ params }: { params: { category: string 
             Shop now with official warranty, fast shipping to your door, and Cash on Delivery.
           </p>
         </div>
+
+        {/* Subcategory Navigation Chips */}
+        {(() => {
+          const subs = getSubcategoriesByParent(category.slug);
+          if (subs.length === 0) return null;
+          return (
+            <div className="mb-10">
+              <h2 className="text-xl font-bold text-text mb-4">Browse by Type</h2>
+              <div className="flex flex-wrap gap-3">
+                {subs.map((sub) => (
+                  <Link
+                    key={sub.slug}
+                    href={`/en/${category.slug}/${sub.slug}`}
+                    className="px-5 py-2.5 bg-surface hover:bg-primary hover:text-white border border-border rounded-xl text-text font-semibold transition-all duration-300 flex items-center gap-2"
+                  >
+                    <span>{sub.icon}</span>
+                    {sub.nameEn}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Product Grid */}
         <div className="mb-8">
@@ -131,6 +161,9 @@ export default function CategoryPageEn({ params }: { params: { category: string 
             })}
           </div>
         </div>
+
+        {/* Robin Hood Links (Plan 06 §4.1) */}
+        <RobinHoodLinks currentCategory={category.slug} />
 
       </div>
     </div>

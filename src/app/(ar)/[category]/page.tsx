@@ -4,6 +4,8 @@ import { categories, getCategoryBySlug, getProductsByCategory, getSubcategoriesB
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ShieldCheck, Zap } from 'lucide-react';
+import CollectionSchema from '@/components/seo/CollectionSchema';
+import RobinHoodLinks from '@/components/behavior/RobinHoodLinks';
 
 export async function generateStaticParams() {
   return categories.map((cat) => ({
@@ -29,6 +31,11 @@ export default function CategoryPage({ params }: { params: { category: string } 
 
   return (
     <div className="bg-bg min-h-screen py-8 md:py-12">
+      <CollectionSchema
+        name={`أفضل ${category.nameAr} في السعودية`}
+        url={`/${category.slug}`}
+        productUrls={products.map(p => `/product/${p.slug}`)}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Category Hero */}
@@ -154,6 +161,9 @@ export default function CategoryPage({ params }: { params: { category: string } 
             })}
           </div>
         </div>
+
+        {/* Robin Hood Links (Plan 06 §4.1) */}
+        <RobinHoodLinks currentCategory={category.slug} />
 
       </div>
     </div>

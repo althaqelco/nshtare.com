@@ -6,6 +6,7 @@ import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import { CartProvider } from "@/context/CartContext";
 import CartSidebar from "@/components/cart/CartSidebar";
 import OrganizationSchema from "@/components/seo/OrganizationSchema";
+import WebSiteSchema from "@/components/seo/WebSiteSchema";
 import SpeculationRules from "@/components/performance/SpeculationRules";
 
 const tajawal = Tajawal({
@@ -28,6 +29,7 @@ export default function ArabicLayout({
     <html lang="ar-SA" dir="rtl">
       <head>
         <OrganizationSchema />
+        <WebSiteSchema />
         <SpeculationRules />
       </head>
       <body className={`${tajawal.variable} font-sans antialiased min-h-screen flex flex-col`}>

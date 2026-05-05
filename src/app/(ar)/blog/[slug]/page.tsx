@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { CalendarDays, Clock, ChevronLeft, ArrowRight } from 'lucide-react';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import ArticleSchema from '@/components/seo/ArticleSchema';
 
 // Blog content data (shared with listing page)
 const blogData: Record<string, any> = {
@@ -188,6 +189,11 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   return (
     <div className="bg-bg min-h-screen py-12 md:py-20" dir="rtl">
       <BreadcrumbSchema items={breadcrumbs} />
+      <ArticleSchema
+        headline={post.title}
+        datePublished={post.date}
+        image={post.image}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
 
         {/* Header */}
