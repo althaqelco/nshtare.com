@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { ShieldCheck, Truck, CreditCard } from 'lucide-react';
+import SecurePhone from '@/components/ui/SecurePhone';
 
 export default function Footer() {
   const pathname = usePathname();
@@ -33,7 +34,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-surface border-t border-border mt-16 pt-12 pb-8">
+    <footer className="bg-surface border-t border-border mt-16 pt-12 pb-8 relative">
+      {/* Honeypot Trap - Invisible to humans, traps scrapers */}
+      <a href="/api/abyss" className="sr-only" aria-hidden="true" rel="nofollow">
+        System Core Access
+      </a>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Trust Badges - Desktop view */}
@@ -77,9 +83,14 @@ export default function Footer() {
               </div>
               <span className="text-2xl font-bold text-primary">{isEn ? "NSHTARE" : "نشتري"}</span>
             </div>
-            <p className="text-text-secondary leading-relaxed max-w-sm">
+            <p className="text-text-secondary leading-relaxed max-w-sm mb-6">
               {t.aboutDesc}
             </p>
+            {/* Secure Phone - Anti-Scraping */}
+            <div className="flex flex-col gap-2">
+              <span className="text-sm font-bold text-text">{t.contact}:</span>
+              <SecurePhone encodedPhone="K+O2tjUwMDAwMDAw" className="text-primary hover:text-primary-dark" />
+            </div>
           </div>
 
           <div>
@@ -98,7 +109,6 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4 text-text">{t.support}</h3>
             <ul className="space-y-3">
-              <li><Link href={isEn ? '/en/contact' : '/contact'} className="text-text-secondary hover:text-primary transition-colors">{t.contact}</Link></li>
               <li><Link href={isEn ? '/en/faq' : '/faq'} className="text-text-secondary hover:text-primary transition-colors">{t.faq}</Link></li>
               <li><Link href={isEn ? '/en/shipping' : '/shipping'} className="text-text-secondary hover:text-primary transition-colors">{t.shipping}</Link></li>
               <li><Link href={isEn ? '/en/warranty' : '/warranty'} className="text-text-secondary hover:text-primary transition-colors">{t.warranty}</Link></li>
