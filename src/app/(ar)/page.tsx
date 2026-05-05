@@ -1,8 +1,13 @@
+import HeroSection from "@/components/home/HeroSection";
+import TrustBar from "@/components/home/TrustBar";
+import CategoryGrid from "@/components/home/CategoryGrid";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-8">
-      <h1 className="text-4xl font-bold text-blue-600 mb-4">نشتري للسكوترات</h1>
-      <p className="text-xl text-gray-600">قريباً - الموقع تحت الإنشاء</p>
-    </main>
+    <>
+      <HeroSection />
+      <TrustBar />
+      <CategoryGrid />
+    </>
   );
 }

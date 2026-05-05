@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,8 +21,13 @@ export default function EnglishLayout({
 }>) {
   return (
     <html lang="en" dir="ltr">
-      <body className={`${inter.variable} font-sans antialiased bg-gray-50 text-gray-900`}>
-        {children}
+      <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
+        <Header />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

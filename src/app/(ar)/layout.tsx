@@ -1,5 +1,8 @@
 import { Tajawal } from "next/font/google";
 import "@/app/globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],
@@ -19,8 +22,13 @@ export default function ArabicLayout({
 }>) {
   return (
     <html lang="ar-SA" dir="rtl">
-      <body className={`${tajawal.variable} font-sans antialiased bg-gray-50 text-gray-900`}>
-        {children}
+      <body className={`${tajawal.variable} font-sans antialiased min-h-screen flex flex-col`}>
+        <Header />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
