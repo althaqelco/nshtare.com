@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { categories, cities, products } from '@/lib/data';
+import { categories, subcategories, cities, products } from '@/lib/data';
 
 const baseUrl = 'https://nshtare.com';
 
@@ -64,6 +64,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'weekly',
         priority: 0.7,
       });
+    });
+  });
+
+  // 2b. Subcategories
+  subcategories.forEach((sub) => {
+    routes.push({
+      url: `${baseUrl}/${sub.parentSlug}/${sub.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    });
+    routes.push({
+      url: `${baseUrl}/en/${sub.parentSlug}/${sub.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
     });
   });
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { categories, getCategoryBySlug, getProductsByCategory } from '@/lib/data';
+import { categories, getCategoryBySlug, getProductsByCategory, getSubcategoriesByParent } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ShieldCheck, Zap } from 'lucide-react';
@@ -42,6 +42,29 @@ export default function CategoryPage({ params }: { params: { category: string } 
             تسوق الآن بضمان الوكيل وشحن سريع لباب بيتك مع خيار الدفع عند الاستلام.
           </p>
         </div>
+
+        {/* Subcategory Navigation Chips */}
+        {(() => {
+          const subs = getSubcategoriesByParent(category.slug);
+          if (subs.length === 0) return null;
+          return (
+            <div className="mb-10">
+              <h2 className="text-xl font-bold text-text mb-4">تصفح حسب النوع</h2>
+              <div className="flex flex-wrap gap-3">
+                {subs.map((sub) => (
+                  <Link
+                    key={sub.slug}
+                    href={`/${category.slug}/${sub.slug}`}
+                    className="px-5 py-2.5 bg-surface hover:bg-primary hover:text-white border border-border rounded-xl text-text font-semibold transition-all duration-300 flex items-center gap-2"
+                  >
+                    <span>{sub.icon}</span>
+                    {sub.nameAr}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Product Grid */}
         <div className="mb-8">
