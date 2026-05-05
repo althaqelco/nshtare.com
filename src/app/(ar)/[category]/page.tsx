@@ -106,6 +106,32 @@ export default function CategoryPage({ params }: { params: { category: string } 
           )}
         </div>
 
+        {/* Local SEO Cities Linking Block */}
+        <div className="mt-16 bg-surface p-8 rounded-3xl border border-border shadow-sm">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl font-bold text-text mb-2">
+              تسوق {category.nameAr} في مدينتك
+            </h2>
+            <p className="text-text-secondary">
+              نوفر خدمة التوصيل السريع والتركيب لجميع مناطق المملكة
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {['riyadh', 'jeddah', 'makkah', 'dammam'].map((citySlug) => {
+              const cityName = citySlug === 'riyadh' ? 'الرياض' : citySlug === 'jeddah' ? 'جدة' : citySlug === 'makkah' ? 'مكة المكرمة' : 'الدمام';
+              return (
+                <Link 
+                  key={citySlug}
+                  href={`/${category.slug}/${citySlug}`}
+                  className="px-6 py-3 bg-bg hover:bg-primary hover:text-white border border-border rounded-xl text-text font-semibold transition-all duration-300"
+                >
+                  {category.nameAr} في {cityName}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
       </div>
     </div>
   );
