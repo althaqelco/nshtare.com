@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import { CartProvider } from "@/context/CartContext";
 import CartSidebar from "@/components/cart/CartSidebar";
+import OrganizationSchema from "@/components/seo/OrganizationSchema";
 
 const tajawal = Tajawal({
   subsets: ["arabic"],
@@ -24,6 +25,9 @@ export default function ArabicLayout({
 }>) {
   return (
     <html lang="ar-SA" dir="rtl">
+      <head>
+        <OrganizationSchema />
+      </head>
       <body className={`${tajawal.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <CartProvider>
           <Header />

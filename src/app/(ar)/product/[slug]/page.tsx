@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 import { Star, ShieldCheck, Truck, Zap, Plus, Minus, ShoppingCart, MessageCircle, Eye } from "lucide-react";
+import ProductSchema from "@/components/seo/ProductSchema";
 
 // Mock database fetching based on slug
 const mockProducts: Record<string, any> = {
@@ -100,6 +101,16 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="bg-surface min-h-screen pb-24 md:pb-12" dir={isEn ? "ltr" : "rtl"}>
+      <ProductSchema 
+        name={product.name}
+        nameEn={product.nameEn}
+        image={product.image}
+        description={product.featuresAr.join(" - ")}
+        sku={product.id}
+        price={product.price}
+        rating={product.rating}
+        reviewsCount={product.reviewsCount}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">

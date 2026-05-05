@@ -4,6 +4,7 @@ import { categories, cities, getCategoryBySlug, getCityBySlug, getProductsByCate
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ShieldCheck, Zap, MapPin, Truck } from 'lucide-react';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 export async function generateStaticParams() {
   const params: { category: string; city: string }[] = [];
@@ -36,8 +37,15 @@ export default function CategoryCityPage({ params }: { params: { category: strin
 
   const products = getProductsByCategory(category.slug);
 
+  const breadcrumbItems = [
+    { name: "الرئيسية", url: "/" },
+    { name: category.nameAr, url: `/${category.slug}` },
+    { name: city.nameAr, url: `/${category.slug}/${city.slug}` }
+  ];
+
   return (
     <div className="bg-bg min-h-screen py-8 md:py-12">
+      <BreadcrumbSchema items={breadcrumbItems} />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Local SEO Hero */}
