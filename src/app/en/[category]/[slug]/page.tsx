@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Star, ShieldCheck, Zap, MapPin, Truck, ChevronRight } from 'lucide-react';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ProductDetails from '@/components/product/ProductDetails';
+import RelatedProducts from '@/components/product/RelatedProducts';
 
 export async function generateStaticParams() {
   const params: { category: string; slug: string }[] = [];
@@ -67,7 +68,20 @@ export default async function CategorySlugPageEn({ params }: { params: Promise<{
 
   const product = getProductBySlug(slug);
   if (product && product.categorySlug === catSlug) {
-    return <ProductDetails product={product} />;
+    const productBreadcrumbs = [
+      { name: "Home", url: "/en" },
+      { name: category.nameEn, url: `/en/${category.slug}` },
+      { name: product.nameEn, url: `/en/${product.categorySlug}/${product.slug}` },
+    ];
+    return (
+      <>
+        <BreadcrumbSchema items={productBreadcrumbs} />
+        <ProductDetails product={product} />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <RelatedProducts currentProductId={product.id} categorySlug={product.categorySlug} />
+        </div>
+      </>
+    );
   }
 
   const city = getCityBySlug(slug);

@@ -77,8 +77,14 @@ export default async function CategorySlugPage({ params }: { params: Promise<{ c
 
   const product = getProductBySlug(slug);
   if (product && product.categorySlug === catSlug) {
+    const productBreadcrumbs = [
+      { name: "الرئيسية", url: "/" },
+      { name: category.nameAr, url: `/${category.slug}` },
+      { name: product.name, url: `/${product.categorySlug}/${product.slug}` },
+    ];
     return (
       <>
+        <BreadcrumbSchema items={productBreadcrumbs} />
         <ProductDetails product={product} />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <RelatedProducts currentProductId={product.id} categorySlug={product.categorySlug} />

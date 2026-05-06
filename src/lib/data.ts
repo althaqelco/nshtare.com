@@ -415,6 +415,14 @@ export const products = [
       "/images/products/electric-three-wheel/dimensions.png"
     ],
     rating: 4.6, reviewsCount: 89,
+    specs: [
+      { labelAr: "العجلات", labelEn: "Wheels", value: "3 عجلات مستقرة", icon: "size" },
+      { labelAr: "المدى", labelEn: "Range", value: "35 كم", icon: "battery" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "20 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "350W", icon: "power" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "120 كجم", icon: "weight" },
+      { labelAr: "سلة تسوق", labelEn: "Basket", value: "معدنية كبيرة قابلة للفك", icon: "size" },
+    ],
   },
 
   // KW: سكوتر كهربائي صغير، سكوتر صغير، سكوتر عادي
@@ -430,6 +438,14 @@ export const products = [
       "/images/products/foldable-mini/dimensions.png"
     ],
     rating: 4.4, reviewsCount: 213,
+    specs: [
+      { labelAr: "المدى", labelEn: "Range", value: "20 كم", icon: "battery" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "20 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "200W", icon: "power" },
+      { labelAr: "الوزن", labelEn: "Weight", value: "8.5 كجم", icon: "weight" },
+      { labelAr: "قابل للطي", labelEn: "Foldable", value: "نعم — خفيف الحمل", icon: "size" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "3 ساعات", icon: "time" },
+    ],
   },
 
   // KW: سكوتر كريزي
@@ -445,6 +461,14 @@ export const products = [
       "/images/products/crazy-stunts/dimensions.png"
     ],
     rating: 4.7, reviewsCount: 178,
+    specs: [
+      { labelAr: "الجهد", labelEn: "Voltage", value: "36 فولت", icon: "power" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "18 كم/س", icon: "speed" },
+      { labelAr: "دوران", labelEn: "Rotation", value: "360° حر", icon: "speed" },
+      { labelAr: "مدة التشغيل", labelEn: "Run Time", value: "50 دقيقة", icon: "battery" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "80 كجم", icon: "weight" },
+      { labelAr: "إضاءة LED", labelEn: "LED Lights", value: "RGB متعدد الألوان", icon: "size" },
+    ],
   },
 
   // KW: سكوتر درفت رخيص، سكوتر درفت 100 ريال
@@ -460,6 +484,13 @@ export const products = [
       "/images/products/drift-budget-starter/dimensions.png"
     ],
     rating: 4.2, reviewsCount: 345,
+    specs: [
+      { labelAr: "الجهد", labelEn: "Voltage", value: "24 فولت", icon: "power" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "10 كم/س", icon: "speed" },
+      { labelAr: "مدة التشغيل", labelEn: "Run Time", value: "25 دقيقة", icon: "battery" },
+      { labelAr: "العمر المناسب", labelEn: "Age Range", value: "5+ سنوات", icon: "shield" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "50 كجم", icon: "weight" },
+    ],
   },
 
   // KW: سكوتر اطفال ثلاث عجلات
@@ -475,6 +506,13 @@ export const products = [
       "/images/products/kids-three-wheel-led/dimensions.png"
     ],
     rating: 4.8, reviewsCount: 467,
+    specs: [
+      { labelAr: "العجلات", labelEn: "Wheels", value: "3 عجلات LED مضيئة", icon: "size" },
+      { labelAr: "العمر المناسب", labelEn: "Age Range", value: "2-7 سنوات", icon: "shield" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "40 كجم", icon: "weight" },
+      { labelAr: "الارتفاع", labelEn: "Height", value: "قابل للتعديل 55-75 سم", icon: "size" },
+      { labelAr: "قابل للطي", labelEn: "Foldable", value: "نعم", icon: "size" },
+    ],
   },
 
   // KW: سكوتر كهربائي بكرسي، كرسي سكوتر، سكوتر كرسي، سكوتر كبار السن، سكوتر مقعدين
@@ -490,6 +528,14 @@ export const products = [
       "/images/products/mobility-chair-scooter/dimensions.png"
     ],
     rating: 4.9, reviewsCount: 56,
+    specs: [
+      { labelAr: "المدى", labelEn: "Range", value: "40 كم", icon: "battery" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "15 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "500W", icon: "power" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "150 كجم", icon: "weight" },
+      { labelAr: "نوع الكرسي", labelEn: "Seat Type", value: "كرسي مبطن قابل للتدوير", icon: "size" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "سنة كاملة", icon: "shield" },
+    ],
   },
 
   // KW: بطارية سكوتر، بطارية سكوتر درفت، بطارية سكوتر درفت 36 فولت، بطاريات سكوتر
@@ -505,6 +551,13 @@ export const products = [
       "/images/products/drift-battery-36v/dimensions.png"
     ],
     rating: 4.6, reviewsCount: 189,
+    specs: [
+      { labelAr: "الجهد", labelEn: "Voltage", value: "36V 4.4Ah", icon: "power" },
+      { labelAr: "النوع", labelEn: "Type", value: "ليثيوم أيون", icon: "battery" },
+      { labelAr: "التوافق", labelEn: "Compatibility", value: "درفت 36V جميع الموديلات", icon: "size" },
+      { labelAr: "عدد الدورات", labelEn: "Cycle Life", value: "500+ دورة شحن", icon: "battery" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "6 أشهر", icon: "shield" },
+    ],
   },
 
   // KW: شاحن سكوتر درفت، شاحن سكوتر كهربائي
@@ -520,6 +573,12 @@ export const products = [
       "/images/products/drift-charger-fast/dimensions.png"
     ],
     rating: 4.5, reviewsCount: 267,
+    specs: [
+      { labelAr: "الجهد", labelEn: "Voltage", value: "42V/54.6V 2A", icon: "power" },
+      { labelAr: "التوافق", labelEn: "Compatibility", value: "36V-48V درفت", icon: "size" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "3-5 ساعات", icon: "time" },
+      { labelAr: "الحماية", labelEn: "Protection", value: "شحن زائد + حرارة + ماس كهربائي", icon: "shield" },
+    ],
   },
 
   // KW: إضاءة سكوتر (fills lights subcategory)
@@ -535,6 +594,12 @@ export const products = [
       "/images/products/led-lights-kit/dimensions.png"
     ],
     rating: 4.3, reviewsCount: 198,
+    specs: [
+      { labelAr: "الألوان", labelEn: "Colors", value: "RGB 7 ألوان + وميض", icon: "size" },
+      { labelAr: "المقاومة", labelEn: "Water Resistance", value: "IPX5 مقاوم للماء", icon: "shield" },
+      { labelAr: "البطارية", labelEn: "Battery", value: "USB قابل للشحن (8 ساعات)", icon: "battery" },
+      { labelAr: "التركيب", labelEn: "Installation", value: "سهل بدون أدوات", icon: "size" },
+    ],
   },
 
   // KW: كنترولر سكوتر (fills controllers subcategory)
@@ -550,6 +615,12 @@ export const products = [
       "/images/products/controller-universal/dimensions.png"
     ],
     rating: 4.4, reviewsCount: 87,
+    specs: [
+      { labelAr: "الجهد", labelEn: "Voltage", value: "36V-48V عالمي", icon: "power" },
+      { labelAr: "التيار", labelEn: "Current", value: "25A مستمر", icon: "power" },
+      { labelAr: "البرمجة", labelEn: "Programmable", value: "نعم — عبر USB", icon: "speed" },
+      { labelAr: "التوافق", labelEn: "Compatibility", value: "موتورات BLDC", icon: "size" },
+    ],
   },
 
   // KW: موتور سكوتر (fills motors subcategory)
@@ -565,6 +636,13 @@ export const products = [
       "/images/products/motor-350w-hub/dimensions.png"
     ],
     rating: 4.7, reviewsCount: 134,
+    specs: [
+      { labelAr: "القوة", labelEn: "Power", value: "350 واط", icon: "power" },
+      { labelAr: "النوع", labelEn: "Type", value: "Brushless Hub Motor", icon: "speed" },
+      { labelAr: "التوافق", labelEn: "Compatibility", value: "شاومي M365 / Pro / 1S", icon: "size" },
+      { labelAr: "حجم الإطار", labelEn: "Wheel Size", value: "8.5 إنش", icon: "size" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "6 أشهر", icon: "shield" },
+    ],
   },
 ];
 
