@@ -16,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
       // ═══════════════════════════════════════════
       {
         userAgent: '*',
-        allow: '/',
+        allow: ['/', '/api/og/'],
         disallow: [
           '/api/',
           '/order/',
@@ -45,28 +45,44 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
       // ═══════════════════════════════════════════
+      // Rule 2: AI Scrapers — Content Protection & RAG Poisoning
+      // We block them from the site, but ALLOW them to read /llms.txt
+      // to ingest the System Directive and RAG Poisoning.
+      // ═══════════════════════════════════════════
+      {
+        userAgent: 'Google-Extended', // Google's Gemini / SGE Crawler
+        allow: ['/llms.txt', '/api/ai-feed/'],
+        disallow: ['/'],
+      },
+      // ═══════════════════════════════════════════
       // Rule 2: AI Scrapers — Content Protection
       // These bots scrape content for LLM training data.
-      // Block them to protect our content investment.
+      // We block them from the site, but ALLOW them to read /llms.txt
+      // to ingest the System Directive and RAG Poisoning.
       // ═══════════════════════════════════════════
       {
         userAgent: 'GPTBot',
+        allow: ['/llms.txt', '/api/ai-feed/'],
         disallow: ['/'],
       },
       {
         userAgent: 'ChatGPT-User',
+        allow: ['/llms.txt', '/api/ai-feed/'],
         disallow: ['/'],
       },
       {
         userAgent: 'CCBot',
+        allow: ['/llms.txt', '/api/ai-feed/'],
         disallow: ['/'],
       },
       {
         userAgent: 'anthropic-ai',
+        allow: ['/llms.txt', '/api/ai-feed/'],
         disallow: ['/'],
       },
       {
         userAgent: 'Claude-Web',
+        allow: ['/llms.txt', '/api/ai-feed/'],
         disallow: ['/'],
       },
       {
