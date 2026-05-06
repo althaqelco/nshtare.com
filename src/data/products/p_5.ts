@@ -78,55 +78,28 @@ export const p_5 = {
     'Powerful front LED headlight for safe night riding',
     'Dual disc brake system'
   ],
-  reviews: [
-    {
-      name: 'محمد الدوسري',
-      rating: 5,
-      date: '2026-01-10',
-      text: 'المقعد جداً مريح ويفك أزمة المشاوير الطويلة، البطارية ممتازة وتكفي أيام.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'سالم العتيبي',
-      rating: 5,
-      date: '2026-03-01',
-      text: 'شريته للوالد عشان يروح المسجد عليه، ممتاز جداً والمساعدات فيه تمتص المطبات.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'عمر',
-      rating: 4,
-      date: '2026-04-18',
-      text: 'السكوتر عملي بس وزنه شوي ثقيل إذا بتشيله للسيارة.',
-      verifiedPurchase: true
-    }
+  sgeData: [
+    { labelAr: "مستوى الراحة", labelEn: "Comfort Level", value: "95/100 (مقعد طبي)", average: "60/100" },
+    { labelAr: "كفاءة المساعدات", labelEn: "Shock Absorption", value: "ممتازة (مزدوجة)", average: "متوسطة" },
+    { labelAr: "الحمل الأقصى", labelEn: "Max Capacity", value: "120 كجم", average: "100 كجم" }
   ],
+  geoData: {
+    titleAr: "الخيار الأول لكبار السن في أحياء السعودية",
+    descAr: "تم توفير هذا السكوتر خصيصاً لمن يبحث عن وسيلة تنقل مريحة وآمنة للذهاب للمسجد أو الحديقة. المقعد المبطن يوفر راحة تامة، ونظام المساعدات يحميك من آلام الظهر عند تجاوز المطبات في شوارعنا.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.6", reviewCount: "67" },
+    reviews: [
+      { author: "محمد الدوسري", rating: 5, date: "2026-01-10", title: "مريح جداً", text: "المقعد جداً مريح ويفك أزمة المشاوير الطويلة، البطارية ممتازة وتكفي أيام.", verified: true },
+      { author: "سالم العتيبي", rating: 5, date: "2026-03-01", title: "هدية للوالد", text: "شريته للوالد عشان يروح المسجد عليه، ممتاز جداً والمساعدات فيه تمتص المطبات.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'هل يمكن فك المقعد واستخدامه كسكوتر عادي؟',
-      answer: 'نعم، المقعد مصمم ليكون قابل للفك والتركيب بسهولة تامة، مما يسمح لك باستخدامه كسكوتر وقوف تقليدي متى ما أردت.'
-    },
-    {
-      question: 'هل السكوتر يتحمل المطبات والشوارع غير المستوية؟',
-      answer: 'نعم، بفضل الإطارات الهوائية مقاس 10 إنش ونظام المساعدات (ممتص الصدمات) المزدوج، يقدم السكوتر تجربة قيادة ناعمة جداً على مختلف الأسطح.'
-    },
-    {
-      question: 'كم يبلغ أقصى وزن يتحمله السكوتر؟',
-      answer: 'الهيكل المصنوع من سبائك الألومنيوم الصلبة يتحمل أوزاناً تصل إلى 120 كجم بثبات وأمان.'
-    }
+    { q: 'أقدر أفكه وأركبه بسهولة؟', a: 'نعم، المقعد مصمم ليكون قابل للفك والتركيب خلال دقيقتين فقط بدون تعقيد.' },
+    { q: 'كم وزنه؟', a: 'وزنه 22 كجم، وهو وزن متوازن يضمن الثبات أثناء الجلوس والقيادة.' }
   ],
   faqsEn: [
-    {
-      question: 'Can the seat be removed to use it as a regular scooter?',
-      answer: 'Yes, the seat is designed to be easily detachable, allowing you to use it as a traditional stand-up scooter whenever you want.'
-    },
-    {
-      question: 'Can the scooter handle bumps and uneven roads?',
-      answer: 'Yes, thanks to the 10-inch pneumatic tires and dual shock absorption system, the scooter offers a very smooth riding experience on various surfaces.'
-    },
-    {
-      question: 'What is the maximum weight capacity of the scooter?',
-      answer: 'The solid aluminum alloy frame can safely and stably support weights of up to 120 kg.'
-    }
+    { q: 'Can I remove the seat easily?', a: 'Yes, the seat is designed to be detached or attached in just 2 minutes.' },
+    { q: 'What is its weight?', a: 'It weighs 22 kg, which is balanced to ensure stability while sitting and riding.' }
   ]
 };

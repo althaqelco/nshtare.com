@@ -72,55 +72,28 @@ export const p_3 = {
     'Battery level display screen',
     'Frame supports weights up to 65 kg'
   ],
-  reviews: [
-    {
-      name: 'سالم الدوسري',
-      rating: 5,
-      date: '2026-03-12',
-      text: 'ولديه انبسطوا عليه مره، خفيف وحجمه ممتاز للبيت والحوش، والسرعة تقدر تتحكم فيها.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'أم سعود',
-      rating: 5,
-      date: '2026-04-05',
-      text: 'شريته هدية نجاح لولدي 8 سنين، جودته بطله والبطارية تطول معه، والبلوتوث شغال تمام.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'فهد العتيبي',
-      rating: 4,
-      date: '2026-04-20',
-      text: 'منتج ممتاز ويستاهل سعره، بس ياليت الشاحن يكون اسرع شوي.',
-      verifiedPurchase: true
-    }
+  sgeData: [
+    { labelAr: "قوة الدرفت", labelEn: "Drift Power", value: "36V (قوية)", average: "24V" },
+    { labelAr: "مزايا إضافية", labelEn: "Extra Features", value: "بلوتوث + مفتاحين", average: "بدون" },
+    { labelAr: "مستوى الأمان", labelEn: "Safety Grade", value: "عالي (ضد الانقلاب)", average: "متوسط" }
   ],
+  geoData: {
+    titleAr: "السكوتر الأكثر شعبية في الحارات السعودية",
+    descAr: "سكوتر الدرفت 36 فولت هو المفضل لدى العوائل السعودية بفضل توازنه بين السعر والأداء. تصميمه القريب من الأرض يجعله الخيار الآمن للأطفال لتعلم مهارات التحكم والالتفاف في الأحواش والمنتزهات.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.7", reviewCount: "89" },
+    reviews: [
+      { author: "سالم الدوسري", rating: 5, date: "2026-03-12", title: "ممتع جداً", text: "ولديه انبسطوا عليه مره، خفيف وحجمه ممتاز للبيت والحوش، والسرعة تقدر تتحكم فيها.", verified: true },
+      { author: "أم سعود", rating: 5, date: "2026-04-05", title: "هدية نجاح بطلة", text: "شريته هدية نجاح لولدي 8 سنين، جودته بطله والبطارية تطول معه، والبلوتوث شغال تمام.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'هل سكوتر درفت 36 فولت آمن للأطفال؟',
-      answer: 'نعم، يتميز بتصميم منخفض قريب من الأرض يمنع الانقلاب، ومزود بثلاث سرعات يمكن لولي الأمر التحكم بها لضمان سلامة الطفل.'
-    },
-    {
-      question: 'كم يستغرق شحن بطارية السكوتر الدرفت؟',
-      answer: 'يستغرق الشحن الكامل من 3 إلى 4 ساعات تقريباً، وتكفي للعب المتواصل لمدة تصل إلى 40 دقيقة حسب الوزن والسرعة.'
-    },
-    {
-      question: 'هل يمكن تشغيل الموسيقى على السكوتر؟',
-      answer: 'نعم، السكوتر مزود بتقنية البلوتوث وسماعات مدمجة تتيح لك ربط الجوال وتشغيل الصوتيات أثناء اللعب.'
-    }
+    { q: 'هل هو آمن؟', a: 'نعم، تصميمه منخفض جداً يمنع الانقلاب، وفيه 3 سرعات للتحكم.' },
+    { q: 'أقدر أشغل موسيقى؟', a: 'نعم، فيه بلوتوث وسماعات مدمجة لربط الجوال وتشغيل أي صوتيات.' }
   ],
   faqsEn: [
-    {
-      question: 'Is the 36V drift scooter safe for kids?',
-      answer: 'Yes, it features a low-to-the-ground design that prevents tipping and has 3 speed settings that parents can control for safety.'
-    },
-    {
-      question: 'How long does it take to charge the drift scooter?',
-      answer: 'A full charge takes about 3 to 4 hours, which provides up to 40 minutes of continuous playtime depending on weight and speed.'
-    },
-    {
-      question: 'Can I play music on the scooter?',
-      answer: 'Yes, the scooter is equipped with Bluetooth and built-in speakers, allowing you to connect your phone and play audio while riding.'
-    }
+    { q: 'Is it safe?', a: 'Yes, its low-profile design prevents tipping, and it has 3 speed modes.' },
+    { q: 'Can I play music?', a: 'Yes, it features Bluetooth and built-in speakers for mobile connection.' }
   ]
 };

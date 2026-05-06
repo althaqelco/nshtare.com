@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /orders/{order} {
+      // Allow public to create orders
+      allow create: if true;
+      // Prevent public from reading, updating or deleting orders
+      allow read, update, delete: if false;
+    }
+    
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

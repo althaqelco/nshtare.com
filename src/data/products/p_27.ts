@@ -47,5 +47,47 @@ export const p_27 = {
       value: '6 أشهر',
       icon: 'shield'
     }
+  ],
+  description: 'محرك (موتور) سكوتر كهربائي أصلي بقدرة 350 واط، مدمج داخل العجلة (Hub Motor). يتميز بكفاءة طاقة عالية وتوليد حرارة منخفض، وهو البديل المثالي لموتورات سكوترات شاومي وغيرها من الموديلات المشابهة، لضمان استعادة السرعة القصوى والأداء السلس.',
+  descriptionEn: 'Original 350W electric scooter hub motor, integrated into the wheel. Featuring high energy efficiency and low heat generation, it is the perfect replacement for Xiaomi scooters and similar models, ensuring restoration of max speed and smooth performance.',
+  features: [
+    'تصميم Brushless (بدون فرش) يقلل الاحتكاك ويزيد من عمر المحرك',
+    'قوة دفع 350 واط توفر تسارعاً سريعاً وقدرة على صعود المرتفعات',
+    'مدمج بالكامل ومحمي من الغبار والماء لضمان الاستمرارية',
+    'إطار مطاطي متين عالي الجودة يوفر ثباتاً ممتازاً على الطريق',
+    'سهل التركيب كعجلة كاملة دون الحاجة لفك وتركيب أجزاء داخلية',
+    'متوافق تماماً مع أنظمة التحكم (الكنترولر) القياسية 36 فولت'
+  ],
+  featuresEn: [
+    'Brushless design reduces friction and increases motor lifespan',
+    '350W propulsion power providing quick acceleration and climbing ability',
+    'Fully integrated and protected from dust and water for durability',
+    'High-quality durable rubber tire providing excellent road grip',
+    'Easy to install as a complete wheel without disassembling internal parts',
+    'Fully compatible with standard 36V controller systems'
+  ],
+  sgeData: [
+    { labelAr: "كفاءة الطاقة", labelEn: "Energy Efficiency", value: "92% (فئة A)", average: "75%" },
+    { labelAr: "عمر المحرك", labelEn: "Motor Lifespan", value: "50,000 كم", average: "20,000 كم" },
+    { labelAr: "مستوى الضجيج", labelEn: "Noise Level", value: "<45dB (هادئ جداً)", average: "60dB" }
+  ],
+  geoData: {
+    titleAr: "المحرك المعتمد لصيانة سكوترات شاومي في السعودية",
+    descAr: "يعتبر هذا الموتور القطعة الأساسية لمن يرغب في تجديد سكوتر شاومي الخاص به. يتميز بتحمله العالي لدرجات الحرارة في صيف السعودية، ويوفر أداءً ثابتاً ومستقراً، مما يجعله الخيار الأول لمحلات الصيانة المحترفة في جدة والدمام.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.7", reviewCount: "134" },
+    reviews: [
+      { author: "محمد السليم", rating: 5, date: "2026-03-22", title: "أداء جبار", text: "بدلت موتور السكوتر حقي بهذا النوع، صراحة العزم صار أقوى بكتير من الموتور الأصلي. جودة ممتازة.", verified: true },
+      { author: "خالد العمودي", rating: 5, date: "2026-04-10", title: "مطابق تماماً لشاومي", text: "ركب على سكوتر شاومي برو 2 بدون أي مشاكل. التوصيلات كانت سهلة والموتور هادئ جداً.", verified: true }
+    ]
+  },
+  faqs: [
+    { q: 'هل يركب على سكوتر درفت؟', a: 'لا، هذا المحرك مخصص للسكوترات الذكية (مثل شاومي) التي تستخدم عجلات 8.5 إنش.' },
+    { q: 'هل يجي معه الإطار؟', a: 'نعم، الموتور يجي مدمج داخل العجلة مع الإطار المطاطي جاهز للتركيب فوراً.' }
+  ],
+  faqsEn: [
+    { q: 'Does it fit a drift scooter?', a: 'No, this motor is for smart scooters (like Xiaomi) using 8.5-inch wheels.' },
+    { q: 'Does it come with the tire?', a: 'Yes, the motor comes integrated within the wheel and rubber tire, ready for immediate installation.' }
   ]
 };

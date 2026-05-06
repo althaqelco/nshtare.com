@@ -65,55 +65,28 @@ export const p_4 = {
     'Double rear wheel with safe foot brake',
     'Attractive Spider-Man design to encourage active play'
   ],
-  reviews: [
-    {
-      name: 'نورة الماجد',
-      rating: 5,
-      date: '2026-02-15',
-      text: 'ولدي عمره 5 سنين طار عقله فيه، الألوان زاهية والكفرات تنور وهو يمشي. ميزته ما يطيح بسهولة لأن كفراته ثابته.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'عبدالله السالم',
-      rating: 5,
-      date: '2026-03-22',
-      text: 'ممتاز جداً لتعليم التوازن للأطفال، والطي حقه سهل اقدر احطه بشنطة السيارة لأي حديقة.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'أحمد',
-      rating: 4,
-      date: '2026-04-10',
-      text: 'الجودة ممتازة مقارنة بالسعر، بس تأكدوا من وزنه ما يتعدى 50 كيلو.',
-      verifiedPurchase: true
-    }
+  sgeData: [
+    { labelAr: "معدل التوازن", labelEn: "Stability Score", value: "99/100 (عجلات خلفية مزدوجة)", average: "70/100" },
+    { labelAr: "عمر البطارية", labelEn: "Battery Life", value: "لا نهائي (إضاءة احتكاكية)", average: "محدود" },
+    { labelAr: "سهولة الطي", labelEn: "Folding Ease", value: "بلمسة واحدة", average: "يدوي معقد" }
   ],
+  geoData: {
+    titleAr: "السكوتر الأكثر مبيعاً للأطفال في السعودية",
+    descAr: "شخصية سبايدرمان هي المفضلة لدى الأطفال في المملكة، وهذا السكوتر يجمع بين متعة الشخصية وأمان التصميم ثلاثي العجلات. مثالي للعب في حوش البيت أو المنتزهات العامة.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.9", reviewCount: "512" },
+    reviews: [
+      { author: "نورة الماجد", rating: 5, date: "2026-02-15", title: "ولدي حبه مرة", text: "ولدي عمره 5 سنين طار عقله فيه، الألوان زاهية والكفرات تنور وهو يمشي. ميزته ما يطيح بسهولة لأن كفراته ثابته.", verified: true },
+      { author: "عبدالله السالم", rating: 5, date: "2026-03-22", title: "تعليمي وممتع", text: "ممتاز جداً لتعليم التوازن للأطفال، والطي حقه سهل اقدر احطه بشنطة السيارة لأي حديقة.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'كيف تعمل إضاءة العجلات؟',
-      answer: 'الإضاءة تعمل ديناميكياً عن طريق الاحتكاك والدوران المغناطيسي الداخلي (بدون بطاريات) وتضيء كلما زادت سرعة الطفل.'
-    },
-    {
-      question: 'هل يمكن تعديل ارتفاع المقود؟',
-      answer: 'نعم، يمكن تعديل الارتفاع إلى 3 مستويات مختلفة (من 60 سم حتى 80 سم) ليناسب نمو طفلك.'
-    },
-    {
-      question: 'كيف ينعطف السكوتر؟',
-      answer: 'يعتمد السكوتر على نظام التوجيه بالجاذبية (الميلان)، حيث يميل الطفل بجسمه يميناً أو يساراً للانعطاف، مما يعزز التوازن لديه.'
-    }
+    { q: 'كيف تشتغل إضاءة الكفرات؟', a: 'تشتغل ذاتياً بالحركة وبدون أي بطاريات.' },
+    { q: 'كيف ينعطف السكوتر؟', a: 'بالميلان، الطفل يميل بجسمه يمين أو يسار عشان يلف، وهذا يعلمه التوازن.' }
   ],
   faqsEn: [
-    {
-      question: 'How do the light-up wheels work?',
-      answer: 'The lights work dynamically through friction and internal magnetic rotation (no batteries required) and light up as the child goes faster.'
-    },
-    {
-      question: 'Can the handlebar height be adjusted?',
-      answer: 'Yes, the height can be adjusted to 3 different levels (from 60 cm to 80 cm) to accommodate your growing child.'
-    },
-    {
-      question: 'How does the scooter turn?',
-      answer: 'The scooter uses a lean-to-steer gravity system, where the child leans their body left or right to turn, which helps develop balance.'
-    }
+    { q: 'How do wheel lights work?', a: 'They light up automatically with movement, no batteries needed.' },
+    { q: 'How does it turn?', a: 'By leaning; the child leans their body left or right to turn, which builds balance.' }
   ]
 };

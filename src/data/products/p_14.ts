@@ -60,55 +60,19 @@ export const p_14 = {
     'Compatible with most Xiaomi, Ninebot, and commercial 36V scooters',
     'Durable and insulated cable with a suitable length for ease of use and portability'
   ],
-  reviews: [
-    {
-      name: 'عبدالله السعيد',
-      rating: 5,
-      date: '2026-03-12',
-      text: 'شاحن ممتاز وعملي، نفس كفاءة الأصلي أو يمكن أسرع شوي. الميزة إن اللمبة تقلب أخضر ويفصل من نفسه.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'سالم',
-      rating: 5,
-      date: '2026-04-01',
-      text: 'اشتريته لسكوتر شاومي برو 2 واشتغل معاه زي الحلاوة. ما يحتر وسرعة الشحن ممتازة.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'نورة',
-      rating: 4,
-      date: '2026-04-18',
-      text: 'شغال تمام بس سلك الفيش الجداري قصير شوي، غير كذا أداء الشاحن بطل وموثوق.',
-      verifiedPurchase: true
-    }
-  ],
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.4", reviewCount: "234" },
+    reviews: [
+      { author: "عبدالله السعيد", rating: 5, date: "2026-03-12", title: "شاحن ذكي وسريع", text: "شاحن ممتاز وعملي، نفس كفاءة الأصلي أو يمكن أسرع شوي. الميزة إن اللمبة تقلب أخضر ويفصل من نفسه.", verified: true },
+      { author: "سالم", rating: 5, date: "2026-04-01", title: "ممتاز لشاومي", text: "اشتريته لسكوتر شاومي برو 2 واشتغل معاه زي الحلاوة. ما يحتر وسرعة الشحن ممتازة.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'هل الشاحن يفصل تلقائياً عند امتلاء البطارية؟',
-      answer: 'نعم، الشاحن مزود بشريحة ذكية تقطع التيار الكهربائي فور وصول البطارية إلى نسبة شحن 100% لحمايتها من التلف والانفجار.'
-    },
-    {
-      question: 'كيف أعرف إذا كان متوافقاً مع سكوتر خاص بي؟',
-      answer: 'تأكد من أن بطارية سكوترك من نوع ليثيوم 36 فولت. الشاحن يخرج 42 فولت لشحن هذا النوع، ومنفذ الشحن هو المنفذ الدائري القياسي المتعارف عليه في شاومي ومعظم السكوترات.'
-    },
-    {
-      question: 'ما معنى إضاءة اللمبة في الشاحن؟',
-      answer: 'اللون الأحمر يعني أن السكوتر قيد الشحن ويسحب طاقة. اللون الأخضر يعني إما أن البطارية امتلأت أو أن الشاحن غير موصل بشكل صحيح.'
-    }
+    { q: 'هل الشاحن يفصل تلقائياً؟', a: 'نعم، الشاحن يقطع التيار فور وصول البطارية إلى 100% لحمايتها من الشحن الزائد.' },
+    { q: 'كيف أتأكد من التوافق؟', a: 'تأكد أن بطارية سكوترك 36 فولت ليثيوم، هذا الشاحن هو المعياري لمعظم سكوترات شاومي وناينبوت.' }
   ],
   faqsEn: [
-    {
-      question: 'Does the charger automatically stop when the battery is full?',
-      answer: 'Yes, the charger is equipped with a smart chip that cuts off the power as soon as the battery reaches 100% to protect it from damage and overcharging.'
-    },
-    {
-      question: 'How do I know if it is compatible with my scooter?',
-      answer: 'Make sure your scooter battery is a 36V lithium type. The charger outputs 42V to charge this type, and the charging port is the standard round plug common in Xiaomi and most scooters.'
-    },
-    {
-      question: 'What do the LED lights on the charger mean?',
-      answer: 'A red light means the scooter is charging and drawing power. A green light means the battery is fully charged or the charger is not connected properly.'
-    }
+    { q: 'Does it stop automatically?', a: 'Yes, the smart chip cuts power at 100% to prevent overcharging and battery damage.' },
+    { q: 'How to check compatibility?', a: 'This charger is compatible with 36V lithium batteries, standard for Xiaomi, Ninebot, and most e-scooters.' }
   ]
 };

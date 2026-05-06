@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -54,11 +54,47 @@ export default function CheckoutPage() {
     processing: isEn ? "Processing..." : "جاري تأكيد الطلب...",
   };
   
-  const { register, handleSubmit, watch, formState: { errors } } = useForm<OrderFormValues>({
+  const { register, handleSubmit, watch, setValue, formState: { errors } } = useForm<OrderFormValues>({
     resolver: zodResolver(orderSchema)
   });
 
+  // Form Persistence
+  useEffect(() => {
+    const savedData = localStorage.getItem('nshtare_checkout_form');
+    if (savedData) {
+      try {
+        const parsed = JSON.parse(savedData);
+        Object.keys(parsed).forEach((key) => {
+          setValue(key as keyof OrderFormValues, parsed[key]);
+        });
+      } catch (e) {
+        console.error("Failed to restore form data");
+      }
+    }
+  }, [setValue]);
+
+  const formData = watch();
+  useEffect(() => {
+    localStorage.setItem('nshtare_checkout_form', JSON.stringify(formData));
+  }, [formData]);
+
+  // Analytics: Initiate Checkout
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // @ts-ignore
+      if (window.fbq) window.fbq('track', 'InitiateCheckout');
+      // @ts-ignore
+      if (window.ttq) window.ttq.track('InitiateCheckout');
+    }
+  }, []);
+
   const selectedCityId = watch("city");
+  
+  // Reset district when city changes
+  useEffect(() => {
+    setValue("district", "");
+  }, [selectedCityId, setValue]);
+
   const currentCity = saudiCities.find((c: any) => c.id === selectedCityId || c.nameAr === selectedCityId);
   const districts = currentCity ? currentCity.districts : [];
 
@@ -96,7 +132,16 @@ export default function CheckoutPage() {
       
       console.log("Order Saved to Firebase:", { orderId });
       
+      // Analytics: Purchase
+      if (typeof window !== 'undefined') {
+        // @ts-ignore
+        if (window.fbq) window.fbq('track', 'Purchase', { value: cartTotal, currency: 'SAR' });
+        // @ts-ignore
+        if (window.ttq) window.ttq.track('CompletePayment', { value: cartTotal, currency: 'SAR' });
+      }
+
       clearCart();
+      localStorage.removeItem('nshtare_checkout_form');
       
       // Redirect to confirmation
       router.push(isEn ? `/en/order/confirmation?id=${orderId}` : `/order/confirmation?id=${orderId}`);

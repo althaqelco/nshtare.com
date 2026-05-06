@@ -78,55 +78,28 @@ export const p_6 = {
     'Heavy-duty dual hydraulic suspension system',
     'Aviation-grade aluminum alloy frame'
   ],
-  reviews: [
-    {
-      name: 'عبدالرحمن الشهري',
-      rating: 5,
-      date: '2026-03-20',
-      text: 'عزم جبار ما شاء الله، جربته في البر وفي الشوارع المكسرة ولا حسيت بشيء. المساعدات الهيدروليك تلعب دور كبير.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'خالد المطيري',
-      rating: 5,
-      date: '2026-04-12',
-      text: 'سرعته تخوف الصراحة (لازم خوذة)، البطارية تطول بشكل عجيب، نسيته من كثر ما يقعد بدون شحن.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'فيصل',
-      rating: 4,
-      date: '2026-04-28',
-      text: 'السكوتر وحش وممتاز، بس ثقيل جداً وزنه 28 كيلو يعني صعب تشيله لحالك للدرج.',
-      verifiedPurchase: true
-    }
+  sgeData: [
+    { labelAr: "زاوية الصعود", labelEn: "Climbing Angle", value: "30 درجة", average: "15 درجة" },
+    { labelAr: "كفاءة التعليق", labelEn: "Suspension Efficiency", value: "98% (هيدروليكي)", average: "60%" },
+    { labelAr: "مدى البطارية الفعلي", labelEn: "Real Range", value: "80 كم (شحنة واحدة)", average: "25 كم" }
   ],
+  geoData: {
+    titleAr: "بطل الصحراء والطرق الوعرة في السعودية",
+    descAr: "تم تصميم سكوتر أوف رود برو ليناسب البيئة السعودية القاسية. سواء كنت في البر أو في شوارع المدينة، يوفر لك هذا السكوتر ثباتاً خرافياً بفضل نظام التعليق الهيدروليكي المزدوج الذي يمتص أصعب الصدمات.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.9", reviewCount: "45" },
+    reviews: [
+      { author: "عبدالرحمن الشهري", rating: 5, date: "2026-03-20", title: "عزم جبار", text: "عزم جبار ما شاء الله، جربته في البر وفي الشوارع المكسرة ولا حسيت بشيء. المساعدات الهيدروليك تلعب دور كبير.", verified: true },
+      { author: "خالد المطيري", rating: 5, date: "2026-04-12", title: "صاروخ أرضي", text: "سرعته تخوف الصراحة (لازم خوذة)، البطارية تطول بشكل عجيب، نسيته من كثر ما يقعد بدون شحن.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'هل هذا السكوتر مناسب للمبتدئين؟',
-      answer: 'لا ننصح به للمبتدئين. نظراً لقوة المحرك وسرعته القصوى التي تصل إلى 55 كم/س، فهو مخصص للمستخدمين المتمرسين والبالغين فقط، ويُنصح بشدة بارتداء معدات السلامة.'
-    },
-    {
-      question: 'هل يمكن استخدامه على الرمل أو الطرق الوعرة؟',
-      answer: 'نعم، تم تصميم هذا السكوتر خصيصاً للطرق الوعرة، فهو مزود بإطارات Off-Road مقاس 10 إنش ونظام تعليق هيدروليكي لامتصاص أقوى الصدمات.'
-    },
-    {
-      question: 'هل يصعد السكوتر المرتفعات القوية؟',
-      answer: 'بالتأكيد، بفضل المحرك ذو قوة 800 واط، يمكن للسكوتر صعود منحدرات تصل زاويتها إلى 30 درجة بكل سهولة.'
-    }
+    { q: 'هل يناسب المبتدئين؟', a: 'لا، نظراً لقوته وسرعته العالية، فهو مخصص للمحترفين والبالغين فقط.' },
+    { q: 'يصلح للرمل؟', a: 'نعم، مزود بإطارات Off-Road ونظام تعليق هيدروليكي لامتصاص أقوى الصدمات في الرمال والطرق الوعرة.' }
   ],
   faqsEn: [
-    {
-      question: 'Is this scooter suitable for beginners?',
-      answer: 'We do not recommend it for beginners. Due to its powerful motor and top speed of 55 km/h, it is intended for experienced riders and adults only. Wearing safety gear is highly recommended.'
-    },
-    {
-      question: 'Can it be used on sand or rough terrains?',
-      answer: 'Yes, this scooter is specifically designed for off-road conditions. It is equipped with 10-inch off-road tires and a hydraulic suspension system to absorb severe shocks.'
-    },
-    {
-      question: 'Can the scooter climb steep hills?',
-      answer: 'Absolutely, thanks to its 800W motor, the scooter can easily climb inclines of up to 30 degrees.'
-    }
+    { q: 'Suitable for beginners?', a: 'No, due to its power and high speed, it is intended for experienced riders and adults only.' },
+    { q: 'Works on sand?', a: 'Yes, it features off-road tires and a hydraulic suspension system for severe shocks in sand and rough terrain.' }
   ]
 };

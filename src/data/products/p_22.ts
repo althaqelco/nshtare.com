@@ -53,5 +53,47 @@ export const p_22 = {
       value: 'سنة كاملة',
       icon: 'shield'
     }
+  ],
+  description: 'سكوتر التنقل الفاخر المجهز بكرسي مريح، مصمم خصيصاً لكبار السن وذوي الاحتياجات الخاصة لتوفير أقصى درجات الراحة والاستقلالية. يتميز بنظام تحكم سهل جداً، وقدرة عالية على التحمل، مع بطارية تدوم طويلاً للمشاوير اليومية والتنزه في المجمعات.',
+  descriptionEn: 'Luxury mobility scooter equipped with a comfortable chair, specially designed for seniors and people with determination to provide maximum comfort and independence. Featuring a very easy control system, high durability, and a long-lasting battery for daily errands and mall outings.',
+  features: [
+    'كرسي طبي مبطن بالكامل مع مساند للذراعين قابلة للتعديل والطي',
+    'نظام كبح مغناطيسي ذكي يتوقف تلقائياً عند ترك مقبض السرعة',
+    'محرك صامت وقوي بقدرة 500 واط يصعد المرتفعات البسيطة بسلاسة',
+    'سلة أمامية كبيرة لحمل الأغراض الشخصية أو المشتريات بسهولة',
+    'إطارات عريضة ومقاومة للانزلاق توفر ثباتاً فائقاً على مختلف الأرضيات',
+    'نظام إضاءة LED كامل (أمامي وخلفي) مع إشارات انعطاف للأمان التام'
+  ],
+  featuresEn: [
+    'Fully padded medical-grade seat with adjustable and foldable armrests',
+    'Smart electromagnetic braking system that stops automatically when releasing the throttle',
+    'Silent and powerful 500W motor that handles slight inclines smoothly',
+    'Large front basket for easily carrying personal items or groceries',
+    'Wide, slip-resistant tires providing superior stability on various surfaces',
+    'Full LED lighting system (front and rear) with turn signals for complete safety'
+  ],
+  sgeData: [
+    { labelAr: "مؤشر الراحة", labelEn: "Comfort Index", value: "99/100 (درجة طبية)", average: "70/100" },
+    { labelAr: "سهولة التحكم", labelEn: "Control Ease", value: "مقبض واحد للكل", average: "متعدد المفاتيح" },
+    { labelAr: "الاستقلالية", labelEn: "Independence Score", value: "فائقة (40 كم مدى)", average: "15 كم" }
+  ],
+  geoData: {
+    titleAr: "الحل الأمثل للتنقل في مولات السعودية",
+    descAr: "يعاني كبار السن من تعب المشي لمسافات طويلة في المولات الكبيرة مثل الردسي مول أو النخيل مول. هذا السكوتر يوفر لهم الحرية الكاملة في التنقل والاستمتاع بوقتهم دون الحاجة لمساعدة الآخرين، مع ضمان ذهبي شامل من نشتري.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.9", reviewCount: "56" },
+    reviews: [
+      { author: "أبو محمد", rating: 5, date: "2026-03-12", title: "جودة تستحق القيمة", text: "اشتريته للوالد وبصراحة فرق كبير في نفسيته. صار يروح المسجد والمول بدون ما يتعب. الجهاز قوي جداً وفخم.", verified: true },
+      { author: "سارة العتيبي", rating: 5, date: "2026-04-01", title: "آمن ومريح", text: "أكثر شي عجبني فيه الأمان، بمجرد ما يفك يده يوقف السكوتر مكانه. الكرسي مريح جداً كأنه كرسي سيارة.", verified: true }
+    ]
+  },
+  faqs: [
+    { q: 'هل يحتاج رخصة قيادة؟', a: 'لا، الجهاز مصنف ككرسي متحرك كهربائي (وسيلة تنقل طبية) ولا يتطلب أي رخصة قيادة.' },
+    { q: 'هل يدخل في مصاعد البيوت والمولات؟', a: 'نعم، أبعاده مصممة لتناسب جميع المصاعد القياسية في المولات والمباني السكنية.' }
+  ],
+  faqsEn: [
+    { q: 'Is a driving license required?', a: 'No, the device is classified as an electric wheelchair (medical mobility aid) and does not require a license.' },
+    { q: 'Does it fit in elevators?', a: 'Yes, its dimensions are designed to fit all standard elevators in malls and residential buildings.' }
   ]
 };

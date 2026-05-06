@@ -13,7 +13,7 @@ const baseUrl = 'https://nshtare.com';
  * Update these dates manually when actual content changes occur.
  */
 const SITE_LAUNCH = '2026-05-01T00:00:00Z';
-const CONTENT_UPDATE = '2026-05-06T00:00:00Z';
+const CONTENT_UPDATE = '2026-05-06T13:30:00Z';
 const BLOG_UPDATE = '2026-05-01T00:00:00Z';
 
 export default function sitemap(): MetadataRoute.Sitemap {

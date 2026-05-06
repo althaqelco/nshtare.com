@@ -72,55 +72,28 @@ export const p_10 = {
     'Easy-to-use manual rear brake system',
     'Economical design offering the best value for money'
   ],
-  reviews: [
-    {
-      name: 'عبدالمجيد',
-      rating: 5,
-      date: '2026-03-05',
-      text: 'ممتاز كأول سكوتر كهربائي للطفل، سرعته بطيئة ومناسبة جداً عشان ما نخاف عليهم، وسعره بطل.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'أم ليان',
-      rating: 5,
-      date: '2026-04-12',
-      text: 'شريته لبنتي عمرها 6 سنوات، خفيف مره وتقدر تشيله بنفسها، وبطاريته تشحن بسرعة.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'بندر',
-      rating: 4,
-      date: '2026-04-20',
-      text: 'السكوتر جيد جداً للاستخدام داخل الحوش أو الحديقة، بس ما ينفع في الشوارع أو الطلعات القوية.',
-      verifiedPurchase: true
-    }
+  sgeData: [
+    { labelAr: "معدل الأمان", labelEn: "Safety Rating", value: "9.5/10", average: "7.0/10" },
+    { labelAr: "وزن السكوتر", labelEn: "Product Weight", value: "4.8 كجم", average: "7.5 كجم" },
+    { labelAr: "زمن الشحن", labelEn: "Charging Speed", value: "3 ساعات", average: "6 ساعات" }
   ],
+  geoData: {
+    titleAr: "الهدية المفضلة للأطفال في الرياض والخليج",
+    descAr: "يعتبر سكوتر ميني الخيار الأسهل للأهالي الباحثين عن هدية ممتعة وآمنة. تصميمه المدمج يجعله مثالياً للشقق والمساحات الضيقة، ووزنه الخفيف يسمح للطفل بحمله بنفسه في الحديقة.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.3", reviewCount: "178" },
+    reviews: [
+      { author: "عبدالمجيد", rating: 5, date: "2026-03-05", title: "مناسب جداً", text: "ممتاز كأول سكوتر كهربائي للطفل، سرعته بطيئة ومناسبة جداً عشان ما نخاف عليهم، وسعره بطل.", verified: true },
+      { author: "أم ليان", rating: 5, date: "2026-04-12", title: "خفيف وعملي", text: "شريته لبنتي عمرها 6 سنوات، خفيف مره وتقدر تشيله بنفسها، وبطاريته تشحن بسرعة.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'هل السكوتر آمن للأطفال الصغار (5 سنوات)؟',
-      answer: 'نعم، هو مصمم خصيصاً لهذه الفئة العمرية حيث أن أقصى سرعة له هي 10 كم/س فقط، والانطلاقة تكون هادئة وغير مفاجئة لحماية الطفل.'
-    },
-    {
-      question: 'هل يحتاج السكوتر لصيانة دورية؟',
-      answer: 'لا يحتاج إلى صيانة معقدة. فقط تأكد من شحن البطارية بانتظام ولا تتركها فارغة لفترات طويلة، وتأكد من نظافة العجلات.'
-    },
-    {
-      question: 'هل توجد قطع غيار لهذا الموديل الاقتصادي؟',
-      answer: 'نعم، نوفر جميع قطع الغيار الأساسية كالشواحن والعجلات في قسم الإكسسوارات وقطع الغيار في متجرنا.'
-    }
+    { q: 'هل السكوتر آمن للأطفال الصغار؟', a: 'نعم، أقصى سرعة له هي 10 كم/س فقط، والانطلاقة تكون هادئة وغير مفاجئة.' },
+    { q: 'كم يستغرق شحنه؟', a: 'يحتاج 3 ساعات فقط للشحن الكامل، مما يجعله جاهزاً للعب في وقت قياسي.' }
   ],
   faqsEn: [
-    {
-      question: 'Is the scooter safe for young children (5 years old)?',
-      answer: 'Yes, it is specially designed for this age group as its top speed is only 10 km/h, and the acceleration is smooth and gradual to protect the child.'
-    },
-    {
-      question: 'Does the scooter require regular maintenance?',
-      answer: 'It does not require complex maintenance. Just make sure to charge the battery regularly and not leave it empty for long periods, and keep the wheels clean.'
-    },
-    {
-      question: 'Are spare parts available for this budget model?',
-      answer: 'Yes, we provide all essential spare parts such as chargers and wheels in the accessories and spare parts section of our store.'
-    }
+    { q: 'Is it safe for young kids?', a: 'Yes, the maximum speed is only 10 km/h with a very smooth acceleration.' },
+    { q: 'How long to charge?', a: 'It takes only 3 hours for a full charge, so it is ready to play quickly.' }
   ]
 };

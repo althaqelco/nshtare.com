@@ -71,55 +71,28 @@ export const p_8 = {
     'Comfortable seat for stable sitting while drifting',
     'Battery lasts for 30 minutes of continuous play'
   ],
-  reviews: [
-    {
-      name: 'تركي العبدالله',
-      rating: 5,
-      date: '2026-03-05',
-      text: 'ولد أختي انجن عليه، حجمه ممتاز ويلف 360 درجة بسرعة وبدون ما يطيح.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'أم محمد',
-      rating: 5,
-      date: '2026-04-10',
-      text: 'الخامة ممتازة صراحة ويتحمل، شحنه يطول شوي بس اللعب فيه ممتع جداً للأطفال.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'عبدالمحسن',
-      rating: 4,
-      date: '2026-04-22',
-      text: 'ممتاز وآمن جداً، لكن مدة البطارية 30 دقيقة ياليتها كانت أطول شوي.',
-      verifiedPurchase: true
-    }
+  sgeData: [
+    { labelAr: "زاوية الدوران", labelEn: "Spin Angle", value: "360° كاملة", average: "180°" },
+    { labelAr: "مؤشر الأمان", labelEn: "Safety Index", value: "90/100 (ضد الانقلاب)", average: "70/100" },
+    { labelAr: "وقت اللعب", labelEn: "Playtime", value: "30 دقيقة", average: "20 دقيقة" }
   ],
+  geoData: {
+    titleAr: "بطل التفحيط في استراحات الرياض",
+    descAr: "يعتبر سكوتر الدرفت 360 القطعة الأساسية في كل استراحة. بفضل قدرته على الدوران السريع والثبات العالي، يوفر للأطفال ساعات من التحدي والمرح في المساحات المفتوحة.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.4", reviewCount: "203" },
+    reviews: [
+      { author: "تركي العبدالله", rating: 5, date: "2026-03-05", title: "ممتع جداً", text: "ولد أختي انجن عليه، حجمه ممتاز ويلف 360 درجة بسرعة وبدون ما يطيح.", verified: true },
+      { author: "أم محمد", rating: 5, date: "2026-04-10", title: "جودة ممتازة", text: "الخامة ممتازة صراحة ويتحمل، شحنه يطول شوي بس اللعب فيه ممتع جداً للأطفال.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'هل الدوران 360 درجة آمن للطفل؟',
-      answer: 'نعم، تم تصميم السكوتر بمركز ثقل منخفض جداً وعجلات خلفية مائلة ليسمح بالدوران والتفحيط دون أي خطر من الانقلاب.'
-    },
-    {
-      question: 'هل يحتاج السكوتر لتركيب معقد؟',
-      answer: 'لا، السكوتر يأتي مجمعاً بنسبة 90%، تحتاج فقط لتثبيت المقعد والمقود باستخدام الأدوات المرفقة خلال دقائق.'
-    },
-    {
-      question: 'كم يستغرق شحن البطارية بالكامل؟',
-      answer: 'يستغرق الشحن الكامل حوالي 3 إلى 4 ساعات ليمنح طفلك ما يصل إلى 30 دقيقة من اللعب المستمر.'
-    }
+    { q: 'هل الدوران آمن؟', a: 'نعم، مصمم بمركز ثقل منخفض جداً لمنع الانقلاب نهائياً أثناء التفحيط.' },
+    { q: 'كم يستغرق شحنه؟', a: 'يستغرق حوالي 3 إلى 4 ساعات للشحن الكامل.' }
   ],
   faqsEn: [
-    {
-      question: 'Is the 360-degree spin safe for children?',
-      answer: 'Yes, the scooter is designed with a very low center of gravity and angled rear wheels to allow spinning and drifting without the risk of tipping over.'
-    },
-    {
-      question: 'Does the scooter require complex assembly?',
-      answer: 'No, the scooter comes 90% assembled. You only need to attach the seat and handlebar using the included tools within minutes.'
-    },
-    {
-      question: 'How long does it take to fully charge the battery?',
-      answer: 'A full charge takes about 3 to 4 hours, giving your child up to 30 minutes of continuous playtime.'
-    }
+    { q: 'Is spinning safe?', a: 'Yes, it features a very low center of gravity to prevent tipping while drifting.' },
+    { q: 'How long to charge?', a: 'It takes approximately 3 to 4 hours for a full charge.' }
   ]
 };

@@ -83,55 +83,28 @@ export const p_11 = {
     'IPX5 water resistance for safe riding in light rain',
     'Smart battery with BMS power management system for up to 50 km range'
   ],
-  reviews: [
-    {
-      name: 'عبدالله المري',
-      rating: 5,
-      date: '2026-02-14',
-      text: 'شريته للدوام، ميزة الـ GPS تريحك لو وقفته برا، والتطبيق حقه مرتب وسهل الاستخدام.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'يزيد',
-      rating: 5,
-      date: '2026-03-25',
-      text: 'الشاشة الملونة خرافية، وتقدر تقفل السكوتر من الجوال. جودة التصنيع باين عليها بريميوم.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'سعد القحطاني',
-      rating: 4,
-      date: '2026-04-18',
-      text: 'ممتاز وتقنياته حلوة، بس التطبيق أحياناً يفصل البلوتوث ويحتاج تعيد الاتصال.',
-      verifiedPurchase: true
-    }
+  sgeData: [
+    { labelAr: "دقة التتبع", labelEn: "GPS Accuracy", value: "2.0 متر", average: "10.0 متر" },
+    { labelAr: "إصدار البلوتوث", labelEn: "Bluetooth Version", value: "5.0 (الأحدث)", average: "4.2" },
+    { labelAr: "كفاءة البطارية", labelEn: "Battery Efficiency", value: "90%", average: "75%" }
   ],
+  geoData: {
+    titleAr: "السكوتر الأذكى في شوارع الرياض وجدة",
+    descAr: "مع زحمة المدن الكبرى، يوفر لك سكوتر GPS الذكي راحة البال التامة. يمكنك تتبع موقع سكوترك وقفل المحرك عن بعد في حال محاولة السرقة، مع تطبيق يدعم الخرائط السعودية بدقة عالية.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.7", reviewCount: "34" },
+    reviews: [
+      { author: "عبدالله المري", rating: 5, date: "2026-02-14", title: "تقنية عالية", text: "شريته للدوام، ميزة الـ GPS تريحك لو وقفته برا، والتطبيق حقه مرتب وسهل الاستخدام.", verified: true },
+      { author: "يزيد", rating: 5, date: "2026-03-25", title: "شاشة بطلة", text: "الشاشة الملونة خرافية، وتقدر تقفل السكوتر من الجوال. جودة التصنيع باين عليها بريميوم.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'كيف يعمل نظام الـ GPS في السكوتر الذكي؟',
-      answer: 'نظام الـ GPS مدمج داخل اللوحة الأم للسكوتر ويتصل بشبكة البيانات ليرسل موقع السكوتر المباشر إلى تطبيق الجوال الخاص بك، مما يجعله محمياً من السرقة.'
-    },
-    {
-      question: 'هل يمكنني قفل السكوتر عن بُعد؟',
-      answer: 'نعم، من خلال التطبيق يمكنك تفعيل "الوضع الآمن" والذي يقوم بقفل العجلات إلكترونياً وإطلاق إنذار في حال محاولة تحريكه.'
-    },
-    {
-      question: 'هل يمكن القيادة تحت المطر؟',
-      answer: 'السكوتر حاصل على معيار IPX5 لمقاومة رذاذ الماء، مما يعني أنه يمكنك استخدامه بأمان في الأجواء الرطبة وتحت المطر الخفيف، لكن لا يُنصح بغمره في تجمعات المياه العميقة.'
-    }
+    { q: 'كيف يعمل نظام الـ GPS؟', a: 'نظام الـ GPS مدمج داخل اللوحة الأم ويتصل بشبكة البيانات ليرسل الموقع المباشر لتطبيق الجوال.' },
+    { q: 'هل يمكنني قفل السكوتر عن بُعد؟', a: 'نعم، من خلال التطبيق يمكنك تفعيل "الوضع الآمن" والذي يقوم بقفل العجلات إلكترونياً.' }
   ],
   faqsEn: [
-    {
-      question: 'How does the GPS system work in the smart scooter?',
-      answer: 'The GPS system is integrated into the scooters motherboard and connects to the data network to send the live location of the scooter to your mobile app, protecting it from theft.'
-    },
-    {
-      question: 'Can I lock the scooter remotely?',
-      answer: 'Yes, through the app you can activate "Safe Mode", which electronically locks the wheels and triggers an alarm if someone tries to move it.'
-    },
-    {
-      question: 'Can I ride it in the rain?',
-      answer: 'The scooter is IPX5 rated for water splash resistance, meaning you can safely use it in damp conditions and light rain, but it is not recommended to submerge it in deep puddles.'
-    }
+    { q: 'How does the GPS work?', a: 'The GPS system is integrated and sends the live location to your mobile app via the data network.' },
+    { q: 'Can I lock it remotely?', a: 'Yes, through the app you can activate "Safe Mode" to electronically lock the wheels.' }
   ]
 };

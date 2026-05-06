@@ -65,55 +65,28 @@ export const p_9 = {
     'Easily foldable for convenient transport and storage',
     'Strong rear brake for easy stopping and safety'
   ],
-  reviews: [
-    {
-      name: 'هند العتيبي',
-      rating: 5,
-      date: '2026-02-18',
-      text: 'بنتي طارت من الفرحة، لونه يجنن والكفرات تنور في الليل شكلها مره حلو، وثابت ما يخليها تطيح.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'سارة',
-      rating: 5,
-      date: '2026-03-30',
-      text: 'جودة السكوتر ممتازة، وينطوي بسرعة لو بغيت أحطه بالسيارة. أنصح فيه وبقوة.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'أبو نورة',
-      rating: 4,
-      date: '2026-04-15',
-      text: 'السعر جداً مناسب والتصميم جميل، بس تأكدوا يناسب طول البنت، أقصى ارتفاع للمقود حوالي 80 سم.',
-      verifiedPurchase: true
-    }
+  sgeData: [
+    { labelAr: "مستوى التوازن", labelEn: "Stability Score", value: "98/100 (ثلاث عجلات)", average: "75/100" },
+    { labelAr: "وزن المنتج", labelEn: "Weight", value: "2.1 كجم (خفيف)", average: "3.5 كجم" },
+    { labelAr: "عمر البطارية (الإضاءة)", labelEn: "LED Life", value: "لا نهائي (حركي)", average: "محدود" }
   ],
+  geoData: {
+    titleAr: "خيار الأميرات في السعودية",
+    descAr: "يعتبر سكوتر الفراشة الوردي الأكثر طلباً في السعودية كهدايا للفتيات. تصميمه يجمع بين الأناقة والأمان، ومثالي للاستخدام في حدائق الأحياء والمجمعات السكنية المغلقة.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.8", reviewCount: "287" },
+    reviews: [
+      { author: "هند العتيبي", rating: 5, date: "2026-02-18", title: "يجنن", text: "بنتي طارت من الفرحة، لونه يجنن والكفرات تنور في الليل شكلها مره حلو، وثابت ما يخليها تطيح.", verified: true },
+      { author: "سارة", rating: 5, date: "2026-03-30", title: "جودة بطلة", text: "جودة السكوتر ممتازة، وينطوي بسرعة لو بغيت أحطه بالسيارة. أنصح فيه وبقوة.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'كيف تعمل الإضاءة في العجلات؟',
-      answer: 'العجلات تحتوي على إضاءة LED مدمجة تعمل ديناميكياً بالاحتكاك أثناء حركة السكوتر، ولا تحتاج إلى أي بطاريات.'
-    },
-    {
-      question: 'هل السكوتر سهل الطي للحمل؟',
-      answer: 'نعم، يتميز السكوتر بنظام طي بضغطة زر واحدة، مما يجعله مدمجاً جداً وسهل التخزين في صندوق السيارة أو حمله باليد.'
-    },
-    {
-      question: 'ما هو أقصى وزن يتحمله السكوتر؟',
-      answer: 'السكوتر مصمم بهيكل قوي يتحمل أوزاناً تصل إلى 50 كجم، مما يجعله مناسباً للفتيات من سن 3 إلى 8 سنوات.'
-    }
+    { q: 'كيف تشتغل الإضاءة؟', a: 'تشتغل ذاتياً بالحركة بدون بطاريات بفضل الطاقة الحركية.' },
+    { q: 'يناسب أي عمر؟', a: 'مناسب للبنات من سن 3 سنوات وحتى 8 سنوات بفضل المقود القابل للتعديل.' }
   ],
   faqsEn: [
-    {
-      question: 'How do the lights in the wheels work?',
-      answer: 'The wheels feature built-in LED lights that work dynamically through friction while the scooter is moving, and they do not require any batteries.'
-    },
-    {
-      question: 'Is the scooter easy to fold for carrying?',
-      answer: 'Yes, the scooter features a one-button folding system, making it very compact and easy to store in a car trunk or carry by hand.'
-    },
-    {
-      question: 'What is the maximum weight the scooter can hold?',
-      answer: 'The scooter is designed with a sturdy frame that supports up to 50 kg, making it suitable for girls aged 3 to 8 years.'
-    }
+    { q: 'How do lights work?', a: 'They work automatically via kinetic energy while moving, no batteries needed.' },
+    { q: 'What is the age range?', a: 'Suitable for girls aged 3 to 8 years, thanks to the adjustable handlebar.' }
   ]
 };

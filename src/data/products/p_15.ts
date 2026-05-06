@@ -59,55 +59,19 @@ export const p_15 = {
     'Long lifespan exceeding 5000 kilometers of heavy use',
     'Requires no maintenance or special care after installation'
   ],
-  reviews: [
-    {
-      name: 'تركي',
-      rating: 5,
-      date: '2026-03-28',
-      text: 'وربي ارتحت من البنشر كل شوي! ركبته عند محل دراجات والآن أسوق في الشارع وأنا متطمن.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'سعد القحطاني',
-      rating: 4,
-      date: '2026-04-05',
-      text: 'قوي وعملي جداً، ركبته على شاومي برو وراكب تمام. العيب الوحيد إنه قاسي شوي بالمطبات مقارنة بالهواء، بس أرحم من البنشر.',
-      verifiedPurchase: true
-    },
-    {
-      name: 'بدر',
-      rating: 5,
-      date: '2026-04-20',
-      text: 'جودة المطاط ممتازة وما يتزحلق مع المطر. أنصح فيه بقوة لأي شخص يتنقل يومياً بالسكوتر.',
-      verifiedPurchase: true
-    }
-  ],
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.7", reviewCount: "423" },
+    reviews: [
+      { author: "تركي", rating: 5, date: "2026-03-28", title: "وداعاً للبنشر", text: "وربي ارتحت من البنشر كل شوي! ركبته عند محل دراجات والآن أسوق في الشارع وأنا متطمن.", verified: true },
+      { author: "سعد القحطاني", rating: 4, date: "2026-04-05", title: "قوي وعملي", text: "قوي وعملي جداً، ركبته على شاومي برو وراكب تمام. أرحم من البنشر مليون مرة.", verified: true }
+    ]
+  },
   faqs: [
-    {
-      question: 'هل الإطار صلب بالكامل أم يحتوي على هواء؟',
-      answer: 'الإطار صلب بالكامل (Solid) ولا يحتوي على هواء نهائياً، مما يعني استحالة تعرضه للثقب (البنشر) ولن تحتاج لتعبئته بالهواء أبداً.'
-    },
-    {
-      question: 'كيف يتم تركيب الإطار الصلب؟',
-      answer: 'نظراً لقساوة المطاط، يُنصح بوضع الإطار في ماء مغلي لمدة 10 دقائق لتليينه قبل التركيب، ثم استخدام أدوات رفع (مفك براغي مسطح) لتركيبه على الجنط، أو الاستعانة بمحل صيانة مختص.'
-    },
-    {
-      question: 'هل الإطار يسبب ارتجاج قوي أثناء القيادة؟',
-      answer: 'على الرغم من أنه أقسى من إطارات الهواء، إلا أن هذا الموديل يتميز بتصميم مجوف (Honeycomb) هندسي يمتص جزءاً كبيراً من الصدمات ويوفر قيادة مريحة في شوارع المدينة.'
-    }
+    { q: 'هل الإطار صلب بالكامل؟', a: 'نعم، الإطار صلب تماماً ولا يحتوي على هواء، مما ينهي مشكلة البنشر نهائياً.' },
+    { q: 'هل تركيبه سهل؟', a: 'يُنصح بتسخينه في ماء مغلي لتليينه قبل التركيب أو الاستعانة بفني مختص لسهولة التثبيت على الجنط.' }
   ],
   faqsEn: [
-    {
-      question: 'Is the tire completely solid or does it contain air?',
-      answer: 'The tire is completely solid and contains no air at all, meaning it is impossible to puncture (get a flat) and you will never need to inflate it.'
-    },
-    {
-      question: 'How is the solid tire installed?',
-      answer: 'Due to the hardness of the rubber, it is recommended to place the tire in boiling water for 10 minutes to soften it before installation, then use tire levers to mount it on the rim, or seek help from a professional repair shop.'
-    },
-    {
-      question: 'Does the tire cause strong vibrations while riding?',
-      answer: 'Although it is harder than pneumatic tires, this model features a geometric honeycomb hollow design that absorbs a large portion of the shocks and provides a comfortable ride on city streets.'
-    }
+    { q: 'Is it completely solid?', a: 'Yes, it contains no air, making it 100% puncture-proof forever.' },
+    { q: 'Is it easy to install?', a: 'We recommend boiling it for 10 mins to soften it before mounting, or seeking professional help.' }
   ]
 };
