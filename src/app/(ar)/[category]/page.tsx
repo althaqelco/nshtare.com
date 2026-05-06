@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Star, ShieldCheck, Zap } from 'lucide-react';
 import CollectionSchema from '@/components/seo/CollectionSchema';
 import RobinHoodLinks from '@/components/behavior/RobinHoodLinks';
+import PriceComparisonTable from '@/components/product/PriceComparisonTable';
 
 export async function generateStaticParams() {
   return categories.map((cat) => ({
@@ -150,6 +151,12 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
             </div>
           )}
         </div>
+
+        {/* Price Comparison Table (Plan 03 §3.1) */}
+        <PriceComparisonTable 
+          products={products}
+          categoryAr={category.nameAr}
+        />
 
         {/* Local SEO Cities Linking Block */}
         <div className="mt-16 bg-surface p-8 rounded-3xl border border-border shadow-sm">

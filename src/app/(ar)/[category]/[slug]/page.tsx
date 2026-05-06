@@ -6,6 +6,11 @@ import Link from 'next/link';
 import { Star, ShieldCheck, Zap, MapPin, Truck, ChevronRight } from 'lucide-react';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ProductDetails from '@/components/product/ProductDetails';
+import RelatedProducts from '@/components/product/RelatedProducts';
+import DirectAnswerBox from '@/components/seo/DirectAnswerBox';
+import AiBaitStats from '@/components/seo/AiBaitStats';
+import PriceComparisonTable from '@/components/product/PriceComparisonTable';
+import DynamicFAQ from '@/components/seo/DynamicFAQ';
 
 export async function generateStaticParams() {
   const params: { category: string; slug: string }[] = [];
@@ -72,7 +77,14 @@ export default async function CategorySlugPage({ params }: { params: Promise<{ c
 
   const product = getProductBySlug(slug);
   if (product && product.categorySlug === catSlug) {
-    return <ProductDetails product={product} />;
+    return (
+      <>
+        <ProductDetails product={product} />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <RelatedProducts currentProductId={product.id} categorySlug={product.categorySlug} />
+        </div>
+      </>
+    );
   }
 
   const city = getCityBySlug(slug);
@@ -130,7 +142,30 @@ function CityPage({ category, city }: { category: any; city: any }) {
           </div>
         </div>
 
+        <DirectAnswerBox 
+          categoryAr={category.nameAr}
+          cityAr={city.nameAr}
+          productCount={products.length}
+          minPrice={products.length > 0 ? Math.min(...products.map(p => p.price)) : 0}
+        />
+
+        <AiBaitStats cityAr={city.nameAr} serviceAr={category.nameAr} />
+
         <ProductGrid products={products} lang="ar" />
+
+        <PriceComparisonTable 
+          products={products}
+          categoryAr={category.nameAr}
+          cityAr={city.nameAr}
+        />
+
+        <DynamicFAQ
+          categoryAr={category.nameAr}
+          categoryEn={category.nameEn}
+          cityAr={city.nameAr}
+          minPrice={products.length > 0 ? Math.min(...products.map(p => p.price)) : 0}
+          maxPrice={products.length > 0 ? Math.max(...products.map(p => p.price)) : 0}
+        />
       </div>
     </div>
   );
