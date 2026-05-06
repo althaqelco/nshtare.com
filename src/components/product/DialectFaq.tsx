@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { MessageCircleQuestion, ChevronDown } from "lucide-react";
 
-export default function DialectFaq({ categorySlug, productName }: { categorySlug: string, productName: string }) {
+export default function DialectFaq({ categorySlug, productName, product }: { categorySlug: string, productName: string, product?: any }) {
   const pathname = usePathname();
   const isEn = pathname.startsWith("/en");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   // N-Grams and Dialect Bridge
   // Short, punchy answers under 45 words for Voice Search / AEO
-  const faqsAr = [
+  const defaultFaqsAr = [
     {
       q: `بكم ${productName} ومين يوصله للرياض؟`,
       a: `السعر شامل الضريبة. نوصل ${productName} لكل أحياء الرياض وجدة والدمام مجاناً خلال 24-48 ساعة، وتقدر تدفع عند الاستلام.`
@@ -30,7 +30,7 @@ export default function DialectFaq({ categorySlug, productName }: { categorySlug
     }
   ];
 
-  const faqsEn = [
+  const defaultFaqsEn = [
     {
       q: `How much is ${productName} and do you deliver to Riyadh?`,
       a: `The price is tax-inclusive. We offer free delivery to Riyadh, Jeddah, and Dammam within 24-48 hours. Cash on delivery is available.`
@@ -49,7 +49,7 @@ export default function DialectFaq({ categorySlug, productName }: { categorySlug
     }
   ];
 
-  const faqs = isEn ? faqsEn : faqsAr;
+  const faqs = product?.faqs ? product.faqs : (isEn ? defaultFaqsEn : defaultFaqsAr);
 
   return (
     <div className="mb-10" dir={isEn ? "ltr" : "rtl"}>
@@ -61,7 +61,7 @@ export default function DialectFaq({ categorySlug, productName }: { categorySlug
       </div>
 
       <div className="flex flex-col gap-3">
-        {faqs.map((faq, idx) => (
+        {faqs.map((faq: any, idx: number) => (
           <div 
             key={idx} 
             className={`border rounded-xl transition-all duration-300 overflow-hidden ${openIndex === idx ? 'border-primary bg-primary/5 shadow-sm' : 'border-border bg-surface hover:border-primary/30'}`}
@@ -91,7 +91,7 @@ export default function DialectFaq({ categorySlug, productName }: { categorySlug
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: faqs.map((faq) => ({
+            mainEntity: faqs.map((faq: any) => ({
               "@type": "Question",
               name: faq.q,
               acceptedAnswer: {

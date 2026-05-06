@@ -4,12 +4,15 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { MapPin, ThermometerSun, Droplets } from "lucide-react";
 
-export default function GeoJustification({ categorySlug }: { categorySlug: string }) {
+export default function GeoJustification({ categorySlug, product }: { categorySlug: string, product?: any }) {
   const pathname = usePathname();
   const isEn = pathname.startsWith("/en");
 
   // Dynamic text based on category for N-Grams and Dialect relevance
   const getGeoText = () => {
+    if (product?.geoData) {
+      return isEn && product.geoData.descEn ? product.geoData.descEn : product.geoData.descAr;
+    }
     if (categorySlug.includes("drift")) {
       return isEn 
         ? "Engineered with reinforced solid tires to withstand the rough asphalt of Saudi neighborhoods and high-temperature drifting friction."

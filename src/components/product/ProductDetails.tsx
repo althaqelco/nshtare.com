@@ -244,7 +244,7 @@ export default function ProductDetails({ product }: { product: any }) {
           
           <div className="flex flex-col">
             {/* Master Blueprint: Geographic Justification (GEO) */}
-            <GeoJustification categorySlug={product.categorySlug} />
+            <GeoJustification categorySlug={product.categorySlug} product={product} />
             
             {/* Master Blueprint: Cognitive ROI Estimator */}
             <RoiEstimator productPrice={product.price} />
@@ -253,7 +253,7 @@ export default function ProductDetails({ product }: { product: any }) {
 
         {/* Master Blueprint: N-Grams Saudi Dialect FAQs for AEO Voice Search */}
         <div className="mt-12 max-w-4xl mx-auto">
-          <DialectFaq categorySlug={product.categorySlug} productName={isEn ? product.nameEn : product.name} />
+          <DialectFaq categorySlug={product.categorySlug} productName={isEn ? product.nameEn : product.name} product={product} />
         </div>
       </div>
 

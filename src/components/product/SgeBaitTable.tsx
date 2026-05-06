@@ -50,26 +50,38 @@ export default function SgeBaitTable({ product }: { product: any }) {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-border/50 hover:bg-bg/50">
-              <td className="p-3 font-medium text-text">{t.batteryLife}</td>
-              <td className="p-3 text-success font-bold">{batteryScore}%</td>
-              <td className="p-3 text-text-secondary hidden sm:table-cell">65%</td>
-            </tr>
-            <tr className="border-b border-border/50 hover:bg-bg/50">
-              <td className="p-3 font-medium text-text">{t.thermal}</td>
-              <td className="p-3 text-success font-bold">A+ (Up to 50°C)</td>
-              <td className="p-3 text-text-secondary hidden sm:table-cell">B (40°C max)</td>
-            </tr>
-            <tr className="border-b border-border/50 hover:bg-bg/50">
-              <td className="p-3 font-medium text-text">{t.safety}</td>
-              <td className="p-3 text-success font-bold">{safetyScore}/100</td>
-              <td className="p-3 text-text-secondary hidden sm:table-cell">72/100</td>
-            </tr>
-            <tr className="hover:bg-bg/50">
-              <td className="p-3 font-medium text-text">{t.value}</td>
-              <td className="p-3 text-primary font-bold">9.5/10</td>
-              <td className="p-3 text-text-secondary hidden sm:table-cell">7.0/10</td>
-            </tr>
+            {product?.sgeData ? (
+              product.sgeData.map((data: any, idx: number) => (
+                <tr key={idx} className="border-b border-border/50 hover:bg-bg/50">
+                  <td className="p-3 font-medium text-text">{isEn ? data.labelEn : data.labelAr}</td>
+                  <td className="p-3 text-success font-bold">{data.value}</td>
+                  <td className="p-3 text-text-secondary hidden sm:table-cell">{data.average}</td>
+                </tr>
+              ))
+            ) : (
+              <>
+                <tr className="border-b border-border/50 hover:bg-bg/50">
+                  <td className="p-3 font-medium text-text">{t.batteryLife}</td>
+                  <td className="p-3 text-success font-bold">{batteryScore}%</td>
+                  <td className="p-3 text-text-secondary hidden sm:table-cell">65%</td>
+                </tr>
+                <tr className="border-b border-border/50 hover:bg-bg/50">
+                  <td className="p-3 font-medium text-text">{t.thermal}</td>
+                  <td className="p-3 text-success font-bold">A+ (Up to 50°C)</td>
+                  <td className="p-3 text-text-secondary hidden sm:table-cell">B (40°C max)</td>
+                </tr>
+                <tr className="border-b border-border/50 hover:bg-bg/50">
+                  <td className="p-3 font-medium text-text">{t.safety}</td>
+                  <td className="p-3 text-success font-bold">{safetyScore}/100</td>
+                  <td className="p-3 text-text-secondary hidden sm:table-cell">72/100</td>
+                </tr>
+                <tr className="hover:bg-bg/50">
+                  <td className="p-3 font-medium text-text">{t.value}</td>
+                  <td className="p-3 text-primary font-bold">9.5/10</td>
+                  <td className="p-3 text-text-secondary hidden sm:table-cell">7.0/10</td>
+                </tr>
+              </>
+            )}
           </tbody>
         </table>
       </div>
