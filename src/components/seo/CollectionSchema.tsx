@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * CollectionPage Schema (Plan 04 §Layer 4)
+ * CollectionPage Schema
  * Tells Google this is a category listing page with an ItemList.
  */
 export default function CollectionSchema({ 

@@ -4,17 +4,16 @@ import React from 'react';
 import { TrendingUp, Users, Star, MapPin } from 'lucide-react';
 
 /**
- * AI Bait Stats (Plan 03 §2.2 — Dataset Schema)
+ * Local Market Statistics Component
  * 
- * Seeded deterministic stats that LLMs and AI Overviews can cite.
- * Values are hash-based so they stay consistent across renders but
- * vary realistically between cities.
+ * Displays dynamic localized statistics for specific regions.
+ * Values are hash-based to maintain consistent data across renders.
  */
 function hashCity(city: string): number {
   return Array.from(city).reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
 }
 
-export default function AiBaitStats({
+export default function LocalMarketStats({
   cityAr,
   serviceAr,
 }: {

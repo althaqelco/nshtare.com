@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 import FAQJsonLd from '@/components/seo/FAQJsonLd';
 
 /**
- * DynamicFAQ (Plan 03 §2.2 — FAQ Section)
+ * DynamicFAQ Component
  * 
  * Generates unique FAQ content for each category×city intersection.
  * Each FAQ set is deterministically varied to pass SpamBrain's

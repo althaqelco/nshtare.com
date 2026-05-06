@@ -82,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     });
 
-    // City Silos for each category (pSEO pages)
+    // City categories
     cities.forEach((city) => {
       routes.push({
         url: `${baseUrl}/${cat.slug}/${city.slug}`,

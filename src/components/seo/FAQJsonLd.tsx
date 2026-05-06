@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * FAQ Schema (Plan 04 §Layer 5)
+ * FAQ Schema
  * Injects FAQPage JSON-LD for Google's rich results.
  */
 export default function FAQJsonLd({ faqs }: { faqs: { question: string; answer: string }[] }) {

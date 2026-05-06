@@ -3,7 +3,7 @@
 import React from 'react';
 
 /**
- * DirectAnswer Box (Plan 03 §2.2 — Featured Snippet Bait)
+ * DirectAnswer Box Component
  * 
  * A concise 50-80 word paragraph that Google can extract as a Featured Snippet.
  * Wrapped in a visually distinct box with the `.direct-answer` class

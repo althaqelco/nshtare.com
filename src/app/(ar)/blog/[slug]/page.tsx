@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           })}
         </div>
 
-        {/* CTA — One-way link to category page (Plan 06 §4.3 Anti-Cannibalization) */}
+        {/* Category Link */}
         <div className="mt-12 bg-primary text-white rounded-3xl p-8 md:p-12 text-center">
           <h3 className="text-2xl font-black mb-3">جاهز للشراء؟</h3>
           <p className="text-white/80 mb-6">تصفح تشكيلتنا بأفضل الأسعار مع ضمان سنة والدفع عند الاستلام.</p>

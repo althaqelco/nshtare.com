@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Star, ShieldCheck, Zap } from 'lucide-react';
 
 /**
- * PriceComparisonTable (Plan 03 §3.1 — Copy Event Bait)
+ * PriceComparisonTable Component
  * 
  * A structured table comparing products in a category.
  * Google loves tables — they trigger featured snippets for "أسعار..."

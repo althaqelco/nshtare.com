@@ -7,11 +7,11 @@ import { cities, categories } from '@/lib/data';
 import { MapPin } from 'lucide-react';
 
 /**
- * Robin Hood Links (Plan 06 §4.1)
- * Pumps PageRank from strong city pages to weaker ones.
- * Displayed at the bottom of category and city pages.
+ * CategoryCrossLinks Component
+ * 
+ * Provides internal contextual links for semantic relationships.
  */
-export default function RobinHoodLinks({ currentCategory }: { currentCategory: string }) {
+export default function CategoryCrossLinks({ currentCategory }: { currentCategory: string }) {
   const pathname = usePathname();
   const isEn = pathname.startsWith('/en');
   const prefix = isEn ? '/en' : '';

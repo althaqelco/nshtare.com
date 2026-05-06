@@ -5,7 +5,7 @@ import { Eye } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
 /**
- * Live Viewer Count — Seeded deterministic social proof (Plan 05 §5)
+ * Live Viewer Count Component
  * Shows a realistic but deterministic viewer count based on product slug + hour.
  * Fluctuates gently to feel alive without being suspicious.
  */

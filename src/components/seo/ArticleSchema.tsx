@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * Article Schema (Plan 04 §Layer 7)
+ * Article Schema
  * Structured data for blog articles with Speakable specification.
  */
 export default function ArticleSchema({

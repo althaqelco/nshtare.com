@@ -5,7 +5,7 @@ import React from 'react';
  * Injected once in the root layout. Only affects Chromium browsers (Chrome 121+).
  * Non-Chromium browsers safely ignore this script type.
  * 
- * Reference: Plan 05 §6.1
+ * Reference: Speculation Rules API
  */
 export default function SpeculationRules() {
   const rules = {

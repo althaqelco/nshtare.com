@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * WebSite Schema (Plan 04 §Layer 2)
+ * WebSite Schema
  * Enables Google Sitelinks Search Box and establishes the website entity.
  */
 export default function WebSiteSchema() {

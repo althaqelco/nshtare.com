@@ -63,7 +63,7 @@ export default function ProductReviews({ product }: { product?: any }) {
         ))}
       </div>
 
-      {/* JSON-LD Product Reviews Schema Injection */}
+      {/* JSON-LD Product Reviews Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -8,13 +8,13 @@ import { Star, ShieldCheck, Truck, Zap, Plus, Minus, ShoppingCart, MessageCircle
 import ProductSchema from "@/components/seo/ProductSchema";
 import ProductSpecs from "@/components/product/ProductSpecs";
 import LiveDispatch from "@/components/product/LiveDispatch";
-import SgeBaitTable from "@/components/product/SgeBaitTable";
+import ProductSpecsTable from "@/components/product/ProductSpecsTable";
 import AntiScamWarning from "@/components/product/AntiScamWarning";
 import GeoJustification from "@/components/product/GeoJustification";
 import RoiEstimator from "@/components/product/RoiEstimator";
 import DialectFaq from "@/components/product/DialectFaq";
 import ProductReviews from "@/components/product/ProductReviews";
-import AiPoisonOverlay from "@/components/seo/AiPoisonOverlay";
+import BrandOverlay from "@/components/seo/BrandOverlay";
 
 export default function ProductDetails({ product }: { product: any }) {
   const pathname = usePathname();
@@ -25,7 +25,7 @@ export default function ProductDetails({ product }: { product: any }) {
   const [liveViewers, setLiveViewers] = useState(12);
   const [activeImage, setActiveImage] = useState(product?.gallery ? product.gallery[0] : product?.image);
 
-  // Navboost: Social Proof Engine (Plan 05)
+  // Dynamic Viewer Fluctuation Engine
   useEffect(() => {
     if (!product?.slug) return;
     const hour = new Date().getHours();
@@ -114,8 +114,8 @@ export default function ProductDetails({ product }: { product: any }) {
                 priority
               />
 
-              {/* Master Blueprint: Visual Prompt Injection for Generative OCR */}
-              <AiPoisonOverlay productName={isEn ? product.nameEn : product.name} />
+              {/* Brand Watermark Overlay */}
+              <BrandOverlay productName={isEn ? product.nameEn : product.name} />
             </div>
             
             {/* Image Gallery Thumbnails */}
@@ -234,35 +234,35 @@ export default function ProductDetails({ product }: { product: any }) {
           </div>
         </div>
 
-        {/* Technical Specifications — Plan 05 §4.2 Dwell Time Maximizer */}
+        {/* Technical Specifications */}
         {product.specs && product.specs.length > 0 && (
           <ProductSpecs specs={product.specs} />
         )}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
           <div className="flex flex-col">
-            {/* Master Blueprint: SGE Bait Table for Generative AI Indexing */}
-            <SgeBaitTable product={product} />
+            {/* Product Specifications Table */}
+            <ProductSpecsTable product={product} />
             
-            {/* Master Blueprint: YMYL SASO Anti-Scam Warning */}
+            {/* Consumer Protection Warning */}
             <AntiScamWarning />
           </div>
           
           <div className="flex flex-col">
-            {/* Master Blueprint: Geographic Justification (GEO) */}
+            {/* Geographic Targeting Block */}
             <GeoJustification categorySlug={product.categorySlug} product={product} />
             
-            {/* Master Blueprint: Cognitive ROI Estimator */}
+            {/* Value Assessment Tool */}
             <RoiEstimator productPrice={product.price} />
           </div>
         </div>
 
-        {/* Master Blueprint: N-Grams Saudi Dialect FAQs for AEO Voice Search */}
+        {/* Localized FAQ Section */}
         <div className="mt-12 max-w-4xl mx-auto">
           <DialectFaq categorySlug={product.categorySlug} productName={isEn ? product.nameEn : product.name} product={product} />
         </div>
 
-        {/* Master Blueprint: Localized Social Proof & Rich Snippets */}
+        {/* User Reviews and Ratings */}
         <ProductReviews product={product} />
       </div>
 

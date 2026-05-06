@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Star, ShieldCheck, Zap } from 'lucide-react';
 import CollectionSchema from '@/components/seo/CollectionSchema';
-import RobinHoodLinks from '@/components/behavior/RobinHoodLinks';
+import CategoryCrossLinks from '@/components/behavior/CategoryCrossLinks';
 import CategoryRichContent from '@/components/category/CategoryRichContent';
 
 export async function generateStaticParams() {
@@ -152,10 +152,10 @@ export default async function CategoryPageEn({ params }: { params: Promise<{ cat
           )}
         </div>
 
-        {/* Semantic SEO & E-E-A-T Content Layer */}
+        {/* Category Rich Content Layer */}
         <CategoryRichContent category={category} isEn={true} />
 
-        {/* Local SEO Cities Linking Block */}
+        {/* Local Markets Block */}
         <div className="mt-16 bg-surface p-8 rounded-3xl border border-border shadow-sm">
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold text-text mb-2">
@@ -181,8 +181,8 @@ export default async function CategoryPageEn({ params }: { params: Promise<{ cat
           </div>
         </div>
 
-        {/* Robin Hood Links (Plan 06 §4.1) */}
-        <RobinHoodLinks currentCategory={category.slug} />
+        {/* Cross Linking Block */}
+        <CategoryCrossLinks currentCategory={category.slug} />
 
       </div>
     </div>

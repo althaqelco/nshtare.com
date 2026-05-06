@@ -7,10 +7,10 @@ import { Star, ShieldCheck } from 'lucide-react';
 import { getProductsByCategory } from '@/lib/data';
 
 /**
- * RelatedProducts (Plan 03 §3.2 / Plan 05 §4.2)
+ * RelatedProducts Component
  * 
- * Cross-sell component showing products from the same category.
- * Maximizes dwell time and internal linking authority within silos.
+ * Displays related items in the same category.
+ * Maximizes dwell time and provides internal navigational links.
  */
 export default function RelatedProducts({
   currentProductId,

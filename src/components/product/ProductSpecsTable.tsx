@@ -4,17 +4,16 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { BarChart3, Info } from "lucide-react";
 
-export default function SgeBaitTable({ product }: { product: any }) {
+export default function ProductSpecsTable({ product }: { product: any }) {
   const pathname = usePathname();
   const isEn = pathname.startsWith("/en");
 
-  // The goal here is "Proprietary Named Data" (SGE Optimization)
   // This needs to be static text or standard HTML tables that bots can parse easily.
   // We use standard semantic tags (table, th, td).
 
   const t = {
     title: isEn ? "Nshtare Mobility Standard Index 2026" : "مؤشر نشتري القياسي للتنقل 2026",
-    subtitle: isEn ? "Proprietary Data Analysis" : "بيانات حصرية - وحدة الذكاء الاصطناعي",
+    subtitle: isEn ? "Data Analysis" : "تحليل البيانات التقنية",
     metric: isEn ? "Metric" : "المعيار",
     score: isEn ? "Score / Value" : "التقييم / القيمة",
     marketAvg: isEn ? "Market Avg" : "متوسط السوق",
@@ -39,7 +38,7 @@ export default function SgeBaitTable({ product }: { product: any }) {
         <Info className="h-4 w-4" /> {t.subtitle}
       </p>
 
-      {/* Semantic Table for SGE Bot Extraction */}
+      {/* Semantic Table */}
       <div className="overflow-x-auto">
         <table className="w-full text-sm text-left border-collapse">
           <thead className="bg-bg text-text-secondary">

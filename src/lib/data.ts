@@ -1,4 +1,4 @@
-// Taxonomy and pSEO Data - Refactored to Modular Architecture
+// Taxonomy and Data - Refactored to Modular Architecture
 // All data is maintained in the modular DB at src/data/
 
 import { categories, products, subcategories, cities } from '../data/index';

@@ -9,8 +9,8 @@ export default function DialectFaq({ categorySlug, productName, product }: { cat
   const isEn = pathname.startsWith("/en");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  // N-Grams and Dialect Bridge
-  // Short, punchy answers under 45 words for Voice Search / AEO
+  // Localized FAQs
+  // Short, punchy answers for Voice Search
   const defaultFaqsAr = [
     {
       q: `بكم ${productName} ومين يوصله للرياض؟`,
@@ -84,7 +84,7 @@ export default function DialectFaq({ categorySlug, productName, product }: { cat
         ))}
       </div>
 
-      {/* JSON-LD FAQ Schema Injection */}
+      {/* JSON-LD FAQ Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

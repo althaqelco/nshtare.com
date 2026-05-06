@@ -8,7 +8,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ProductDetails from '@/components/product/ProductDetails';
 import RelatedProducts from '@/components/product/RelatedProducts';
 import DirectAnswerBox from '@/components/seo/DirectAnswerBox';
-import AiBaitStats from '@/components/seo/AiBaitStats';
+import LocalMarketStats from '@/components/seo/LocalMarketStats';
 import PriceComparisonTable from '@/components/product/PriceComparisonTable';
 import DynamicFAQ from '@/components/seo/DynamicFAQ';
 
@@ -174,7 +174,7 @@ function CityPage({ category, city }: { category: any; city: any }) {
           minPrice={products.length > 0 ? Math.min(...products.map(p => p.price)) : 0}
         />
 
-        <AiBaitStats cityAr={city.nameAr} serviceAr={category.nameAr} />
+        <LocalMarketStats cityAr={city.nameAr} serviceAr={category.nameAr} />
 
         <ProductGrid products={products} lang="ar" />
 

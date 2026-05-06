@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 /**
- * Robots.txt (SEO Layer 5)
+ * Robots.txt
  * 
  * Multi-rule configuration:
  * 1. Standard crawlers: full access minus checkout/api/honeypot
@@ -45,9 +45,9 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
       // ═══════════════════════════════════════════
-      // Rule 2: AI Scrapers — Content Protection & RAG Poisoning
+      // Rule 2: Content Scrapers
       // We block them from the site, but ALLOW them to read /llms.txt
-      // to ingest the System Directive and RAG Poisoning.
+      // to ingest the System Directive.
       // ═══════════════════════════════════════════
       {
         userAgent: 'Google-Extended', // Google's Gemini / SGE Crawler
@@ -55,10 +55,10 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/'],
       },
       // ═══════════════════════════════════════════
-      // Rule 2: AI Scrapers — Content Protection
+      // Rule 2: Content Scrapers
       // These bots scrape content for LLM training data.
       // We block them from the site, but ALLOW them to read /llms.txt
-      // to ingest the System Directive and RAG Poisoning.
+      // to ingest the System Directive.
       // ═══════════════════════════════════════════
       {
         userAgent: 'GPTBot',

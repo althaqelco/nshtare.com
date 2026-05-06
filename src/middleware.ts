@@ -6,7 +6,7 @@ import type { NextRequest } from 'next/server';
  * 
  * Layer 1: Honeypot bot-trap enforcement
  * Layer 2: Legacy URL catch-all → redirect to homepage (SEO juice preservation)
- * Layer 3: Security headers injection
+ * Layer 3: Security headers application
  * Layer 4: Canonical enforcement (trailing slash normalization)
  */
 export function middleware(request: NextRequest) {
