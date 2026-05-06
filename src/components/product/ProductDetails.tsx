@@ -14,6 +14,7 @@ export default function ProductDetails({ product }: { product: any }) {
   
   const [quantity, setQuantity] = useState(1);
   const [liveViewers, setLiveViewers] = useState(12);
+  const [activeImage, setActiveImage] = useState(product?.gallery ? product.gallery[0] : product?.image);
 
   // Navboost: Social Proof Engine (Plan 05)
   useEffect(() => {
@@ -94,7 +95,7 @@ export default function ProductDetails({ product }: { product: any }) {
                 </div>
               )}
               <Image 
-                src={product.image} 
+                src={activeImage || product.image} 
                 alt={product.name} 
                 fill 
                 className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
@@ -102,18 +103,32 @@ export default function ProductDetails({ product }: { product: any }) {
               />
             </div>
             
-            {/* Feature Thumbnails */}
-            <div className="grid grid-cols-3 gap-4">
-              <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                 <Image src="/images/ui/feature_battery.png" alt="Battery" fill className="object-cover hover:scale-110 transition-transform" />
+            {/* Image Gallery Thumbnails */}
+            {product.gallery && product.gallery.length > 0 ? (
+              <div className="grid grid-cols-4 gap-2 sm:gap-4 mt-2">
+                {product.gallery.map((img: string, idx: number) => (
+                  <button 
+                    key={idx}
+                    onClick={() => setActiveImage(img)}
+                    className={`relative aspect-square rounded-xl overflow-hidden border-2 transition-all ${activeImage === img ? 'border-primary shadow-md' : 'border-border hover:border-primary/50 opacity-70 hover:opacity-100'}`}
+                  >
+                    <Image src={img} alt={`${product.name} view ${idx + 1}`} fill className="object-cover" />
+                  </button>
+                ))}
               </div>
-              <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                 <Image src="/images/ui/feature_motor.png" alt="Motor" fill className="object-cover hover:scale-110 transition-transform" />
+            ) : (
+              <div className="grid grid-cols-3 gap-4">
+                <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
+                   <Image src="/images/ui/feature_battery.png" alt="Battery" fill className="object-cover hover:scale-110 transition-transform" />
+                </div>
+                <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
+                   <Image src="/images/ui/feature_motor.png" alt="Motor" fill className="object-cover hover:scale-110 transition-transform" />
+                </div>
+                <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
+                   <Image src="/images/ui/feature_display.png" alt="Display" fill className="object-cover hover:scale-110 transition-transform" />
+                </div>
               </div>
-              <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                 <Image src="/images/ui/feature_display.png" alt="Display" fill className="object-cover hover:scale-110 transition-transform" />
-              </div>
-            </div>
+            )}
           </div>
 
           {/* Product Details (Right) */}

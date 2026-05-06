@@ -41,15 +41,28 @@ export default async function CategoryPageEn({ params }: { params: Promise<{ cat
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Category Hero */}
-        <div className="bg-primary text-white rounded-3xl p-8 md:p-16 mb-12 flex flex-col items-center text-center relative overflow-hidden shadow-xl">
-          <div className="absolute inset-0 bg-[url('/images/ui/banner_flash_sale_1777999346027.png')] bg-cover bg-center opacity-10"></div>
-          <span className="text-5xl md:text-7xl mb-6 relative z-10">{category.icon}</span>
-          <h1 className="text-4xl md:text-5xl font-black mb-4 relative z-10 tracking-tight">
-            Best {category.nameEn} in Saudi Arabia
-          </h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl relative z-10">
-            Shop now with official warranty, fast shipping to your door, and Cash on Delivery.
-          </p>
+        <div className="rounded-3xl mb-12 flex flex-col items-center justify-center text-center relative overflow-hidden shadow-xl min-h-[250px] md:min-h-[400px]">
+          {category.banner ? (
+            <Image 
+              src={category.banner} 
+              alt={category.nameEn} 
+              fill
+              className="object-cover z-0"
+              priority
+            />
+          ) : (
+            <div className="absolute inset-0 bg-primary z-0"></div>
+          )}
+          <div className="absolute inset-0 bg-black/40 z-10"></div>
+          <div className="relative z-20 p-8 md:p-16 text-white flex flex-col items-center">
+            <span className="text-4xl md:text-6xl mb-4">{category.icon}</span>
+            <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
+              Best {category.nameEn} in Saudi Arabia
+            </h1>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">
+              Shop now with official warranty, fast shipping to your door, and Cash on Delivery.
+            </p>
+          </div>
         </div>
 
         {/* Subcategory Navigation Chips */}

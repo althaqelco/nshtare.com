@@ -1,14 +1,14 @@
 // Taxonomy and pSEO Data
 
 export const categories = [
-  { slug: "electric-scooter", nameAr: "سكوتر كهربائي", nameEn: "Electric Scooter", icon: "⚡", descAr: "للمشاوير اليومية والتنقل السريع", descEn: "For daily commuting and fast transport" },
-  { slug: "xiaomi-scooter", nameAr: "سكوترات شاومي", nameEn: "Xiaomi Scooters", icon: "📱", descAr: "أفضل سكوترات شاومي الأصلية بضمان الوكيل", descEn: "Original Xiaomi scooters with warranty" },
-  { slug: "adult-scooter", nameAr: "سكوترات للكبار", nameEn: "Adult Scooters", icon: "🧑", descAr: "سكوترات قوية تتحمل الأوزان العالية ومناسبة للمشاوير", descEn: "Heavy-duty scooters for adults" },
-  { slug: "drift-scooter", nameAr: "سكوتر درفت", nameEn: "Drift Scooter", icon: "🏎️", descAr: "وحش التفحيط والمتعة القصوى", descEn: "Extreme drifting and fun" },
-  { slug: "kids-scooter", nameAr: "سكوتر أطفال", nameEn: "Kids Scooter", icon: "👶", descAr: "آمن وملون ومناسب للأعمار الصغيرة", descEn: "Safe, colorful, and perfect for kids" },
-  { slug: "smart-scooter", nameAr: "سكوتر ذكي", nameEn: "Smart Scooter", icon: "🧠", descAr: "شاشات ديجيتال واتصال بالتطبيق", descEn: "Digital display and app connectivity" },
-  { slug: "scooter-accessories", nameAr: "إكسسوارات سكوتر", nameEn: "Accessories", icon: "🔧", descAr: "خوذات، شنط، وإضاءات", descEn: "Helmets, bags, and lights" },
-  { slug: "spare-parts", nameAr: "قطع غيار", nameEn: "Spare Parts", icon: "⚙️", descAr: "كفرات، فحمات، بطاريات", descEn: "Tires, brakes, batteries" },
+  { slug: "electric-scooter", nameAr: "سكوتر كهربائي", nameEn: "Electric Scooter", icon: "⚡", descAr: "للمشاوير اليومية والتنقل السريع", descEn: "For daily commuting and fast transport", banner: "/images/categories/main/electric-scooter-banner.png", thumbnail: "/images/categories/main/electric-scooter-thumb.png" },
+  { slug: "xiaomi-scooter", nameAr: "سكوترات شاومي", nameEn: "Xiaomi Scooters", icon: "📱", descAr: "أفضل سكوترات شاومي الأصلية بضمان الوكيل", descEn: "Original Xiaomi scooters with warranty", banner: "/images/categories/main/xiaomi-scooter-banner.png", thumbnail: "/images/categories/main/xiaomi-scooter-thumb.png" },
+  { slug: "adult-scooter", nameAr: "سكوترات للكبار", nameEn: "Adult Scooters", icon: "🧑", descAr: "سكوترات قوية تتحمل الأوزان العالية ومناسبة للمشاوير", descEn: "Heavy-duty scooters for adults", banner: "/images/categories/main/adult-scooter-banner.png", thumbnail: "/images/categories/main/adult-scooter-thumb.png" },
+  { slug: "drift-scooter", nameAr: "سكوتر درفت", nameEn: "Drift Scooter", icon: "🏎️", descAr: "وحش التفحيط والمتعة القصوى", descEn: "Extreme drifting and fun", banner: "/images/categories/main/drift-scooter-banner.png", thumbnail: "/images/categories/main/drift-scooter-thumb.png" },
+  { slug: "kids-scooter", nameAr: "سكوتر أطفال", nameEn: "Kids Scooter", icon: "👶", descAr: "آمن وملون ومناسب للأعمار الصغيرة", descEn: "Safe, colorful, and perfect for kids", banner: "/images/categories/main/kids-scooter-banner.png", thumbnail: "/images/categories/main/kids-scooter-thumb.png" },
+  { slug: "smart-scooter", nameAr: "سكوتر ذكي", nameEn: "Smart Scooter", icon: "🧠", descAr: "شاشات ديجيتال واتصال بالتطبيق", descEn: "Digital display and app connectivity", banner: "/images/categories/main/smart-scooter-banner.png", thumbnail: "/images/categories/main/smart-scooter-thumb.png" },
+  { slug: "scooter-accessories", nameAr: "إكسسوارات سكوتر", nameEn: "Accessories", icon: "🔧", descAr: "خوذات، شنط، وإضاءات", descEn: "Helmets, bags, and lights", banner: "/images/categories/main/accessories-banner.png", thumbnail: "/images/categories/main/accessories-thumb.png" },
+  { slug: "spare-parts", nameAr: "قطع غيار", nameEn: "Spare Parts", icon: "⚙️", descAr: "كفرات، فحمات، بطاريات", descEn: "Tires, brakes, batteries", banner: "/images/categories/main/spare-parts-banner.png", thumbnail: "/images/categories/main/spare-parts-thumb.png" },
 ];
 
 export const subcategories = [
@@ -57,25 +57,53 @@ export const products = [
   {
     id: "p_1", slug: "ninebot-max", categorySlug: "adult-scooter",
     name: "سكوتر كهربائي للكبار ناينبوت ماكس احترافي", nameEn: "Ninebot Max Professional Electric Scooter",
-    price: 1899, originalPrice: 2499, image: "/images/products/product_ninebot_max_1777998751040.png",
+    price: 1899, originalPrice: 2499, 
+    image: "/images/products/ninebot-max/main.png",
+    gallery: [
+      "/images/products/ninebot-max/main.png",
+      "/images/products/ninebot-max/lifestyle.png",
+      "/images/products/ninebot-max/features.png",
+      "/images/products/ninebot-max/dimensions.png"
+    ],
     rating: 4.8, reviewsCount: 124,
   },
   {
     id: "p_2", slug: "xiaomi-m365", categorySlug: "xiaomi-scooter",
     name: "سكوتر شاومي مي M365 العملي المطور", nameEn: "Xiaomi Mi M365 Commuter Scooter",
-    price: 1299, originalPrice: 1599, image: "/images/products/product_xiaomi_m365_1777998736815.png",
+    price: 1299, originalPrice: 1599, 
+    image: "/images/products/xiaomi-m365/main.png",
+    gallery: [
+      "/images/products/xiaomi-m365/main.png",
+      "/images/products/xiaomi-m365/lifestyle.png",
+      "/images/products/xiaomi-m365/features.png",
+      "/images/products/xiaomi-m365/dimensions.png"
+    ],
     rating: 4.5, reviewsCount: 342,
   },
   {
     id: "p_5", slug: "ninebot-with-seat", categorySlug: "electric-scooter", subcategorySlug: "with-seat",
     name: "سكوتر كهربائي بمقعد ناينبوت المريح", nameEn: "Ninebot Comfort Seat Electric Scooter",
-    price: 2199, originalPrice: 2799, image: "/images/products/product_scooter_with_seat_1777998764393.png",
+    price: 2199, originalPrice: 2799, 
+    image: "/images/products/ninebot-with-seat/main.png",
+    gallery: [
+      "/images/products/ninebot-with-seat/main.png",
+      "/images/products/ninebot-with-seat/lifestyle.png",
+      "/images/products/ninebot-with-seat/features.png",
+      "/images/products/ninebot-with-seat/dimensions.png"
+    ],
     rating: 4.6, reviewsCount: 67,
   },
   {
     id: "p_6", slug: "offroad-pro", categorySlug: "electric-scooter", subcategorySlug: "fast",
     name: "سكوتر كهربائي سريع للطرق الوعرة احترافي", nameEn: "Pro Off-Road Fast Electric Scooter",
-    price: 3499, originalPrice: 4299, image: "/images/products/product_offroad_scooter_1777998810643.png",
+    price: 3499, originalPrice: 4299, 
+    image: "/images/products/offroad-pro/main.png",
+    gallery: [
+      "/images/products/offroad-pro/main.png",
+      "/images/products/offroad-pro/lifestyle.png",
+      "/images/products/offroad-pro/features.png",
+      "/images/products/offroad-pro/dimensions.png"
+    ],
     rating: 4.9, reviewsCount: 45,
   },
 
@@ -83,19 +111,40 @@ export const products = [
   {
     id: "p_3", slug: "drift-36v", categorySlug: "drift-scooter", subcategorySlug: "36v",
     name: "سكوتر درفت 36 فولت المطور", nameEn: "Drift Scooter 36V Upgraded",
-    price: 599, originalPrice: 799, image: "/images/categories/category_drift_kick_1777998376795.png",
+    price: 599, originalPrice: 799, 
+    image: "/images/products/drift-36v/main.png",
+    gallery: [
+      "/images/products/drift-36v/main.png",
+      "/images/products/drift-36v/lifestyle.png",
+      "/images/products/drift-36v/features.png",
+      "/images/products/drift-36v/dimensions.png"
+    ],
     rating: 4.7, reviewsCount: 89,
   },
   {
     id: "p_7", slug: "drift-48v-beast", categorySlug: "drift-scooter", subcategorySlug: "48v",
     name: "سكوتر درفت 48 فولت الوحش", nameEn: "48V Beast Drift Scooter",
-    price: 899, originalPrice: 1199, image: "/images/categories/category_drift_scooter_1777997659190.png",
+    price: 899, originalPrice: 1199, 
+    image: "/images/products/drift-48v-beast/main.png",
+    gallery: [
+      "/images/products/drift-48v-beast/main.png",
+      "/images/products/drift-48v-beast/lifestyle.png",
+      "/images/products/drift-48v-beast/features.png",
+      "/images/products/drift-48v-beast/dimensions.png"
+    ],
     rating: 4.8, reviewsCount: 156,
   },
   {
     id: "p_8", slug: "drift-360-spin", categorySlug: "drift-scooter", subcategorySlug: "360",
     name: "سكوتر درفت 360 درجة الدوار", nameEn: "360° Spin Drift Scooter",
-    price: 449, image: "/images/categories/category_drift_kick_1777998376795.png",
+    price: 449, 
+    image: "/images/products/drift-360-spin/main.png",
+    gallery: [
+      "/images/products/drift-360-spin/main.png",
+      "/images/products/drift-360-spin/lifestyle.png",
+      "/images/products/drift-360-spin/features.png",
+      "/images/products/drift-360-spin/dimensions.png"
+    ],
     rating: 4.4, reviewsCount: 203,
   },
 
@@ -103,19 +152,40 @@ export const products = [
   {
     id: "p_4", slug: "kids-spider", categorySlug: "kids-scooter", subcategorySlug: "spider-man",
     name: "سكوتر أطفال سبايدرمان 3 عجلات", nameEn: "Spider-Man Kids 3-Wheel Scooter",
-    price: 149, image: "/images/categories/category_kids_kick_1777998444797.png",
+    price: 149, 
+    image: "/images/products/kids-spider/main.png",
+    gallery: [
+      "/images/products/kids-spider/main.png",
+      "/images/products/kids-spider/lifestyle.png",
+      "/images/products/kids-spider/features.png",
+      "/images/products/kids-spider/dimensions.png"
+    ],
     rating: 4.9, reviewsCount: 512,
   },
   {
     id: "p_9", slug: "kids-girls-pink", categorySlug: "kids-scooter", subcategorySlug: "girls",
     name: "سكوتر بنات وردي فراشة 3 عجلات", nameEn: "Pink Butterfly Girls 3-Wheel Scooter",
-    price: 139, image: "/images/categories/category_kids_scooter_1777997673891.png",
+    price: 139, 
+    image: "/images/products/kids-girls-pink/main.png",
+    gallery: [
+      "/images/products/kids-girls-pink/main.png",
+      "/images/products/kids-girls-pink/lifestyle.png",
+      "/images/products/kids-girls-pink/features.png",
+      "/images/products/kids-girls-pink/dimensions.png"
+    ],
     rating: 4.8, reviewsCount: 287,
   },
   {
     id: "p_10", slug: "kids-electric-mini", categorySlug: "kids-scooter", subcategorySlug: "budget-kids",
     name: "سكوتر أطفال كهربائي ميني اقتصادي", nameEn: "Mini Budget Kids Electric Scooter",
-    price: 249, originalPrice: 349, image: "/images/categories/category_kids_kick_1777998444797.png",
+    price: 249, originalPrice: 349, 
+    image: "/images/products/kids-electric-mini/main.png",
+    gallery: [
+      "/images/products/kids-electric-mini/main.png",
+      "/images/products/kids-electric-mini/lifestyle.png",
+      "/images/products/kids-electric-mini/features.png",
+      "/images/products/kids-electric-mini/dimensions.png"
+    ],
     rating: 4.3, reviewsCount: 178,
   },
 
@@ -123,7 +193,14 @@ export const products = [
   {
     id: "p_11", slug: "smart-gps-pro", categorySlug: "smart-scooter",
     name: "سكوتر ذكي بنظام GPS واتصال بلوتوث", nameEn: "Smart GPS Bluetooth Connected Scooter",
-    price: 2499, originalPrice: 2999, image: "/images/categories/category_smart_scooter_1777997702235.png",
+    price: 2499, originalPrice: 2999, 
+    image: "/images/products/smart-gps-pro/main.png",
+    gallery: [
+      "/images/products/smart-gps-pro/main.png",
+      "/images/products/smart-gps-pro/lifestyle.png",
+      "/images/products/smart-gps-pro/features.png",
+      "/images/products/smart-gps-pro/dimensions.png"
+    ],
     rating: 4.7, reviewsCount: 34,
   },
 
@@ -131,7 +208,14 @@ export const products = [
   {
     id: "p_12", slug: "scooter-helmet-pro", categorySlug: "scooter-accessories", subcategorySlug: "helmets",
     name: "خوذة حماية احترافية للسكوتر", nameEn: "Professional Scooter Safety Helmet",
-    price: 129, originalPrice: 179, image: "/images/products/product_scooter_helmet_1777998827007.png",
+    price: 129, originalPrice: 179, 
+    image: "/images/products/scooter-helmet-pro/main.png",
+    gallery: [
+      "/images/products/scooter-helmet-pro/main.png",
+      "/images/products/scooter-helmet-pro/lifestyle.png",
+      "/images/products/scooter-helmet-pro/features.png",
+      "/images/products/scooter-helmet-pro/dimensions.png"
+    ],
     rating: 4.6, reviewsCount: 98,
   },
   {
