@@ -32,5 +32,35 @@ export const b_3 = {
 
 ### 7. استخدم قطع غيار أصلية فقط
 القطع الرخيصة تضر بالسكوتر وتلغي الضمان. اشترِ دائماً من متجر معتمد مثل نشتري.
+  `,
+  titleEn: '7 Golden Tips for Electric Scooter Maintenance',
+  excerptEn: 'Learn how to maintain your electric scooter and extend its lifespan with practical tips from our maintenance team.',
+  categoryEn: 'Maintenance',
+  ctaLabelEn: 'Browse Spare Parts',
+  contentEn: `
+## How to Maintain Your Electric Scooter?
+
+Your electric scooter is an investment worth caring for. Follow these tips to extend its lifespan for years.
+
+### 1. Never Fully Deplete the Battery
+Keep the charge level between 20% and 80%. Full depletion reduces battery life by 30%.
+
+### 2. Regular Cleaning (Bi-weekly)
+Wipe the body with a damp cloth. Never use direct water — even if the scooter is splash-resistant.
+
+### 3. Check Tire Pressure
+Properly inflated tires increase range and improve braking. Check them every week.
+
+### 4. Inspect Brakes Monthly
+Brakes are your primary safety system. If you notice any delay in response, replace the brake pads immediately.
+
+### 5. Store in a Dry Place
+Moisture is the enemy of the battery and electronics. Store your scooter in a dry place with a moderate temperature.
+
+### 6. Tighten Screws and Bolts
+Vibration during riding gradually loosens screws. Inspect and tighten all bolts monthly.
+
+### 7. Use Only Genuine Spare Parts
+Cheap parts damage the scooter and void the warranty. Always buy from an authorized store like Nshtare.
   `
 };

@@ -36,5 +36,39 @@ export const b_2 = {
 
 ## الخلاصة
 لا يوجد "أفضل" مطلق — الأفضل هو ما يناسب احتياجك. تصفح كلا القسمين واختر ما يلبي رغبتك.
+  `,
+  titleEn: 'Electric Scooter vs Drift Scooter: Which One is Right for You?',
+  excerptEn: 'A comprehensive comparison between electric scooters and drift scooters in terms of speed, range, price, and usage.',
+  categoryEn: 'Comparison',
+  ctaLabelEn: 'View Best Sellers',
+  contentEn: `
+## Electric Scooter vs Drift Scooter
+
+Both run on electricity, but the difference in design and usage is vast. Here is the comprehensive comparison.
+
+### Detailed Comparison
+
+| Criteria | Electric Scooter | Drift Scooter |
+|---|---|---|
+| **Usage** | Daily commute | Fun & Entertainment |
+| **Speed** | 25-45 km/h | 15-25 km/h |
+| **Range** | 25-65 km | 10-20 km |
+| **Suitable Age** | 14+ | 8+ |
+| **Price** | 800-4000 SAR | 400-1200 SAR |
+| **Weight** | 12-20 kg | 15-25 kg |
+| **Folding** | Yes (Mostly) | No |
+
+### When to choose an Electric Scooter?
+- If you need a practical daily commuting vehicle.
+- If you want long range and higher speed.
+- If you commute to work or university daily.
+
+### When to choose a Drift Scooter?
+- If you are looking for fun and entertainment.
+- If you want a special gift for your son or daughter.
+- If you love sliding and stunt maneuvers.
+
+## Conclusion
+There is no absolute "best" — the best is what suits your needs. Browse both categories and choose what meets your desire.
   `
 };
