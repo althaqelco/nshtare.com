@@ -1,0 +1,15 @@
+/[category]/[slug]/page.tsx
+/[category]/page.tsx
+/about/page.tsx
+/blog/[slug]/page.tsx
+/blog/page.tsx
+/compare/page.tsx
+/contact/page.tsx
+/faq/page.tsx
+/layout.tsx
+/order/confirmation/page.tsx
+/order/page.tsx
+/page.tsx
+/return-policy/page.tsx
+/shipping/page.tsx
+/warranty/page.tsx

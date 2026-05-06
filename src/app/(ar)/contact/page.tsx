@@ -38,7 +38,7 @@ export default function ContactPage() {
                 <h2 className="text-xl font-bold text-text mb-2">الدعم الفني والطلب (واتساب)</h2>
                 <p className="text-text-secondary mb-4">أسرع طريقة للتواصل معنا. نرد عادة خلال دقائق.</p>
                 <a 
-                  href="https://wa.me/966500000000" 
+                  href="https://wa.me/966542317431" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-2 rounded-xl font-bold transition-transform transform hover:scale-105"

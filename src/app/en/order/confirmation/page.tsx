@@ -77,7 +77,7 @@ function OrderConfirmationContent() {
         <div className="p-4 rounded-xl bg-[#25D366]/10 border border-[#25D366]/20">
           <p className="text-sm font-bold text-[#128C7E] mb-3">{t.whatsAppHelp}</p>
           <a 
-            href={`https://wa.me/966500000000?text=${encodeURIComponent(isEn ? `Hello, I have an inquiry about my order: ${orderId}` : `مرحباً، لدي استفسار بخصوص طلبي رقم: ${orderId}`)}`}
+            href={`https://wa.me/966542317431?text=${encodeURIComponent(isEn ? `Hello, I have an inquiry about my order: ${orderId}` : `مرحباً، لدي استفسار بخصوص طلبي رقم: ${orderId}`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-3 rounded-xl font-bold transition-transform transform hover:scale-105 w-full sm:w-auto"

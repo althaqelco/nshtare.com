@@ -21,7 +21,7 @@ export default function FloatingWhatsApp() {
     : "مرحباً، أحتاج مساعدة في اختيار سكوتر.";
   
   // Use generic number for now as per instructions to not assume specific numbers
-  const phoneNumber = "966500000000"; 
+  const phoneNumber = "966542317431"; 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   if (!isVisible) return null;

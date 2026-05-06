@@ -36,9 +36,28 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
 
   const product = getProductBySlug(slug);
   if (product && product.categorySlug === catSlug) {
+    const ogUrl = new URL('https://nshtare.com/api/og');
+    ogUrl.searchParams.set('title', product.nameEn); // Use English Name
+    ogUrl.searchParams.set('price', product.price.toString());
+    ogUrl.searchParams.set('image', product.image);
+
     return {
       title: `${product.nameEn} | Nshtare`,
       description: `Shop ${product.nameEn} at the best price. 1-year warranty, fast shipping across Saudi Arabia, and Cash on Delivery.`,
+      openGraph: {
+        images: [
+          {
+            url: ogUrl.toString(),
+            width: 1200,
+            height: 630,
+            alt: product.nameEn,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        images: [ogUrl.toString()],
+      },
     };
   }
 

@@ -80,7 +80,12 @@ export function middleware(request: NextRequest) {
   // ═══════════════════════════════════════════════════════════════
   // Layer 5: API Protection — Block direct API access from scrapers
   // ═══════════════════════════════════════════════════════════════
-  if (pathname.startsWith('/api/') && !pathname.includes('/abyss')) {
+  if (
+    pathname.startsWith('/api/') && 
+    !pathname.includes('/abyss') && 
+    !pathname.startsWith('/api/ai-feed') && 
+    !pathname.startsWith('/api/og')
+  ) {
     const referer = request.headers.get('referer') || '';
     if (!referer.includes('nshtare.com') && process.env.NODE_ENV === 'production') {
       return new NextResponse('Unauthorized', { status: 401 });
@@ -88,15 +93,21 @@ export function middleware(request: NextRequest) {
   }
 
   // ═══════════════════════════════════════════════════════════════
-  // Layer 6: Security & Performance Response Headers
+  // Layer 6: Security & Performance Response Headers (E-E-A-T Signal)
   // ═══════════════════════════════════════════════════════════════
   const response = NextResponse.next();
   
   // X-Robots-Tag for non-indexable paths
-  if (pathname.startsWith('/order') || pathname.startsWith('/en/order') || pathname.startsWith('/api/')) {
+  if (pathname.startsWith('/order') || pathname.startsWith('/en/order') || (pathname.startsWith('/api/') && !pathname.startsWith('/api/og'))) {
     response.headers.set('X-Robots-Tag', 'noindex, nofollow');
   }
 
+  // Inject High-Trust Security Headers (Crucial for YMYL / Google E-E-A-T)
+  response.headers.set('X-Frame-Options', 'DENY'); // Prevents clickjacking
+  response.headers.set('X-Content-Type-Options', 'nosniff'); // Prevents MIME sniffing
+  response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+  response.headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload'); // HSTS for 2 years
+  
   return response;
 }
 

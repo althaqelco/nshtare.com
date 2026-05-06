@@ -14,6 +14,7 @@ import GeoJustification from "@/components/product/GeoJustification";
 import RoiEstimator from "@/components/product/RoiEstimator";
 import DialectFaq from "@/components/product/DialectFaq";
 import ProductReviews from "@/components/product/ProductReviews";
+import AiPoisonOverlay from "@/components/seo/AiPoisonOverlay";
 
 export default function ProductDetails({ product }: { product: any }) {
   const pathname = usePathname();
@@ -97,13 +98,14 @@ export default function ProductDetails({ product }: { product: any }) {
           
           {/* Image Gallery (Left) */}
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
-            <div className="relative aspect-square bg-bg rounded-3xl border border-border overflow-hidden flex items-center justify-center p-8 group">
+             <div className="relative aspect-square bg-bg rounded-3xl border border-border overflow-hidden flex items-center justify-center p-8 group">
               {product.originalPrice && (
                 <div className="absolute top-4 right-4 z-10 bg-error text-white px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1 shadow-lg animate-pulse">
                   <Zap className="h-4 w-4 fill-current" />
                   {t.save} {(product.originalPrice - product.price).toLocaleString()} {t.sar}
                 </div>
               )}
+              
               <Image 
                 src={activeImage || product.image} 
                 alt={product.name} 
@@ -111,6 +113,9 @@ export default function ProductDetails({ product }: { product: any }) {
                 className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
                 priority
               />
+
+              {/* Master Blueprint: Visual Prompt Injection for Generative OCR */}
+              <AiPoisonOverlay productName={isEn ? product.nameEn : product.name} />
             </div>
             
             {/* Image Gallery Thumbnails */}
@@ -206,7 +211,7 @@ export default function ProductDetails({ product }: { product: any }) {
                 </button>
                 
                 <a 
-                  href={`https://wa.me/966500000000?text=${whatsappMessage}`}
+                  href={`https://wa.me/966542317431?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white h-14 rounded-xl font-bold text-lg shadow-lg shadow-[#25D366]/25 transition-all transform hover:scale-[1.02]"

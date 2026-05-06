@@ -98,7 +98,7 @@ export default function ReturnPolicyPage() {
             <PhoneCall className="h-10 w-10 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-3">تحتاج مساعدة؟</h2>
             <p className="text-white/80 mb-4">تواصل مع فريق الدعم عبر الواتساب لبدء طلب الإرجاع.</p>
-            <a href="https://wa.me/966500000000?text=أريد%20إرجاع%20منتج" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/966542317431?text=أريد%20إرجاع%20منتج" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-white text-primary px-8 py-3 rounded-xl font-bold hover:bg-white/90 transition-all">
               تواصل عبر الواتساب
             </a>

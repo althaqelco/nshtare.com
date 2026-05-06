@@ -43,9 +43,28 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
 
   const product = getProductBySlug(slug);
   if (product && product.categorySlug === catSlug) {
+    const ogUrl = new URL('https://nshtare.com/api/og');
+    ogUrl.searchParams.set('title', product.name);
+    ogUrl.searchParams.set('price', product.price.toString());
+    ogUrl.searchParams.set('image', product.image);
+
     return {
       title: `${product.name} | نشتري`,
       description: `تسوق ${product.name} بأفضل سعر. ضمان سنة، شحن سريع لجميع مدن السعودية، والدفع عند الاستلام.`,
+      openGraph: {
+        images: [
+          {
+            url: ogUrl.toString(),
+            width: 1200,
+            height: 630,
+            alt: product.name,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        images: [ogUrl.toString()],
+      },
     };
   }
 

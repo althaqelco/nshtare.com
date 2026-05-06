@@ -92,7 +92,7 @@ export default function ReturnPolicyPageEn() {
             <PhoneCall className="h-10 w-10 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-3">Need Help?</h2>
             <p className="text-white/80 mb-4">Contact our support team via WhatsApp to start a return request.</p>
-            <a href="https://wa.me/966500000000?text=I%20want%20to%20return%20a%20product" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/966542317431?text=I%20want%20to%20return%20a%20product" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-white text-primary px-8 py-3 rounded-xl font-bold hover:bg-white/90 transition-all">
               Contact via WhatsApp
             </a>

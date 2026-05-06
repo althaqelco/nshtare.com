@@ -21,11 +21,37 @@ export default function OrganizationSchema() {
       "url": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.png",
       "width": "512",
       "height": "512",
-      "caption": "نشتري - المتجر الأول للسكوترات الكهربائية في السعودية"
+      "caption": "نشتري - المتجر الأول للسكوترات الكهربائية في السعودية",
+      "locationCreated": {
+        "@type": "Place",
+        "name": "الرياض، المملكة العربية السعودية",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "24.7136",
+          "longitude": "46.6753"
+        }
+      }
     },
-    "image": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.png",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.png",
+      "contentUrl": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.png",
+      "author": {
+        "@type": "Organization",
+        "name": "نشتري - Nshtare"
+      },
+      "locationCreated": {
+        "@type": "Place",
+        "name": "الرياض، المملكة العربية السعودية",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "24.7136",
+          "longitude": "46.6753"
+        }
+      }
+    },
     "description": "المتجر الأول المتخصص في بيع السكوترات الكهربائية للكبار والأطفال في المملكة العربية السعودية. ضمان وكيل، شحن سريع، ودفع عند الاستلام.",
-    "telephone": "+966500000000",
+    "telephone": "+966542317431",
     "email": "support@nshtare.com",
     "priceRange": "$$",
     "currenciesAccepted": "SAR",

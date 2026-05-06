@@ -1,0 +1,14 @@
+
+/order
+/order/confirmation
+/contact
+/[category]
+/[category]/[slug]
+/faq
+/return-policy
+/about
+/shipping
+/blog
+/blog/[slug]
+/compare
+/warranty
