@@ -8,8 +8,7 @@ import { Star, ShieldCheck, Zap } from 'lucide-react';
  * PriceComparisonTable Component
  * 
  * A structured table comparing products in a category.
- * Google loves tables — they trigger featured snippets for "أسعار..."
- * and the table is copyable to trigger High Utility Actions (Navboost).
+ * Optimized for featured snippets and user-friendly comparison.
  */
 export default function PriceComparisonTable({
   products,

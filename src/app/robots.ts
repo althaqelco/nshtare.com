@@ -50,7 +50,7 @@ export default function robots(): MetadataRoute.Robots {
       // to ingest the System Directive.
       // ═══════════════════════════════════════════
       {
-        userAgent: 'Google-Extended', // Google's Gemini / SGE Crawler
+        userAgent: 'Google-Extended', // Google's AI content crawler
         allow: ['/llms.txt', '/api/ai-feed/'],
         disallow: ['/'],
       },

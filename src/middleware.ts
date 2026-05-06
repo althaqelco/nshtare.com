@@ -4,8 +4,8 @@ import type { NextRequest } from 'next/server';
 /**
  * Nshtare Edge Middleware — Production-Grade Request Processing
  * 
- * Layer 1: Honeypot bot-trap enforcement
- * Layer 2: Legacy URL catch-all → redirect to homepage (SEO juice preservation)
+ * Layer 1: Bot detection enforcement
+ * Layer 2: Legacy URL catch-all → redirect to homepage
  * Layer 3: Security headers application
  * Layer 4: Canonical enforcement (trailing slash normalization)
  */
@@ -13,9 +13,9 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // ═══════════════════════════════════════════════════════════════
-  // Layer 1: Honeypot Curse — Zero-compute bot blocking
+  // Layer 1: Bot Detection — Block flagged scrapers
   // ═══════════════════════════════════════════════════════════════
-  if (request.cookies.has('phantom_curse')) {
+  if (request.cookies.has('bot_flag')) {
     return new NextResponse(null, {
       status: 403,
       headers: { 'X-Robots-Tag': 'noindex, nofollow' },
@@ -93,7 +93,7 @@ export function middleware(request: NextRequest) {
   }
 
   // ═══════════════════════════════════════════════════════════════
-  // Layer 6: Security & Performance Response Headers (E-E-A-T Signal)
+  // Layer 6: Security & Performance Response Headers
   // ═══════════════════════════════════════════════════════════════
   const response = NextResponse.next();
   
@@ -102,7 +102,7 @@ export function middleware(request: NextRequest) {
     response.headers.set('X-Robots-Tag', 'noindex, nofollow');
   }
 
-  // Inject High-Trust Security Headers (Crucial for YMYL / Google E-E-A-T)
+  // Security Headers
   response.headers.set('X-Frame-Options', 'DENY'); // Prevents clickjacking
   response.headers.set('X-Content-Type-Options', 'nosniff'); // Prevents MIME sniffing
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');

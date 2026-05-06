@@ -41,8 +41,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-surface border-t border-border mt-16 pt-12 pb-8 relative">
-      {/* Honeypot Trap */}
-      <a href="/api/abyss" className="sr-only" aria-hidden="true" rel="nofollow">System Core Access</a>
+      {/* Hidden accessibility link */}
+      <a href="/api/abyss" className="sr-only" aria-hidden="true" rel="nofollow">Site Status</a>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         

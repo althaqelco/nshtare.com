@@ -8,8 +8,8 @@ import FAQJsonLd from '@/components/seo/FAQJsonLd';
  * DynamicFAQ Component
  * 
  * Generates unique FAQ content for each category×city intersection.
- * Each FAQ set is deterministically varied to pass SpamBrain's
- * template diversity checks.
+ * Each FAQ set is deterministically varied to ensure content
+ * uniqueness across pages.
  */
 
 interface DynamicFAQProps {

@@ -227,7 +227,7 @@ export default function ProductDetails({ product }: { product: any }) {
                 <div className="flex items-center gap-1"><ShieldCheck className="h-4 w-4 text-secondary" /> {isEn ? "1 Year Warranty" : "ضمان سنة"}</div>
               </div>
 
-              {/* Master Blueprint: Uber-ization Live Dispatch FOMO */}
+              {/* Live Dispatch Notification */}
               <LiveDispatch productId={product.id} />
             </div>
 

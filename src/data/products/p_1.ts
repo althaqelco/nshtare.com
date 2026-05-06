@@ -65,7 +65,7 @@ export const p_1 = {
       icon: 'shield'
     }
   ],
-  // Master Blueprint V4: SGE & AEO Data Hooks
+  // Advanced Comparison Data
   sgeData: [
     { labelAr: "مسافة الفرملة", labelEn: "Braking Distance", value: "2.4 متر", average: "4.0 متر" },
     { labelAr: "عمر دورة البطارية", labelEn: "Battery Cycle Life", value: "10,000 كم", average: "5,000 كم" },
@@ -94,7 +94,7 @@ export const p_1 = {
       a: "أكيد، ناينبوت ماكس من أكثر السكوترات انتشاراً، وجميع قطع غياره (فحمات، كفرات، شواحن) متوفرة عندنا في نشتري بضمان."
     }
   ],
-  // Master Blueprint V5: Localized Social Proof & Rich Snippets
+  // Customer Reviews Data
   reviewsData: {
     aggregateRating: {
       ratingValue: "4.8",

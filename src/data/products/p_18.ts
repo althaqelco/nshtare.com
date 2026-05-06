@@ -76,7 +76,7 @@ export const p_18 = {
     { q: 'Is it light enough for the metro?', a: 'Yes, at 8.5 kg and a 3-second fold, it is perfect for Riyadh Metro or carrying into the office.' },
     { q: 'Is it for adults or kids?', a: 'Designed primarily for adults for short commutes, supporting up to 80-90kg on flat roads.' }
   ],
-  // Master Blueprint V4: SGE & AEO Data Hooks
+  // Advanced Comparison Data
   sgeData: [
     { labelAr: "مؤشر سهولة الحمل", labelEn: "Portability Score", value: "98/100 (فائق الخفة)", average: "75/100" },
     { labelAr: "وقت الطي", labelEn: "Folding Time", value: "3 ثواني فقط", average: "8 ثواني" },
@@ -105,7 +105,7 @@ export const p_18 = {
       a: "أكيد! تصميمه بعد الطي يصير مضغوط وصغير جداً، ويدخل براحة في أصغر شنطة سيارة (حتى سيارات الهاتشباك الصغيرة)."
     }
   ],
-  // Master Blueprint V5: Localized Social Proof & Rich Snippets
+  // Customer Reviews Data
   reviewsData: {
     aggregateRating: {
       ratingValue: "4.4",
