@@ -77,4 +77,6 @@ export const products: any[] = [
   p_27
 ];
 
+export { blogPosts } from './blog';
+
 export { subcategories, cities };
