@@ -155,31 +155,7 @@ export default async function CategoryPageEn({ params }: { params: Promise<{ cat
         {/* Category Rich Content Layer */}
         <CategoryRichContent category={category} isEn={true} />
 
-        {/* Local Markets Block */}
-        <div className="mt-16 bg-surface p-8 rounded-3xl border border-border shadow-sm">
-          <div className="text-center mb-6">
-            <h2 className="text-2xl font-bold text-text mb-2">
-              Shop {category.nameEn} in Your City
-            </h2>
-            <p className="text-text-secondary">
-              We offer fast delivery and assembly services across Saudi Arabia
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {['riyadh', 'jeddah', 'makkah', 'dammam'].map((citySlug) => {
-              const cityName = citySlug === 'riyadh' ? 'Riyadh' : citySlug === 'jeddah' ? 'Jeddah' : citySlug === 'makkah' ? 'Makkah' : 'Dammam';
-              return (
-                <Link 
-                  key={citySlug}
-                  href={`/en/${category.slug}/${citySlug}`}
-                  className="px-6 py-3 bg-bg hover:bg-primary hover:text-white border border-border rounded-xl text-text font-semibold transition-all duration-300"
-                >
-                  {category.nameEn} in {cityName}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
+
 
         {/* Cross Linking Block */}
         <CategoryCrossLinks currentCategory={category.slug} />
