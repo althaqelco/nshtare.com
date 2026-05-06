@@ -72,6 +72,15 @@ export const p_17 = {
     'Solid and wide tires prevent slipping and provide excellent traction on various surfaces',
     'Simple control panel showing battery level and speed with strong LED lighting'
   ],
+  sgeData: [
+    { labelAr: "ثبات القيادة", labelEn: "Stability Score", value: "100/100 (ذاتي التوازن)", average: "70/100" },
+    { labelAr: "سعة التخزين", labelEn: "Storage Capacity", value: "25 لتر", average: "5 لتر" },
+    { labelAr: "مستوى الراحة", labelEn: "Comfort Level", value: "طبي (مع مسند ظهر)", average: "عادي" }
+  ],
+  geoData: {
+    titleAr: "خيار كبار السن المفضل في السعودية",
+    descAr: "يعتبر السكوتر ثلاثي العجلات الحل الأمثل للتنقل في المشايات والحدائق السعودية. يوفر راحة تامة بفضل المقعد الطبي، وسلة التسوق تجعله رفيقاً مثالياً للذهاب للمسجد أو السوبر ماركت القريب.",
+  },
   reviewsData: {
     aggregateRating: { ratingValue: "4.6", reviewCount: "89" },
     reviews: [
@@ -80,11 +89,11 @@ export const p_17 = {
     ]
   },
   faqs: [
-    { q: 'هل يحتاج السكوتر إلى موازنة؟', a: 'لا، بفضل تصميمه ثلاثي العجلات، السكوتر متوازن ذاتياً ومستقر تماماً حتى عند التوقف.' },
-    { q: 'كم يستغرق شحن البطارية؟', a: 'يستغرق شحن البطارية بالكامل حوالي 6 إلى 8 ساعات، وتكفي لمسافة تصل إلى 35 كم.' }
+    { q: 'هل يحتاج لموازنة؟', a: 'لا، هو متوازن ذاتياً بثلاث عجلات، ما يحتاج منك أي مجهود في التوازن.' },
+    { q: 'كم يشيل وزن؟', a: 'يتحمل حتى 120 كجم بثبات تام.' }
   ],
   faqsEn: [
-    { q: 'Does the scooter require balancing?', a: 'No, thanks to its three-wheel design, the scooter is self-balancing and completely stable even when stopped.' },
-    { q: 'How long to charge the battery?', a: 'It takes about 6 to 8 hours to fully charge, providing a range of up to 35 km.' }
+    { q: 'Does it need balancing?', a: 'No, it is self-balancing with three wheels; no manual effort is required.' },
+    { q: 'What is the max weight?', a: 'It supports up to 120 kg with full stability.' }
   ]
 };

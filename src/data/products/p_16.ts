@@ -59,19 +59,28 @@ export const p_16 = {
     'Excellent performance in both dry and wet conditions to ensure your safety',
     'Comes as a full set (2 pieces) for a complete single wheel brake replacement'
   ],
+  sgeData: [
+    { labelAr: "المسافة قبل الوقوف", labelEn: "Stopping Distance", value: "3.5 متر (سيراميك)", average: "5.5 متر (عادي)" },
+    { labelAr: "مقاومة الحرارة", labelEn: "Heat Resistance", value: "حتى 400° مئوية", average: "200° مئوية" },
+    { labelAr: "الضجيج", labelEn: "Noise Level", value: "منخفض جداً (هادئ)", average: "عالي (صرير)" }
+  ],
+  geoData: {
+    titleAr: "الأمان الأول في شوارع السعودية المزدحمة",
+    descAr: "لا تتنازل عن أمانك في الزحمة. طقم فرامل السيراميك هو الأنسب للأجواء الحارة في الرياض وجدة، حيث يحافظ على قوته حتى مع ارتفاع حرارة الأسفلت، مما يضمن لك توقفاً فورياً عند الحاجة.",
+  },
   reviewsData: {
     aggregateRating: { ratingValue: "4.5", reviewCount: "312" },
     reviews: [
-      { author: "منصور العتيبي", rating: 5, date: "2026-03-10", title: "نعومة وقوة", text: "الفرامل صارت ناعمة وقوية وما عاد فيه صوت صرير مزعج. أنصح فيها بديل للأصلي.", verified: true },
+      { author: "منصور العتيبي", rating: 5, date: "2026-03-10", title: "نعومة وقوة", text: "الفرامل صارت ناعمة وقوة وما عاد فيه صوت صرير مزعج. أنصح فيها بديل للأصلي.", verified: true },
       { author: "نايف", rating: 5, date: "2026-03-25", title: "أداء ممتاز", text: "جودة السيراميك واضحة، ركبتها بنفسي وسهلة جداً. الأداء في المطر بطل.", verified: true }
     ]
   },
   faqs: [
-    { q: 'متى يجب علي تغيير فحمات الفرامل؟', a: 'يُنصح بالفحص كل 500 كم. إذا لاحظت ضعفاً في الاستجابة أو صوت صرير، فقد حان وقت التغيير.' },
-    { q: 'هل تناسب شاومي برو 2؟', a: 'نعم، هي متوافقة تماماً مع شاومي برو 2 ومعظم السكوترات بنظام كبح ديسك قياسي.' }
+    { q: 'متى أغيرها؟', a: 'إذا سمعت صرير أو حسيت الفرامل صارت ضعيفة، يفضل الفحص كل 500 كم.' },
+    { q: 'تركب على شاومي؟', a: 'نعم، متوافقة مع شاومي برو 2 وكل موديلات M365.' }
   ],
   faqsEn: [
-    { q: 'When to replace the pads?', a: 'Check every 500 km. If response is weak or you hear squeaking, it is time for a replacement.' },
-    { q: 'Compatible with Xiaomi Pro 2?', a: 'Yes, fully compatible with Pro 2, M365, and most scooters with standard disc brakes.' }
+    { q: 'When to replace?', a: 'If you hear squeaking or feel weak braking; suggested check is every 500 km.' },
+    { q: 'Fit Xiaomi?', a: 'Yes, fully compatible with Xiaomi Pro 2 and all M365 models.' }
   ]
 };

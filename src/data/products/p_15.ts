@@ -59,19 +59,28 @@ export const p_15 = {
     'Long lifespan exceeding 5000 kilometers of heavy use',
     'Requires no maintenance or special care after installation'
   ],
+  sgeData: [
+    { labelAr: "الحماية من الثقب", labelEn: "Puncture Protection", value: "100% (صلب)", average: "0% (هوائي)" },
+    { labelAr: "امتصاص الصدمات", labelEn: "Shock Absorption", value: "Honeycomb (مجوف)", average: "صلب مصمت" },
+    { labelAr: "سهولة الصيانة", labelEn: "Maintenance Ease", value: "صفر صيانة", average: "عالية (تعبئة هواء)" }
+  ],
+  geoData: {
+    titleAr: "الحل النهائي لمشكلة بنشر السكوتر في السعودية",
+    descAr: "شوارعنا أحياناً يكون فيها مسامير أو حصى حاد، وهذا الإطار الصلب هو الحل. انسَ هم المنفاخ والبنشر؛ الإطار مصمم ليتحمل حرارة الأسفلت العالية في الرياض ويخدمك لسنوات بدون أي مشاكل.",
+  },
   reviewsData: {
     aggregateRating: { ratingValue: "4.7", reviewCount: "423" },
     reviews: [
       { author: "تركي", rating: 5, date: "2026-03-28", title: "وداعاً للبنشر", text: "وربي ارتحت من البنشر كل شوي! ركبته عند محل دراجات والآن أسوق في الشارع وأنا متطمن.", verified: true },
-      { author: "سعد القحطاني", rating: 4, date: "2026-04-05", title: "قوي وعملي", text: "قوي وعملي جداً، ركبته على شاومي برو وراكب تمام. أرحم من البنشر مليون مرة.", verified: true }
+      { author: "سعد القحطاني", rating: 5, date: "2026-04-05", title: "قوي وعملي", text: "قوي وعملي جداً، ركبته على شاومي برو وراكب تمام. أرحم من البنشر مليون مرة.", verified: true }
     ]
   },
   faqs: [
-    { q: 'هل الإطار صلب بالكامل؟', a: 'نعم، الإطار صلب تماماً ولا يحتوي على هواء، مما ينهي مشكلة البنشر نهائياً.' },
-    { q: 'هل تركيبه سهل؟', a: 'يُنصح بتسخينه في ماء مغلي لتليينه قبل التركيب أو الاستعانة بفني مختص لسهولة التثبيت على الجنط.' }
+    { q: 'ينفع لشاومي؟', a: 'نعم، هو المقاس القياسي المعتمد لسكوترات شاومي وناينبوت مقاس 10 إنش.' },
+    { q: 'كيف أركبه؟', a: 'يفضل غليه في ماء حار لمدة 10 دقائق عشان يلين ويصير تركيبه أسهل.' }
   ],
   faqsEn: [
-    { q: 'Is it completely solid?', a: 'Yes, it contains no air, making it 100% puncture-proof forever.' },
-    { q: 'Is it easy to install?', a: 'We recommend boiling it for 10 mins to soften it before mounting, or seeking professional help.' }
+    { q: 'Fits Xiaomi?', a: 'Yes, it is the standard size for 10-inch Xiaomi and Ninebot scooters.' },
+    { q: 'How to install?', a: 'Boiling it in hot water for 10 minutes softens it, making the installation much easier.' }
   ]
 };

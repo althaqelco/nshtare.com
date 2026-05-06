@@ -52,80 +52,48 @@ export const p_7 = {
       labelEn: 'Run Time',
       value: '60 دقيقة',
       icon: 'battery'
-    },
-    {
-      labelAr: 'الإطارات',
-      labelEn: 'Tires',
-      value: '8 إنش درفت',
-      icon: 'size'
-    },
-    {
-      labelAr: 'الضمان',
-      labelEn: 'Warranty',
-      value: 'سنة كاملة',
-      icon: 'shield'
     }
   ],
-  // Master Blueprint V4: SGE & AEO Data Hooks
+  description: 'درفت الوحش 48 فولت هو الأقوى في فئته، مصمم ليتحمل الأسفلت الخشن والحرارة العالية. بمحرك 1000 واط، يوفر قوة دفع استثنائية ودوران 360 درجة بمتعة لا توصف، مع كفرات صب مقواة تدوم طويلاً.',
+  descriptionEn: 'The 48V Beast Drift Scooter is the most powerful in its class, designed to withstand rough asphalt and high heat. With a 1000W motor, it provides exceptional propulsion and 360-degree drifting fun, featuring long-lasting reinforced cast tires.',
+  features: [
+    'محرك جبار بقدرة 1000 واط يعطي تسارعاً فورياً للأوزان الكبيرة',
+    'بطارية 48 فولت ضخمة توفر وقت لعب طويل يصل إلى ساعة كاملة',
+    'إطارات صب خلفية مقواة مضادة للتآكل والتمزق أثناء التفحيط العنيف',
+    'ثلاث مستويات للسرعة مع مفتاح تحكم للأمان التام',
+    'بلوتوث وسماعات مدمجة عالية الجودة للاستمتاع بالموسيقى',
+    'تصميم منخفض وواسع يضمن ثباتاً فائقاً ومنع الانقلاب'
+  ],
+  featuresEn: [
+    'Powerful 1000W motor providing instant acceleration for heavy loads',
+    'Massive 48V battery offering long playtime up to a full hour',
+    'Reinforced cast rear tires resistant to wear and tear during extreme drifting',
+    'Three speed levels with a control key for complete safety',
+    'Built-in high-quality Bluetooth and speakers for music enjoyment',
+    'Low and wide design ensuring superior stability and preventing tipping'
+  ],
   sgeData: [
     { labelAr: "عزم الدوران", labelEn: "Peak Torque", value: "1000W", average: "250W" },
     { labelAr: "مقاومة تآكل الإطارات", labelEn: "Tire Wear Resistance", value: "مضاعفة (كفرات صب)", average: "عادية" },
-    { labelAr: "الوزن الأقصى للراكب", labelEn: "Max Payload", value: "100 كجم", average: "60 كجم" },
-    { labelAr: "نظام الدوران", labelEn: "Drift System", value: "360 درجة انسيابي", average: "محدود" }
+    { labelAr: "الوزن الأقصى للراكب", labelEn: "Max Payload", value: "100 كجم", average: "60 كجم" }
   ],
   geoData: {
-    titleAr: "مصمم للأسفلت الخشن والتفحيط القوي",
-    descAr: "صُمم درفت الوحش 48 فولت خصيصاً ليتحمل الأسفلت الخشن والحرارة العالية في الحواري والمنتزهات السعودية. الكفرات الصب المقواة لا تتأثر بالاحتكاك العنيف أثناء التفحيط (الدرفت)، والموتور الجبار بقوة 1000W لا يسخن بسرعة بفضل نظام التشتيت الحراري، مما يجعله آمناً وعملياً لأقسى أنواع الاستخدام.",
+    titleAr: "مصمم للأسفلت الخشن والتفحيط القوي في السعودية",
+    descAr: "صُمم درفت الوحش 48 فولت خصيصاً ليتحمل الأسفلت الخشن والحرارة العالية في الحواري والمنتزهات السعودية. الكفرات الصب لا تتأثر بالاحتجاج العنيف، مما يجعله الخيار الأول للشباب في المملكة.",
+  },
+  reviewsData: {
+    aggregateRating: { ratingValue: "4.8", reviewCount: "156" },
+    reviews: [
+      { author: "خالد الشهري", rating: 5, date: "2026-04-20", title: "وحش حقيقي", text: "يا جماعة الدباب هذا مجنون، شريته لولدي عمره 15 وعزمه يفز بسرعة حتى لو ركبت معاه. بطاريته تطول.", verified: true },
+      { author: "ماجد القحطاني", rating: 5, date: "2026-03-12", title: "يستاهل كل ريال", text: "الدرفت 48 فولت صدق وحش. يعطيك دوران 360 درجة ناعم جداً. المتجر محترمين وسرعة في التوصيل لجدة.", verified: true }
+    ]
   },
   faqs: [
-    {
-      q: "هل درفت 48 ڤولت حق كبار أو بس أطفال؟",
-      a: "هذا الموديل (الوحش 48V) هو أقوى سكوتر درفت بالسوق! يتحمل أوزان لغاية 100 كيلو، يعني مناسب للشباب والكبار وبيعطيك درفت قوي 360 درجة بدون ما يضعف عزمه أبداً."
-    },
-    {
-      q: "كم يجلس شحنه إذا بلعب فيه تفحيط متواصل؟",
-      a: "البطارية ضخمة جداً، تعطيك لعب متواصل وسحب قوي لمدة ساعة كاملة (60 دقيقة)، وتقدر تشحنه فل من الصفر خلال 4 ساعات بس."
-    },
-    {
-      q: "كفرات الدرفت تتآكل بسرعة عندنا في الشارع؟",
-      a: "حنا مركبين له كفرات (صب) خلفية وأمامية مضاعفة، تتحمل الأسفلت الخشن واحتكاك الشوارع القوي. بتعيش معك فترة طويلة وما تحتاج تغيرها باستمرار."
-    },
-    {
-      q: "كيف أشحنه أقدر أشبكه بكهرباء البيت العادية؟",
-      a: "أكيد، يجي معه شاحن ذكي وتشبكه في أي فيش جدار 220 فولت (أفياش البيت العادية)، وفيه نظام حماية يفصل الشحن تلقائياً إذا صار فل عشان يحمي البطارية من الاحتراق."
-    }
+    { q: 'مناسب للكبار؟', a: 'نعم، يتحمل أوزان تصل إلى 100 كجم وقوي جداً.' },
+    { q: 'كم يجلس شحنه؟', a: 'يعطيك لعب متواصل وسحب قوي لمدة ساعة كاملة تقريباً.' }
   ],
-  // Master Blueprint V5: Localized Social Proof & Rich Snippets
-  reviewsData: {
-    aggregateRating: {
-      ratingValue: "4.8",
-      reviewCount: "156"
-    },
-    reviews: [
-      {
-        author: "خالد الشهري",
-        date: "2026-04-20",
-        rating: 5,
-        title: "أقوى درفت جربته للعيال",
-        text: "يا جماعة الدباب هذا مجنون، شريته لولدي عمره 15 وعزمه يفز بسرعة حتى لو ركبت معاه. بطاريته تطول، وكفراته صدق تتحمل تفحيط الحارة وما تنمسح بسرعة.",
-        verified: true
-      },
-      {
-        author: "ماجد القحطاني",
-        date: "2026-03-12",
-        rating: 5,
-        title: "يستاهل كل ريال",
-        text: "الدرفت 48 فولت صدق وحش. يعطيك دوران 360 درجة ناعم جداً. المتجر محترمين وسرعة في التوصيل لجدة.",
-        verified: true
-      },
-      {
-        author: "أم سعود",
-        date: "2026-02-28",
-        rating: 4,
-        title: "جداً آمن",
-        text: "كنت خايفة من سرعته بس طلع فيه 3 سرعات تقدر تثبته عليها. وزنه ثقيل شوي لكن هذا يعطيه ثبات عالي وقت اللعب.",
-        verified: true
-      }
-    ]
-  }
+  faqsEn: [
+    { q: 'Suitable for adults?', a: 'Yes, it supports up to 100 kg and is very powerful.' },
+    { q: 'How long does it last?', a: 'Provides continuous play and strong pull for about a full hour.' }
+  ]
 };

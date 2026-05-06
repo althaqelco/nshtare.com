@@ -60,6 +60,15 @@ export const p_12 = {
     'Ultra-lightweight (280g) prevents neck fatigue during rides',
     'Removable and washable inner pads to maintain hygiene'
   ],
+  sgeData: [
+    { labelAr: "معدل الحماية", labelEn: "Protection Grade", value: "CE المعتمد", average: "غير معتمد" },
+    { labelAr: "وزن الخوذة", labelEn: "Helmet Weight", value: "280 جرام (خفيفة)", average: "500 جرام" },
+    { labelAr: "عدد فتحات التهوية", labelEn: "Vents Count", value: "12 فتحة", average: "4 فتحات" }
+  ],
+  geoData: {
+    titleAr: "الأمان والراحة في شمس السعودية",
+    descAr: "تم اختيار هذه الخوذة بعناية لتناسب الأجواء الحارة في السعودية. بفضل الـ 12 فتحة تهوية، توفر برودة ممتازة للرأس وتمنع التعرق المفرط، مما يجعلها الخيار المثالي للقيادة في الرياض وجدة.",
+  },
   reviewsData: {
     aggregateRating: { ratingValue: "4.6", reviewCount: "98" },
     reviews: [
@@ -68,11 +77,11 @@ export const p_12 = {
     ]
   },
   faqs: [
-    { q: 'كيف أختار المقاس المناسب لي؟', a: 'الخوذة تأتي بمقاس مرن (L/XL) يناسب محيط الرأس من 58 إلى 62 سم، ويمكنك ضبطها بدقة عبر البكرة الخلفية.' },
-    { q: 'هل الخوذة معتمدة للسلامة؟', a: 'نعم، الخوذة مصنعة وفقاً لمعايير السلامة الأوروبية (CE) لامتصاص الصدمات.' }
+    { q: 'كيف أختار المقاس؟', a: 'الخوذة تجي بمقاس مرن (L/XL) يناسب محيط الرأس من 58 إلى 62 سم، وتقدر تضبطها من البكرة الخلفية.' },
+    { q: 'هل هي معتمدة؟', a: 'نعم، حاصلة على شهادة CE الأوروبية لسلامة الخوذ.' }
   ],
   faqsEn: [
-    { q: 'How do I choose the right size?', a: 'The helmet comes in a flexible size (L/XL) that fits head circumferences from 58 to 62 cm, adjustable via the rear dial.' },
-    { q: 'Is the helmet safety certified?', a: 'Yes, the helmet is manufactured according to European safety standards (CE).' }
+    { q: 'How to choose size?', a: 'The helmet comes in a flexible L/XL size fitting 58-62 cm, adjustable via the rear dial.' },
+    { q: 'Is it certified?', a: 'Yes, it holds the European CE safety certification for helmets.' }
   ]
 };

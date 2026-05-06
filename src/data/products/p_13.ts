@@ -59,6 +59,15 @@ export const p_13 = {
     'Aerodynamic design that does not affect scooter balance or steering',
     'Double zippers for easy opening and closing while on the go'
   ],
+  sgeData: [
+    { labelAr: "مستوى الحماية", labelEn: "Protection Level", value: "هيكل صلب (Hard Shell)", average: "قماش ناعم" },
+    { labelAr: "مقاومة الماء", labelEn: "Waterproof Grade", value: "IPX4 (ضد المطر والرش)", average: "IPX2" },
+    { labelAr: "سهولة الفك", labelEn: "Detachability", value: "سريعة (فيلكرو)", average: "براغي معقدة" }
+  ],
+  geoData: {
+    titleAr: "الإكسسوار الضروري لمشاويرك في السعودية",
+    descAr: "لا تشيل هم أغراضك الشخصية وأنت تسوق. هذه الشنطة مصممة لتتحمل شمس السعودية القوية وتحمي جوالك من الغبار والحرارة والمطر، وهي الخيار المفضل لمستخدمي السكوتر في المجمعات التجارية والجامعات.",
+  },
   reviewsData: {
     aggregateRating: { ratingValue: "4.5", reviewCount: "156" },
     reviews: [
@@ -67,11 +76,11 @@ export const p_13 = {
     ]
   },
   faqs: [
-    { q: 'هل الشنطة تناسب سكوترات شاومي؟', a: 'نعم، الشنطة مزودة بأشرطة فيلكرو قابلة للتعديل مما يجعلها متوافقة مع جميع موديلات شاومي وناينبوت.' },
-    { q: 'هل الشنطة مقاومة للماء؟', a: 'الشنطة مصنوعة من مواد مقاومة للماء تتحمل الأمطار الخفيفة والمتوسطة بفعالية.' }
+    { q: 'تركب على شاومي؟', a: 'نعم، فيها لزقات تتعدل وتركب على كل موديلات شاومي وناينبوت.' },
+    { q: 'تشيل شاحن السكوتر؟', a: 'نعم، سعتها كبيرة وتكفي الجوال والمحفظة والشاحن بالراحة.' }
   ],
   faqsEn: [
-    { q: 'Does the bag fit Xiaomi scooters?', a: 'Yes, the adjustable Velcro straps make it compatible with Xiaomi, Ninebot, and most electric scooters.' },
-    { q: 'Is the bag waterproof?', a: 'The bag is made of water-resistant materials that protect against rain and splashes.' }
+    { q: 'Fits Xiaomi?', a: 'Yes, it has adjustable Velcro straps that fit all Xiaomi and Ninebot models.' },
+    { q: 'Can it hold the charger?', a: 'Yes, it has ample capacity for a phone, wallet, and the charger easily.' }
   ]
 };
