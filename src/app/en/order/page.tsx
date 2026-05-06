@@ -9,6 +9,9 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
 import { ShieldCheck, Truck, CreditCard, ChevronRight, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
+import { db } from '@/lib/firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { saudiCities } from '@/data/saudi_cities_districts';
 
 // Zod Schema
 const orderSchema = z.object({
@@ -50,31 +53,59 @@ export default function CheckoutPage() {
     returnShop: isEn ? "Return to Shop" : "العودة للتسوق",
     processing: isEn ? "Processing..." : "جاري تأكيد الطلب...",
   };
-
-  const cities = isEn 
-    ? ["Riyadh", "Jeddah", "Mecca", "Medina", "Dammam", "Khobar", "Abha", "Other"]
-    : ["الرياض", "جدة", "مكة المكرمة", "المدينة المنورة", "الدمام", "الخبر", "أبها", "أخرى"];
-
-  const { register, handleSubmit, formState: { errors } } = useForm<OrderFormValues>({
+  
+  const { register, handleSubmit, watch, formState: { errors } } = useForm<OrderFormValues>({
     resolver: zodResolver(orderSchema)
   });
+
+  const selectedCityId = watch("city");
+  const currentCity = saudiCities.find((c: any) => c.id === selectedCityId || c.nameAr === selectedCityId);
+  const districts = currentCity ? currentCity.districts : [];
 
   const onSubmit = async (data: OrderFormValues) => {
     setIsSubmitting(true);
     
-    // Simulate API Call for order placement
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    // Create an order ID
-    const orderId = `NSHT-${new Date().getFullYear()}${String(new Date().getMonth()+1).padStart(2, '0')}-${Math.floor(Math.random() * 10000).toString().padStart(4, '0')}`;
-    
-    // Normally you'd save to Firestore or your backend here.
-    console.log("Order Placed:", { orderId, data, items, total: cartTotal });
-    
-    clearCart();
-    
-    // Redirect to confirmation
-    router.push(isEn ? `/en/order/confirmation?id=${orderId}` : `/order/confirmation?id=${orderId}`);
+    try {
+      // Create an order ID
+      const orderId = `NSHT-${new Date().getFullYear()}${String(new Date().getMonth()+1).padStart(2, '0')}-${Math.floor(Math.random() * 10000).toString().padStart(4, '0')}`;
+      
+      // Save to Firestore
+      const orderData = {
+        orderId,
+        customerName: data.fullName,
+        phone: data.phone,
+        city: data.city,
+        district: data.district,
+        address: data.address,
+        notes: data.notes || "",
+        items: items.map(item => ({
+          id: item.id,
+          name: item.name,
+          nameEn: item.nameEn,
+          price: item.price,
+          quantity: item.quantity,
+          image: item.image
+        })),
+        total: cartTotal,
+        status: "جديد",
+        language: isEn ? "en" : "ar",
+        createdAt: serverTimestamp(),
+      };
+
+      await addDoc(collection(db, "orders"), orderData);
+      
+      console.log("Order Saved to Firebase:", { orderId });
+      
+      clearCart();
+      
+      // Redirect to confirmation
+      router.push(isEn ? `/en/order/confirmation?id=${orderId}` : `/order/confirmation?id=${orderId}`);
+    } catch (error) {
+      console.error("Error placing order:", error);
+      alert(isEn ? "Failed to place order. Please try again." : "فشل في إتمام الطلب. يرجى المحاولة مرة أخرى.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (items.length === 0) {
@@ -146,19 +177,24 @@ export default function CheckoutPage() {
                       className={`w-full p-4 bg-bg border ${errors.city ? 'border-error' : 'border-border'} rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all appearance-none`}
                     >
                       <option value="">{isEn ? "Select City..." : "اختر المدينة..."}</option>
-                      {cities.map((city) => (
-                        <option key={city} value={city}>{city}</option>
+                      {saudiCities.map((city: any) => (
+                        <option key={city.id} value={city.id}>{isEn ? city.nameEn : city.nameAr}</option>
                       ))}
                     </select>
                     {errors.city && <p className="text-error text-xs mt-1">{errors.city.message}</p>}
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-text mb-2">{t.district}</label>
-                    <input 
+                    <select 
                       {...register("district")}
-                      className={`w-full p-4 bg-bg border ${errors.district ? 'border-error' : 'border-border'} rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all`}
-                      placeholder={isEn ? "Al Olaya" : "حي العليا"}
-                    />
+                      disabled={!selectedCityId}
+                      className={`w-full p-4 bg-bg border ${errors.district ? 'border-error' : 'border-border'} rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all appearance-none disabled:opacity-50`}
+                    >
+                      <option value="">{isEn ? "Select District..." : "اختر الحي..."}</option>
+                      {districts.map((district: string) => (
+                        <option key={district} value={district}>{district}</option>
+                      ))}
+                    </select>
                     {errors.district && <p className="text-error text-xs mt-1">{errors.district.message}</p>}
                   </div>
                 </div>
