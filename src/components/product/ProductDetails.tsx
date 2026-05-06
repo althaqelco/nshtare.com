@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 import { Star, ShieldCheck, Truck, Zap, Plus, Minus, ShoppingCart, MessageCircle, Eye } from "lucide-react";
 import ProductSchema from "@/components/seo/ProductSchema";
+import ProductSpecs from "@/components/product/ProductSpecs";
 
 export default function ProductDetails({ product }: { product: any }) {
   const pathname = usePathname();
@@ -217,6 +218,11 @@ export default function ProductDetails({ product }: { product: any }) {
 
           </div>
         </div>
+
+        {/* Technical Specifications — Plan 05 §4.2 Dwell Time Maximizer */}
+        {product.specs && product.specs.length > 0 && (
+          <ProductSpecs specs={product.specs} />
+        )}
       </div>
 
       {/* Mobile Sticky Action Bar */}

@@ -66,6 +66,16 @@ export const products = [
       "/images/products/ninebot-max/dimensions.png"
     ],
     rating: 4.8, reviewsCount: 124,
+    specs: [
+      { labelAr: "المدى", labelEn: "Range", value: "65 كم", icon: "battery" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "30 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "350W", icon: "power" },
+      { labelAr: "الوزن", labelEn: "Weight", value: "19.5 كجم", icon: "weight" },
+      { labelAr: "البطارية", labelEn: "Battery", value: "551Wh ليثيوم", icon: "battery" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "6 ساعات", icon: "time" },
+      { labelAr: "حجم الإطار", labelEn: "Tire Size", value: "10 إنش", icon: "size" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "سنة كاملة", icon: "shield" },
+    ],
   },
   {
     id: "p_2", slug: "xiaomi-m365", categorySlug: "xiaomi-scooter",
@@ -79,6 +89,16 @@ export const products = [
       "/images/products/xiaomi-m365/dimensions.png"
     ],
     rating: 4.5, reviewsCount: 342,
+    specs: [
+      { labelAr: "المدى", labelEn: "Range", value: "30 كم", icon: "battery" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "25 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "250W", icon: "power" },
+      { labelAr: "الوزن", labelEn: "Weight", value: "12.5 كجم", icon: "weight" },
+      { labelAr: "البطارية", labelEn: "Battery", value: "280Wh ليثيوم", icon: "battery" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "5.5 ساعات", icon: "time" },
+      { labelAr: "قابل للطي", labelEn: "Foldable", value: "نعم", icon: "size" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "سنة كاملة", icon: "shield" },
+    ],
   },
   {
     id: "p_5", slug: "ninebot-with-seat", categorySlug: "electric-scooter", subcategorySlug: "with-seat",
@@ -92,6 +112,15 @@ export const products = [
       "/images/products/ninebot-with-seat/dimensions.png"
     ],
     rating: 4.6, reviewsCount: 67,
+    specs: [
+      { labelAr: "المدى", labelEn: "Range", value: "45 كم", icon: "battery" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "25 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "350W", icon: "power" },
+      { labelAr: "الوزن", labelEn: "Weight", value: "22 كجم", icon: "weight" },
+      { labelAr: "نوع المقعد", labelEn: "Seat Type", value: "مقعد مبطن قابل للإزالة", icon: "size" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "6 ساعات", icon: "time" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "سنة كاملة", icon: "shield" },
+    ],
   },
   {
     id: "p_6", slug: "offroad-pro", categorySlug: "electric-scooter", subcategorySlug: "fast",
@@ -105,6 +134,15 @@ export const products = [
       "/images/products/offroad-pro/dimensions.png"
     ],
     rating: 4.9, reviewsCount: 45,
+    specs: [
+      { labelAr: "المدى", labelEn: "Range", value: "80 كم", icon: "battery" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "55 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "800W", icon: "power" },
+      { labelAr: "الوزن", labelEn: "Weight", value: "28 كجم", icon: "weight" },
+      { labelAr: "البطارية", labelEn: "Battery", value: "960Wh ليثيوم", icon: "battery" },
+      { labelAr: "الإطارات", labelEn: "Tires", value: "10 إنش أوف رود", icon: "size" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "سنة كاملة", icon: "shield" },
+    ],
   },
 
   // ──── Drift Scooters ────
@@ -120,6 +158,14 @@ export const products = [
       "/images/products/drift-36v/dimensions.png"
     ],
     rating: 4.7, reviewsCount: 89,
+    specs: [
+      { labelAr: "الجهد", labelEn: "Voltage", value: "36 فولت", icon: "power" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "15 كم/س", icon: "speed" },
+      { labelAr: "العمر المناسب", labelEn: "Age Range", value: "6+ سنوات", icon: "shield" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "65 كجم", icon: "weight" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "3 ساعات", icon: "time" },
+      { labelAr: "مدة التشغيل", labelEn: "Run Time", value: "40 دقيقة", icon: "battery" },
+    ],
   },
   {
     id: "p_7", slug: "drift-48v-beast", categorySlug: "drift-scooter", subcategorySlug: "48v",
@@ -133,6 +179,16 @@ export const products = [
       "/images/products/drift-48v-beast/dimensions.png"
     ],
     rating: 4.8, reviewsCount: 156,
+    specs: [
+      { labelAr: "الجهد", labelEn: "Voltage", value: "48 فولت", icon: "power" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "25 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "1000W", icon: "power" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "100 كجم", icon: "weight" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "4 ساعات", icon: "time" },
+      { labelAr: "مدة التشغيل", labelEn: "Run Time", value: "60 دقيقة", icon: "battery" },
+      { labelAr: "الإطارات", labelEn: "Tires", value: "8 إنش درفت", icon: "size" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "سنة كاملة", icon: "shield" },
+    ],
   },
   {
     id: "p_8", slug: "drift-360-spin", categorySlug: "drift-scooter", subcategorySlug: "360",
@@ -146,6 +202,14 @@ export const products = [
       "/images/products/drift-360-spin/dimensions.png"
     ],
     rating: 4.4, reviewsCount: 203,
+    specs: [
+      { labelAr: "دوران", labelEn: "Rotation", value: "360 درجة", icon: "speed" },
+      { labelAr: "الجهد", labelEn: "Voltage", value: "36 فولت", icon: "power" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "12 كم/س", icon: "speed" },
+      { labelAr: "العمر المناسب", labelEn: "Age Range", value: "6+ سنوات", icon: "shield" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "60 كجم", icon: "weight" },
+      { labelAr: "مدة التشغيل", labelEn: "Run Time", value: "30 دقيقة", icon: "battery" },
+    ],
   },
 
   // ──── Kids Scooters ────
