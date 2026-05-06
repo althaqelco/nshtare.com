@@ -7,6 +7,7 @@ export const b_2 = {
   readTime: 6,
   ctaCategory: 'drift-scooter',
   ctaLabel: 'تصفح سكوترات الدرفت',
+  relatedProducts: ['p_7', 'p_18'],
   content: `
 ## السكوتر الكهربائي vs سكوتر الدرفت
 

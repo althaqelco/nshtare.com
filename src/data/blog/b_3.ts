@@ -7,6 +7,7 @@ export const b_3 = {
   readTime: 5,
   ctaCategory: 'spare-parts',
   ctaLabel: 'تصفح قطع الغيار',
+  relatedProducts: ['p_1'],
   content: `
 ## كيف تحافظ على سكوترك الكهربائي؟
 

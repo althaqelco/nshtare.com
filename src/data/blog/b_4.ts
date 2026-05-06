@@ -7,6 +7,7 @@ export const b_4 = {
   readTime: 7,
   ctaCategory: 'electric-scooter',
   ctaLabel: 'تسوق السكوترات الآن',
+  relatedProducts: ['p_1', 'p_2'],
   content: `
 ## أسعار السكوترات الكهربائية في السعودية 2026
 

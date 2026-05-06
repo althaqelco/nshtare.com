@@ -5,6 +5,8 @@ import { CalendarDays, Clock, ChevronLeft, ArrowRight } from 'lucide-react';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ArticleSchema from '@/components/seo/ArticleSchema';
 import { getPostBySlug, blogPosts } from '@/data/blog';
+import { products } from '@/data';
+import EmbeddedProductCard from '@/components/blog/EmbeddedProductCard';
 
 const allSlugs = blogPosts.map((post) => post.slug);
 
@@ -120,6 +122,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {post.ctaLabel}
           </Link>
         </div>
+
+        {/* Contextual Commerce (Internal Linking) */}
+        {post.relatedProducts && post.relatedProducts.length > 0 && (
+          <div className="mt-16">
+            <h3 className="text-2xl font-black text-text mb-6">منتجات ذات صلة (مقترحة لك)</h3>
+            <div className="space-y-6">
+              {post.relatedProducts.map((productId: string) => {
+                const product = products.find((p: any) => p.id === productId);
+                if (!product) return null;
+                return <EmbeddedProductCard key={product.id} product={product} lang="ar" />;
+              })}
+            </div>
+          </div>
+        )}
 
       </div>
     </div>

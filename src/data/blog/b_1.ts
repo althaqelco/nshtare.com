@@ -7,6 +7,7 @@ export const b_1 = {
   readTime: 8,
   ctaCategory: 'electric-scooter',
   ctaLabel: 'تصفح السكوترات الكهربائية',
+  relatedProducts: ['p_1', 'p_2'],
   content: `
 ## ما هو السكوتر الكهربائي؟
 
