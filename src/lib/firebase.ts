@@ -14,10 +14,10 @@ const firebaseConfig = {
 };
 
 // Guard: skip initialization if API key is missing (e.g. during SSG build)
-let app: FirebaseApp | undefined;
-let db: Firestore | undefined;
-let storage: FirebaseStorage | undefined;
-let auth: Auth | undefined;
+let app = undefined as unknown as FirebaseApp;
+let db = undefined as unknown as Firestore;
+let storage = undefined as unknown as FirebaseStorage;
+let auth = undefined as unknown as Auth;
 
 if (firebaseConfig.apiKey) {
   app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
