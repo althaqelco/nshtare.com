@@ -9,44 +9,13 @@ export const metadata = {
   description: 'اقرأ أحدث المقالات والأدلة حول السكوترات الكهربائية في السعودية. نصائح الشراء، المقارنات، وأدلة الصيانة من خبراء نشتري.',
 };
 
-const blogPosts = [
-  {
-    slug: 'electric-scooter-buying-guide-saudi',
-    title: 'دليل شراء السكوتر الكهربائي في السعودية 2026',
-    excerpt: 'كل ما تحتاج معرفته قبل شراء سكوتر كهربائي: المواصفات، الأسعار، وأفضل الخيارات للمبتدئين والمحترفين.',
-    image: '/images/ui/seo_article_cover_1777998050466.png',
-    category: 'دليل شراء',
-    date: '2026-05-01',
-    readTime: 8,
-  },
-  {
-    slug: 'electric-scooter-vs-drift-scooter',
-    title: 'الفرق بين السكوتر الكهربائي وسكوتر الدرفت: أيهما يناسبك؟',
-    excerpt: 'مقارنة شاملة بين السكوتر الكهربائي وسكوتر الدرفت من حيث السرعة، المدى، السعر، والاستخدام المناسب.',
-    image: '/images/ui/seo_article_kick_1777998364132.png',
-    category: 'مقارنة',
-    date: '2026-04-25',
-    readTime: 6,
-  },
-  {
-    slug: 'electric-scooter-maintenance-tips',
-    title: '7 نصائح ذهبية لصيانة السكوتر الكهربائي وإطالة عمره',
-    excerpt: 'تعلم كيف تحافظ على سكوترك الكهربائي وتزيد عمره الافتراضي مع نصائح عملية من فريق الصيانة لدينا.',
-    image: '/images/ui/hero_kick_scooter_1777998272875.png',
-    category: 'صيانة',
-    date: '2026-04-18',
-    readTime: 5,
-  },
-  {
-    slug: 'electric-scooter-prices-saudi-2026',
-    title: 'أسعار السكوترات الكهربائية في السعودية 2026 — دليل محدّث',
-    excerpt: 'جدول محدّث بأسعار أشهر السكوترات الكهربائية المتوفرة في السوق السعودي مع مقارنة القيمة مقابل السعر.',
-    image: '/images/ui/og_kick_scooter_1777998286952.png',
-    category: 'أسعار',
-    date: '2026-04-10',
-    readTime: 7,
-  },
-];
+import { getAllPosts } from '@/data/blog';
+
+// Generate dynamic excerpts if they don't exist
+const blogPosts = getAllPosts().map(post => ({
+  ...post,
+  excerpt: post.excerpt || (post.content.split('\n').find((p: string) => p.trim().length > 20 && !p.startsWith('#')) || '').substring(0, 120) + '...'
+}));
 
 export default function BlogPage() {
   const breadcrumbs = [
