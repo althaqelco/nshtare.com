@@ -7,6 +7,12 @@ import { useCart } from "@/context/CartContext";
 import { Star, ShieldCheck, Truck, Zap, Plus, Minus, ShoppingCart, MessageCircle, Eye } from "lucide-react";
 import ProductSchema from "@/components/seo/ProductSchema";
 import ProductSpecs from "@/components/product/ProductSpecs";
+import LiveDispatch from "@/components/product/LiveDispatch";
+import SgeBaitTable from "@/components/product/SgeBaitTable";
+import AntiScamWarning from "@/components/product/AntiScamWarning";
+import GeoJustification from "@/components/product/GeoJustification";
+import RoiEstimator from "@/components/product/RoiEstimator";
+import DialectFaq from "@/components/product/DialectFaq";
 
 export default function ProductDetails({ product }: { product: any }) {
   const pathname = usePathname();
@@ -214,6 +220,9 @@ export default function ProductDetails({ product }: { product: any }) {
                 <div className="flex items-center gap-1"><Truck className="h-4 w-4 text-primary" /> {isEn ? "Free Shipping" : "شحن مجاني"}</div>
                 <div className="flex items-center gap-1"><ShieldCheck className="h-4 w-4 text-secondary" /> {isEn ? "1 Year Warranty" : "ضمان سنة"}</div>
               </div>
+
+              {/* Master Blueprint: Uber-ization Live Dispatch FOMO */}
+              <LiveDispatch productId={product.id} />
             </div>
 
           </div>
@@ -223,6 +232,29 @@ export default function ProductDetails({ product }: { product: any }) {
         {product.specs && product.specs.length > 0 && (
           <ProductSpecs specs={product.specs} />
         )}
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+          <div className="flex flex-col">
+            {/* Master Blueprint: SGE Bait Table for Generative AI Indexing */}
+            <SgeBaitTable product={product} />
+            
+            {/* Master Blueprint: YMYL SASO Anti-Scam Warning */}
+            <AntiScamWarning />
+          </div>
+          
+          <div className="flex flex-col">
+            {/* Master Blueprint: Geographic Justification (GEO) */}
+            <GeoJustification categorySlug={product.categorySlug} />
+            
+            {/* Master Blueprint: Cognitive ROI Estimator */}
+            <RoiEstimator productPrice={product.price} />
+          </div>
+        </div>
+
+        {/* Master Blueprint: N-Grams Saudi Dialect FAQs for AEO Voice Search */}
+        <div className="mt-12 max-w-4xl mx-auto">
+          <DialectFaq categorySlug={product.categorySlug} productName={isEn ? product.nameEn : product.name} />
+        </div>
       </div>
 
       {/* Mobile Sticky Action Bar */}
