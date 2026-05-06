@@ -225,6 +225,13 @@ export const products = [
       "/images/products/kids-spider/dimensions.png"
     ],
     rating: 4.9, reviewsCount: 512,
+    specs: [
+      { labelAr: "العجلات", labelEn: "Wheels", value: "3 عجلات مضيئة LED", icon: "size" },
+      { labelAr: "العمر المناسب", labelEn: "Age Range", value: "3-8 سنوات", icon: "shield" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "50 كجم", icon: "weight" },
+      { labelAr: "الارتفاع", labelEn: "Height", value: "قابل للتعديل 60-80 سم", icon: "size" },
+      { labelAr: "قابل للطي", labelEn: "Foldable", value: "نعم", icon: "size" },
+    ],
   },
   {
     id: "p_9", slug: "kids-girls-pink", categorySlug: "kids-scooter", subcategorySlug: "girls",
@@ -238,6 +245,13 @@ export const products = [
       "/images/products/kids-girls-pink/dimensions.png"
     ],
     rating: 4.8, reviewsCount: 287,
+    specs: [
+      { labelAr: "اللون", labelEn: "Color", value: "وردي فراشة", icon: "size" },
+      { labelAr: "العجلات", labelEn: "Wheels", value: "3 عجلات مضيئة", icon: "size" },
+      { labelAr: "العمر المناسب", labelEn: "Age Range", value: "3-8 سنوات", icon: "shield" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "50 كجم", icon: "weight" },
+      { labelAr: "قابل للطي", labelEn: "Foldable", value: "نعم", icon: "size" },
+    ],
   },
   {
     id: "p_10", slug: "kids-electric-mini", categorySlug: "kids-scooter", subcategorySlug: "budget-kids",
@@ -251,6 +265,14 @@ export const products = [
       "/images/products/kids-electric-mini/dimensions.png"
     ],
     rating: 4.3, reviewsCount: 178,
+    specs: [
+      { labelAr: "الموتور", labelEn: "Motor", value: "100W", icon: "power" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "10 كم/س", icon: "speed" },
+      { labelAr: "مدة التشغيل", labelEn: "Run Time", value: "45 دقيقة", icon: "battery" },
+      { labelAr: "العمر المناسب", labelEn: "Age Range", value: "5-12 سنة", icon: "shield" },
+      { labelAr: "الوزن الأقصى", labelEn: "Max Load", value: "50 كجم", icon: "weight" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "3 ساعات", icon: "time" },
+    ],
   },
 
   // ──── Smart Scooters ────
@@ -266,6 +288,16 @@ export const products = [
       "/images/products/smart-gps-pro/dimensions.png"
     ],
     rating: 4.7, reviewsCount: 34,
+    specs: [
+      { labelAr: "المدى", labelEn: "Range", value: "50 كم", icon: "battery" },
+      { labelAr: "السرعة القصوى", labelEn: "Max Speed", value: "30 كم/س", icon: "speed" },
+      { labelAr: "قوة الموتور", labelEn: "Motor Power", value: "400W", icon: "power" },
+      { labelAr: "الشاشة", labelEn: "Display", value: "LCD ملونة 4.5 إنش", icon: "size" },
+      { labelAr: "البلوتوث", labelEn: "Bluetooth", value: "5.0 + تطبيق جوال", icon: "speed" },
+      { labelAr: "GPS", labelEn: "GPS", value: "تتبع مباشر عبر التطبيق", icon: "size" },
+      { labelAr: "مقاومة الماء", labelEn: "Water Resistance", value: "IPX5", icon: "shield" },
+      { labelAr: "الضمان", labelEn: "Warranty", value: "سنة كاملة", icon: "shield" },
+    ],
   },
 
   // ──── Accessories ────
@@ -281,6 +313,12 @@ export const products = [
       "/images/products/scooter-helmet-pro/dimensions.png"
     ],
     rating: 4.6, reviewsCount: 98,
+    specs: [
+      { labelAr: "المقاس", labelEn: "Size", value: "L/XL قابل للتعديل", icon: "size" },
+      { labelAr: "الوزن", labelEn: "Weight", value: "280 جرام", icon: "weight" },
+      { labelAr: "المادة", labelEn: "Material", value: "ABS + EPS", icon: "shield" },
+      { labelAr: "التهوية", labelEn: "Ventilation", value: "12 فتحة تهوية", icon: "speed" },
+    ],
   },
   {
     id: "p_13", slug: "scooter-bag-carry", categorySlug: "scooter-accessories", subcategorySlug: "bags",
@@ -294,6 +332,12 @@ export const products = [
       "/images/products/scooter-bag-carry/dimensions.png"
     ],
     rating: 4.5, reviewsCount: 156,
+    specs: [
+      { labelAr: "المادة", labelEn: "Material", value: "أكسفورد 600D مقاوم للماء", icon: "shield" },
+      { labelAr: "الأبعاد", labelEn: "Dimensions", value: "115×45×50 سم", icon: "size" },
+      { labelAr: "الوزن", labelEn: "Weight", value: "1.2 كجم", icon: "weight" },
+      { labelAr: "التوافق", labelEn: "Compatibility", value: "سكوترات 10 إنش", icon: "size" },
+    ],
   },
   {
     id: "p_14", slug: "universal-charger", categorySlug: "scooter-accessories", subcategorySlug: "chargers",
@@ -307,6 +351,12 @@ export const products = [
       "/images/products/universal-charger/dimensions.png"
     ],
     rating: 4.4, reviewsCount: 234,
+    specs: [
+      { labelAr: "الجهد", labelEn: "Voltage", value: "42V 2A", icon: "power" },
+      { labelAr: "التوافق", labelEn: "Compatibility", value: "36V ليثيوم عالمي", icon: "size" },
+      { labelAr: "وقت الشحن", labelEn: "Charge Time", value: "4-6 ساعات", icon: "time" },
+      { labelAr: "الحماية", labelEn: "Protection", value: "ضد الشحن الزائد + حرارة", icon: "shield" },
+    ],
   },
 
   // ──── Spare Parts ────
@@ -322,6 +372,12 @@ export const products = [
       "/images/products/solid-tire-10inch/dimensions.png"
     ],
     rating: 4.7, reviewsCount: 423,
+    specs: [
+      { labelAr: "المقاس", labelEn: "Size", value: "10 × 2.5 إنش", icon: "size" },
+      { labelAr: "النوع", labelEn: "Type", value: "صلب مقاوم للثقب", icon: "shield" },
+      { labelAr: "التوافق", labelEn: "Compatibility", value: "شاومي M365 / ناينبوت", icon: "size" },
+      { labelAr: "العمر الافتراضي", labelEn: "Lifespan", value: "5000+ كم", icon: "battery" },
+    ],
   },
   {
     id: "p_16", slug: "brake-pads-set", categorySlug: "spare-parts", subcategorySlug: "brakes",
@@ -335,6 +391,12 @@ export const products = [
       "/images/products/brake-pads-set/dimensions.png"
     ],
     rating: 4.5, reviewsCount: 312,
+    specs: [
+      { labelAr: "التوافق", labelEn: "Compatibility", value: "شاومي / ناينبوت / عام", icon: "size" },
+      { labelAr: "المادة", labelEn: "Material", value: "سيراميك عالي الأداء", icon: "shield" },
+      { labelAr: "القطع", labelEn: "Pieces", value: "زوج (يمين + يسار)", icon: "size" },
+      { labelAr: "العمر الافتراضي", labelEn: "Lifespan", value: "3000+ كم", icon: "battery" },
+    ],
   },
 
   // ──── NEW: Keyword Gap Products ────
