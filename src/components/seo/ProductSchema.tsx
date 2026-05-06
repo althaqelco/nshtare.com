@@ -4,43 +4,68 @@ interface ProductSchemaProps {
   name: string;
   nameEn?: string;
   image: string;
+  gallery?: string[];
   description: string;
   sku: string;
   url: string;
   price: number;
+  originalPrice?: number;
   rating: number;
   reviewsCount: number;
   currency?: string;
   inStock?: boolean;
 }
 
+/**
+ * Product Schema (E-E-A-T Layer 3)
+ * 
+ * Full Google Merchant Center compliant schema including:
+ * - Multi-image gallery support (Google Images SEO)
+ * - WarrantyPromise (1 year)
+ * - MerchantReturnPolicy (linked to org-level @id)
+ * - ShippingDetails for KSA with realistic delivery windows
+ * - AggregateRating with proper bestRating/worstRating
+ * - Static priceValidUntil date (no crawl instability)
+ */
 export default function ProductSchema({
   name,
   nameEn,
   image,
+  gallery,
   description,
   sku,
   url,
   price,
+  originalPrice,
   rating,
   reviewsCount,
   currency = 'SAR',
   inStock = true,
 }: ProductSchemaProps) {
-  const schemaData = {
+  // Build image array from gallery or fallback to single image
+  const imageUrls = gallery && gallery.length > 0
+    ? gallery.map(img => `https://nshtare.com${img}`)
+    : [`https://nshtare.com${image}`];
+
+  const schemaData: Record<string, unknown> = {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": name,
     "alternateName": nameEn,
-    "image": [
-      `https://nshtare.com${image}`
-    ],
+    "image": imageUrls,
     "description": description,
     "sku": sku,
+    "mpn": sku,
+    "gtin13": undefined, // Add real GTIN when available
     "brand": {
       "@type": "Brand",
       "name": "نشتري - Nshtare"
     },
+    "manufacturer": {
+      "@type": "Organization",
+      "@id": "https://nshtare.com/#organization"
+    },
+    "category": "Electric Scooters",
     "offers": {
       "@type": "Offer",
       "url": `https://nshtare.com${url}`,
@@ -51,7 +76,7 @@ export default function ProductSchema({
       "availability": inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       "seller": {
         "@type": "Organization",
-        "name": "Nshtare"
+        "@id": "https://nshtare.com/#organization"
       },
       "shippingDetails": {
         "@type": "OfferShippingDetails",
@@ -75,18 +100,13 @@ export default function ProductSchema({
           "transitTime": {
             "@type": "QuantitativeValue",
             "minValue": 1,
-            "maxValue": 3,
+            "maxValue": 4,
             "unitCode": "d"
           }
         }
       },
       "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "SA",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 14,
-        "returnMethod": "https://schema.org/ReturnByMail",
-        "returnFees": "https://schema.org/FreeReturn"
+        "@id": "https://nshtare.com/#returnpolicy"
       }
     },
     "aggregateRating": {
@@ -95,8 +115,23 @@ export default function ProductSchema({
       "reviewCount": reviewsCount,
       "bestRating": "5",
       "worstRating": "1"
-    }
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Warranty",
+        "value": "1 Year Official Warranty"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Payment Method",
+        "value": "Cash on Delivery"
+      }
+    ]
   };
+
+  // Remove undefined fields
+  if (!schemaData.gtin13) delete schemaData.gtin13;
 
   return (
     <script

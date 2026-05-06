@@ -74,10 +74,12 @@ export default function ProductDetails({ product }: { product: any }) {
         name={product.name}
         nameEn={product.nameEn}
         image={product.image}
-        description={product.name}
+        gallery={product.gallery}
+        description={`${product.name} - ${isEn ? 'Buy online with free shipping across Saudi Arabia. 1 year warranty. Cash on delivery available.' : 'اشترِ اونلاين مع شحن مجاني لجميع مدن السعودية. ضمان سنة كاملة. الدفع عند الاستلام.'}`}
         sku={product.id}
         url={isEn ? `/en/${product.categorySlug}/${product.slug}` : `/${product.categorySlug}/${product.slug}`}
         price={product.price}
+        originalPrice={product.originalPrice}
         rating={product.rating}
         reviewsCount={product.reviewsCount}
       />
