@@ -13,6 +13,7 @@ import AntiScamWarning from "@/components/product/AntiScamWarning";
 import GeoJustification from "@/components/product/GeoJustification";
 import RoiEstimator from "@/components/product/RoiEstimator";
 import DialectFaq from "@/components/product/DialectFaq";
+import ProductReviews from "@/components/product/ProductReviews";
 
 export default function ProductDetails({ product }: { product: any }) {
   const pathname = usePathname();
@@ -255,6 +256,9 @@ export default function ProductDetails({ product }: { product: any }) {
         <div className="mt-12 max-w-4xl mx-auto">
           <DialectFaq categorySlug={product.categorySlug} productName={isEn ? product.nameEn : product.name} product={product} />
         </div>
+
+        {/* Master Blueprint: Localized Social Proof & Rich Snippets */}
+        <ProductReviews product={product} />
       </div>
 
       {/* Mobile Sticky Action Bar */}
