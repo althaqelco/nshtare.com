@@ -221,13 +221,27 @@ export const products = [
   {
     id: "p_13", slug: "scooter-bag-carry", categorySlug: "scooter-accessories", subcategorySlug: "bags",
     name: "شنطة حمل سكوتر مقاومة للماء", nameEn: "Waterproof Scooter Carry Bag",
-    price: 89, image: "/images/products/product_scooter_bag_1777998839570.png",
+    price: 89, 
+    image: "/images/products/scooter-bag-carry/main.png",
+    gallery: [
+      "/images/products/scooter-bag-carry/main.png",
+      "/images/products/scooter-bag-carry/lifestyle.png",
+      "/images/products/scooter-bag-carry/features.png",
+      "/images/products/scooter-bag-carry/dimensions.png"
+    ],
     rating: 4.5, reviewsCount: 156,
   },
   {
     id: "p_14", slug: "universal-charger", categorySlug: "scooter-accessories", subcategorySlug: "chargers",
     name: "شاحن سكوتر كهربائي عالمي سريع", nameEn: "Universal Fast Electric Scooter Charger",
-    price: 79, originalPrice: 119, image: "/images/products/product_scooter_charger_1777998905795.png",
+    price: 79, originalPrice: 119, 
+    image: "/images/products/universal-charger/main.png",
+    gallery: [
+      "/images/products/universal-charger/main.png",
+      "/images/products/universal-charger/lifestyle.png",
+      "/images/products/universal-charger/features.png",
+      "/images/products/universal-charger/dimensions.png"
+    ],
     rating: 4.4, reviewsCount: 234,
   },
 
@@ -235,13 +249,27 @@ export const products = [
   {
     id: "p_15", slug: "solid-tire-10inch", categorySlug: "spare-parts", subcategorySlug: "wheels",
     name: "إطار صلب 10 إنش مقاوم للثقب", nameEn: "10-inch Puncture-Proof Solid Tire",
-    price: 49, image: "/images/products/product_solid_tire_1777998891232.png",
+    price: 49, 
+    image: "/images/products/solid-tire-10inch/main.png",
+    gallery: [
+      "/images/products/solid-tire-10inch/main.png",
+      "/images/products/solid-tire-10inch/lifestyle.png",
+      "/images/products/solid-tire-10inch/features.png",
+      "/images/products/solid-tire-10inch/dimensions.png"
+    ],
     rating: 4.7, reviewsCount: 423,
   },
   {
     id: "p_16", slug: "brake-pads-set", categorySlug: "spare-parts", subcategorySlug: "brakes",
     name: "طقم فرامل احترافي للسكوتر", nameEn: "Professional Scooter Brake Pads Set",
-    price: 35, image: "/images/products/product_brake_pads_1777998921286.png",
+    price: 35, 
+    image: "/images/products/brake-pads-set/main.png",
+    gallery: [
+      "/images/products/brake-pads-set/main.png",
+      "/images/products/brake-pads-set/lifestyle.png",
+      "/images/products/brake-pads-set/features.png",
+      "/images/products/brake-pads-set/dimensions.png"
+    ],
     rating: 4.5, reviewsCount: 312,
   },
 ];
