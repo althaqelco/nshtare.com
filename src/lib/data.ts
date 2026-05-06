@@ -272,6 +272,174 @@ export const products = [
     ],
     rating: 4.5, reviewsCount: 312,
   },
+
+  // ──── NEW: Keyword Gap Products ────
+  // These products fill keyword gaps identified from keywords.md
+
+  // KW: سكوتر كهربائي ثلاث عجلات، سكوتر بثلاث عجلات، سكوتر ثلاث عجلات
+  {
+    id: "p_17", slug: "electric-three-wheel", categorySlug: "electric-scooter", subcategorySlug: "three-wheel",
+    name: "سكوتر كهربائي ثلاث عجلات مع سلة للتسوق", nameEn: "3-Wheel Electric Scooter with Basket",
+    price: 1599, originalPrice: 1999,
+    image: "/images/products/electric-three-wheel/main.png",
+    gallery: [
+      "/images/products/electric-three-wheel/main.png",
+      "/images/products/electric-three-wheel/lifestyle.png",
+      "/images/products/electric-three-wheel/features.png",
+      "/images/products/electric-three-wheel/dimensions.png"
+    ],
+    rating: 4.6, reviewsCount: 89,
+  },
+
+  // KW: سكوتر كهربائي صغير، سكوتر صغير، سكوتر عادي
+  {
+    id: "p_18", slug: "foldable-mini", categorySlug: "electric-scooter",
+    name: "سكوتر كهربائي صغير قابل للطي خفيف الوزن", nameEn: "Compact Foldable Mini Electric Scooter",
+    price: 799, originalPrice: 999,
+    image: "/images/products/foldable-mini/main.png",
+    gallery: [
+      "/images/products/foldable-mini/main.png",
+      "/images/products/foldable-mini/lifestyle.png",
+      "/images/products/foldable-mini/features.png",
+      "/images/products/foldable-mini/dimensions.png"
+    ],
+    rating: 4.4, reviewsCount: 213,
+  },
+
+  // KW: سكوتر كريزي
+  {
+    id: "p_19", slug: "crazy-stunts", categorySlug: "drift-scooter", subcategorySlug: "electric",
+    name: "سكوتر كريزي للحركات الاستعراضية والتفحيط", nameEn: "Crazy Stunts Electric Drift Scooter",
+    price: 749, originalPrice: 999,
+    image: "/images/products/crazy-stunts/main.png",
+    gallery: [
+      "/images/products/crazy-stunts/main.png",
+      "/images/products/crazy-stunts/lifestyle.png",
+      "/images/products/crazy-stunts/features.png",
+      "/images/products/crazy-stunts/dimensions.png"
+    ],
+    rating: 4.7, reviewsCount: 178,
+  },
+
+  // KW: سكوتر درفت رخيص، سكوتر درفت 100 ريال
+  {
+    id: "p_20", slug: "drift-budget-starter", categorySlug: "drift-scooter", subcategorySlug: "budget",
+    name: "سكوتر درفت رخيص للمبتدئين اقتصادي", nameEn: "Budget Starter Drift Scooter",
+    price: 299, originalPrice: 449,
+    image: "/images/products/drift-budget-starter/main.png",
+    gallery: [
+      "/images/products/drift-budget-starter/main.png",
+      "/images/products/drift-budget-starter/lifestyle.png",
+      "/images/products/drift-budget-starter/features.png",
+      "/images/products/drift-budget-starter/dimensions.png"
+    ],
+    rating: 4.2, reviewsCount: 345,
+  },
+
+  // KW: سكوتر اطفال ثلاث عجلات
+  {
+    id: "p_21", slug: "kids-three-wheel-led", categorySlug: "kids-scooter", subcategorySlug: "three-wheel-kids",
+    name: "سكوتر أطفال ثلاث عجلات مضيء LED", nameEn: "LED Light-Up 3-Wheel Kids Scooter",
+    price: 119, originalPrice: 179,
+    image: "/images/products/kids-three-wheel-led/main.png",
+    gallery: [
+      "/images/products/kids-three-wheel-led/main.png",
+      "/images/products/kids-three-wheel-led/lifestyle.png",
+      "/images/products/kids-three-wheel-led/features.png",
+      "/images/products/kids-three-wheel-led/dimensions.png"
+    ],
+    rating: 4.8, reviewsCount: 467,
+  },
+
+  // KW: سكوتر كهربائي بكرسي، كرسي سكوتر، سكوتر كرسي، سكوتر كبار السن، سكوتر مقعدين
+  {
+    id: "p_22", slug: "mobility-chair-scooter", categorySlug: "electric-scooter", subcategorySlug: "with-seat",
+    name: "سكوتر كهربائي بكرسي متحرك لكبار السن والراحة", nameEn: "Electric Mobility Chair Scooter for Seniors",
+    price: 2899, originalPrice: 3499,
+    image: "/images/products/mobility-chair-scooter/main.png",
+    gallery: [
+      "/images/products/mobility-chair-scooter/main.png",
+      "/images/products/mobility-chair-scooter/lifestyle.png",
+      "/images/products/mobility-chair-scooter/features.png",
+      "/images/products/mobility-chair-scooter/dimensions.png"
+    ],
+    rating: 4.9, reviewsCount: 56,
+  },
+
+  // KW: بطارية سكوتر، بطارية سكوتر درفت، بطارية سكوتر درفت 36 فولت، بطاريات سكوتر
+  {
+    id: "p_23", slug: "drift-battery-36v", categorySlug: "scooter-accessories", subcategorySlug: "batteries",
+    name: "بطارية سكوتر درفت 36 فولت أصلية عالية الأداء", nameEn: "Original 36V Drift Scooter High-Performance Battery",
+    price: 199, originalPrice: 279,
+    image: "/images/products/drift-battery-36v/main.png",
+    gallery: [
+      "/images/products/drift-battery-36v/main.png",
+      "/images/products/drift-battery-36v/lifestyle.png",
+      "/images/products/drift-battery-36v/features.png",
+      "/images/products/drift-battery-36v/dimensions.png"
+    ],
+    rating: 4.6, reviewsCount: 189,
+  },
+
+  // KW: شاحن سكوتر درفت، شاحن سكوتر كهربائي
+  {
+    id: "p_24", slug: "drift-charger-fast", categorySlug: "scooter-accessories", subcategorySlug: "chargers",
+    name: "شاحن سكوتر درفت سريع 36V-48V متوافق مع جميع الموديلات", nameEn: "Fast Drift Scooter Charger 36V-48V Universal",
+    price: 69, originalPrice: 99,
+    image: "/images/products/drift-charger-fast/main.png",
+    gallery: [
+      "/images/products/drift-charger-fast/main.png",
+      "/images/products/drift-charger-fast/lifestyle.png",
+      "/images/products/drift-charger-fast/features.png",
+      "/images/products/drift-charger-fast/dimensions.png"
+    ],
+    rating: 4.5, reviewsCount: 267,
+  },
+
+  // KW: إضاءة سكوتر (fills lights subcategory)
+  {
+    id: "p_25", slug: "led-lights-kit", categorySlug: "scooter-accessories", subcategorySlug: "lights",
+    name: "طقم إضاءة LED للسكوتر مقاوم للماء ملون", nameEn: "Waterproof RGB LED Scooter Lights Kit",
+    price: 59, originalPrice: 89,
+    image: "/images/products/led-lights-kit/main.png",
+    gallery: [
+      "/images/products/led-lights-kit/main.png",
+      "/images/products/led-lights-kit/lifestyle.png",
+      "/images/products/led-lights-kit/features.png",
+      "/images/products/led-lights-kit/dimensions.png"
+    ],
+    rating: 4.3, reviewsCount: 198,
+  },
+
+  // KW: كنترولر سكوتر (fills controllers subcategory)
+  {
+    id: "p_26", slug: "controller-universal", categorySlug: "spare-parts", subcategorySlug: "controllers",
+    name: "كنترولر سكوتر كهربائي عالمي 36V-48V قابل للبرمجة", nameEn: "Universal Programmable Electric Scooter Controller 36V-48V",
+    price: 149, originalPrice: 199,
+    image: "/images/products/controller-universal/main.png",
+    gallery: [
+      "/images/products/controller-universal/main.png",
+      "/images/products/controller-universal/lifestyle.png",
+      "/images/products/controller-universal/features.png",
+      "/images/products/controller-universal/dimensions.png"
+    ],
+    rating: 4.4, reviewsCount: 87,
+  },
+
+  // KW: موتور سكوتر (fills motors subcategory)
+  {
+    id: "p_27", slug: "motor-350w-hub", categorySlug: "spare-parts", subcategorySlug: "motors",
+    name: "موتور سكوتر كهربائي 350 واط بدون فرش عالي الكفاءة", nameEn: "350W Brushless Hub Motor for Electric Scooter",
+    price: 249, originalPrice: 349,
+    image: "/images/products/motor-350w-hub/main.png",
+    gallery: [
+      "/images/products/motor-350w-hub/main.png",
+      "/images/products/motor-350w-hub/lifestyle.png",
+      "/images/products/motor-350w-hub/features.png",
+      "/images/products/motor-350w-hub/dimensions.png"
+    ],
+    rating: 4.7, reviewsCount: 134,
+  },
 ];
 
 // ──── Utility Functions ────
