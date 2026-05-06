@@ -2,6 +2,7 @@ export const p_18 = {
   id: 'p_18',
   slug: 'foldable-mini',
   categorySlug: 'electric-scooter',
+  subcategorySlug: 'foldable',
   name: 'سكوتر كهربائي صغير قابل للطي خفيف الوزن',
   nameEn: 'Compact Foldable Mini Electric Scooter',
   price: 799,

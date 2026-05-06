@@ -12,7 +12,9 @@ export const p_22 = {
     '/images/products/mobility-chair-scooter/main.png',
     '/images/products/mobility-chair-scooter/lifestyle.png',
     '/images/products/mobility-chair-scooter/features.png',
-    '/images/products/mobility-chair-scooter/dimensions.png'
+    '/images/products/mobility-chair-scooter/dimensions.png',
+    '/images/products/mobility-chair-scooter/angle1.png',
+    '/images/products/mobility-chair-scooter/angle2.png'
   ],
   rating: 4.9,
   reviewsCount: 56,
@@ -85,15 +87,20 @@ export const p_22 = {
     aggregateRating: { ratingValue: "4.9", reviewCount: "56" },
     reviews: [
       { author: "أبو محمد", rating: 5, date: "2026-03-12", title: "جودة تستحق القيمة", text: "اشتريته للوالد وبصراحة فرق كبير في نفسيته. صار يروح المسجد والمول بدون ما يتعب. الجهاز قوي جداً وفخم.", verified: true },
-      { author: "سارة العتيبي", rating: 5, date: "2026-04-01", title: "آمن ومريح", text: "أكثر شي عجبني فيه الأمان، بمجرد ما يفك يده يوقف السكوتر مكانه. الكرسي مريح جداً كأنه كرسي سيارة.", verified: true }
+      { author: "سارة العتيبي", rating: 5, date: "2026-04-01", title: "آمن ومريح", text: "أكثر شي عجبني فيه الأمان، بمجرد ما يفك يده يوقف السكوتر مكانه. الكرسي مريح جداً كأنه كرسي سيارة.", verified: true },
+      { author: "عبدالرحمن المالكي", rating: 5, date: "2026-04-18", title: "استثمار يستاهل", text: "السعر مو رخيص بس يستاهل كل ريال. الوالدة صارت تطلع المول وترجع وهي مرتاحة. البطارية تطول مرة.", verified: true }
     ]
   },
   faqs: [
     { q: 'هل يحتاج رخصة قيادة؟', a: 'لا، الجهاز مصنف ككرسي متحرك كهربائي (وسيلة تنقل طبية) ولا يتطلب أي رخصة قيادة.' },
-    { q: 'هل يدخل في مصاعد البيوت والمولات؟', a: 'نعم، أبعاده مصممة لتناسب جميع المصاعد القياسية في المولات والمباني السكنية.' }
+    { q: 'هل يدخل في مصاعد البيوت والمولات؟', a: 'نعم، أبعاده مصممة لتناسب جميع المصاعد القياسية في المولات والمباني السكنية.' },
+    { q: 'هل ينطوي للسيارة؟', a: 'الكرسي قابل للفك والتخزين، لكن هيكله الأساسي يحتاج مساحة في الشنطة. يناسب سيارات الدفع الرباعي والفانات.' },
+    { q: 'كم يطول الشحن؟', a: 'الشحن الكامل يأخذ حوالي 6-8 ساعات ويوفر مدى يصل إلى 40 كم للتنقلات اليومية.' }
   ],
   faqsEn: [
     { q: 'Is a driving license required?', a: 'No, the device is classified as an electric wheelchair (medical mobility aid) and does not require a license.' },
-    { q: 'Does it fit in elevators?', a: 'Yes, its dimensions are designed to fit all standard elevators in malls and residential buildings.' }
+    { q: 'Does it fit in elevators?', a: 'Yes, its dimensions are designed to fit all standard elevators in malls and residential buildings.' },
+    { q: 'Can it fold for car transport?', a: 'The seat can be detached and stored, but the main frame requires trunk space. It fits SUVs and vans.' },
+    { q: 'How long does charging take?', a: 'A full charge takes about 6-8 hours and provides a range of up to 40 km for daily commuting.' }
   ]
 };

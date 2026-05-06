@@ -12,7 +12,9 @@ export const p_20 = {
     '/images/products/drift-budget-starter/main.png',
     '/images/products/drift-budget-starter/lifestyle.png',
     '/images/products/drift-budget-starter/features.png',
-    '/images/products/drift-budget-starter/dimensions.png'
+    '/images/products/drift-budget-starter/dimensions.png',
+    '/images/products/drift-budget-starter/angle1.png',
+    '/images/products/drift-budget-starter/angle2.png'
   ],
   rating: 4.2,
   reviewsCount: 345,
@@ -79,15 +81,20 @@ export const p_20 = {
     aggregateRating: { ratingValue: "4.2", reviewCount: "345" },
     reviews: [
       { author: "أم عبدالله", rating: 5, date: "2026-02-15", title: "سعر ممتاز", text: "أفضل سكوتر درفت بسعر رخيص. ولدي عمره 6 سنوات وتعلمه بسرعة ومرة مستانس عليه.", verified: true },
-      { author: "صالح الغامدي", rating: 4, date: "2026-01-20", title: "جيد جداً للمبتدئين", text: "الخامات مقبولة جداً بالنسبة للسعر. البطارية تقعد نص ساعة تقريباً وهذا كافي للعب اليومي.", verified: true }
+      { author: "صالح الغامدي", rating: 4, date: "2026-01-20", title: "جيد جداً للمبتدئين", text: "الخامات مقبولة جداً بالنسبة للسعر. البطارية تقعد نص ساعة تقريباً وهذا كافي للعب اليومي.", verified: true },
+      { author: "أم ريان", rating: 5, date: "2026-03-10", title: "هدية العيد المثالية", text: "جبته لبنتي هدية عيد وفرحت مرة. سعره ممتاز والتوصيل كان سريع. الجودة مقبولة جداً لأول سكوتر.", verified: true }
     ]
   },
   faqs: [
     { q: 'هل ينفع للأوزان الكبيرة؟', a: 'لا، هذا الموديل مخصص للأطفال الصغار بوزن أقصى 50 كجم فقط.' },
-    { q: 'كم ساعة يشحن؟', a: 'يحتاج شحن من 4 إلى 5 ساعات ويوفر وقت لعب متواصل يصل لـ 25-30 دقيقة.' }
+    { q: 'كم ساعة يشحن؟', a: 'يحتاج شحن من 4 إلى 5 ساعات ويوفر وقت لعب متواصل يصل لـ 25-30 دقيقة.' },
+    { q: 'هل يحتاج تركيب؟', a: 'تركيبه بسيط جداً ويجي مع دليل واضح. خلال 15 دقيقة يكون جاهز للاستخدام.' },
+    { q: 'يشتغل على بلاط أو سيراميك؟', a: 'ممتاز جداً على البلاط والسيراميك والأسطح الناعمة. الإطارات الخلفية مصممة خصيصاً للانزلاق على هذه الأسطح.' }
   ],
   faqsEn: [
     { q: 'Is it suitable for adults?', a: 'No, this model is specifically designed for small children with a maximum weight of 50 kg.' },
-    { q: 'How long does it charge?', a: 'It requires 4-5 hours of charging and provides about 25-30 minutes of continuous playtime.' }
+    { q: 'How long does it charge?', a: 'It requires 4-5 hours of charging and provides about 25-30 minutes of continuous playtime.' },
+    { q: 'Does it require assembly?', a: 'Assembly is very simple with a clear guide included. It can be ready in about 15 minutes.' },
+    { q: 'Does it work on tile or ceramic?', a: 'It works excellently on tile, ceramic, and smooth surfaces. The rear wheels are specifically designed for sliding on these surfaces.' }
   ]
 };

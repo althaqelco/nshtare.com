@@ -73,15 +73,20 @@ export const p_24 = {
     aggregateRating: { ratingValue: "4.5", reviewCount: "267" },
     reviews: [
       { author: "ياسر الحربي", rating: 5, date: "2026-03-05", title: "أفضل من الشاحن الأصلي", text: "شاحن بطل وسريع وما يحتر وقت الشحن. الإضاءة حقت الشحن واضحة وممتازة.", verified: true },
-      { author: "أم فيصل", rating: 4, date: "2026-04-15", title: "جيد جداً", text: "يشتغل تمام على سكوتر ولدي الـ 36 فولت. وصل بسرعة والتغليف كان ممتاز.", verified: true }
+      { author: "أم فيصل", rating: 4, date: "2026-04-15", title: "جيد جداً", text: "يشتغل تمام على سكوتر ولدي الـ 36 فولت. وصل بسرعة والتغليف كان ممتاز.", verified: true },
+      { author: "علي الزهراني", rating: 5, date: "2026-04-28", title: "أفضل شاحن جربته", text: "ما يحتر زي الشواحن التقليد. الإضاءة واضحة وعملية والشحن يخلص بسرعة.", verified: true }
     ]
   },
   faqs: [
     { q: 'يركب على سكوتر شاومي؟', a: 'لا، هذا الشاحن مخصص لسكوترات الدرفت (3 فتحات). سكوتر شاومي له منفذ مختلف تماماً.' },
-    { q: 'ليش الشاحن يسخن شوي؟', a: 'من الطبيعي ارتفاع الحرارة البسيط أثناء تحويل الطاقة، لكن شاحننا مصمم بمبدد حرارة يحميه من الاحتراق.' }
+    { q: 'ليش الشاحن يسخن شوي؟', a: 'من الطبيعي ارتفاع الحرارة البسيط أثناء تحويل الطاقة، لكن شاحننا مصمم بمبدد حرارة يحميه من الاحتراق.' },
+    { q: 'هل الشاحن يوقف لما تمتلي البطارية؟', a: 'نعم، فيه نظام شحن ذكي يتوقف تلقائياً ويتحول المؤشر من أحمر إلى أخضر.' },
+    { q: 'كم طول الكيبل؟', a: 'الكيبل بطول 1.5 متر تقريباً، مما يوفر مرونة في اختيار مكان الشحن.' }
   ],
   faqsEn: [
     { q: 'Does it work for Xiaomi scooters?', a: 'No, this charger is for drift scooters (3-pin). Xiaomi scooters use a completely different port.' },
-    { q: 'Why does it get slightly warm?', a: 'Slight warming is normal during power conversion, but our charger is designed with heat dissipation to prevent burning.' }
+    { q: 'Why does it get slightly warm?', a: 'Slight warming is normal during power conversion, but our charger is designed with heat dissipation to prevent burning.' },
+    { q: 'Does it stop when the battery is full?', a: 'Yes, it has smart charging technology that automatically stops and the LED indicator turns from red to green.' },
+    { q: 'How long is the cable?', a: 'The cable is approximately 1.5 meters long, providing flexibility in choosing a charging location.' }
   ]
 };

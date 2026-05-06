@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Star, ShieldCheck, Zap } from 'lucide-react';
 import CollectionSchema from '@/components/seo/CollectionSchema';
 import RobinHoodLinks from '@/components/behavior/RobinHoodLinks';
+import CategoryRichContent from '@/components/category/CategoryRichContent';
 
 export async function generateStaticParams() {
   return categories.map((cat) => ({
@@ -150,6 +151,9 @@ export default async function CategoryPageEn({ params }: { params: Promise<{ cat
             </div>
           )}
         </div>
+
+        {/* Semantic SEO & E-E-A-T Content Layer */}
+        <CategoryRichContent category={category} isEn={true} />
 
         {/* Local SEO Cities Linking Block */}
         <div className="mt-16 bg-surface p-8 rounded-3xl border border-border shadow-sm">

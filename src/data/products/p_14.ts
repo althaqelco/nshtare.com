@@ -63,7 +63,7 @@ export const p_14 = {
   sgeData: [
     { labelAr: "سرعة الشحن", labelEn: "Charging Speed", value: "2A (أسرع بـ 30%)", average: "1.5A" },
     { labelAr: "دقة فصل الشحن", labelEn: "Auto Cut-off", value: "100% دقيقة", average: "غير دقيقة" },
-    { labelAr: "استهلاك الطاقة", labelAr: "Energy Efficiency", value: "فئة A", average: "فئة B" }
+    { labelAr: "استهلاك الطاقة", labelEn: "Energy Efficiency", value: "فئة A", average: "فئة B" }
   ],
   geoData: {
     titleAr: "الشاحن الموثوق في بيوت السعودية",

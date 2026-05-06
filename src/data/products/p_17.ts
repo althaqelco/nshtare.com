@@ -85,15 +85,20 @@ export const p_17 = {
     aggregateRating: { ratingValue: "4.6", reviewCount: "89" },
     reviews: [
       { author: "أبو فهد", rating: 5, date: "2026-03-02", title: "آمن جداً للوالد", text: "اشتريته للوالد الله يحفظه، جداً ممتاز وآمن. السلة ميزة بطلة يقدر يروح فيها المسجد ويجيب أغراض البيت البسيطة.", verified: true },
-      { author: "هيا السبيعي", rating: 5, date: "2026-03-20", title: "مريح في المجمع", text: "مريح جداً في المجمع السكني، صرت أخلص مشاويري فيه وبدون تعب. التوازن فيه 100%.", verified: true }
+      { author: "هيا السبيعي", rating: 5, date: "2026-03-20", title: "مريح في المجمع", text: "مريح جداً في المجمع السكني، صرت أخلص مشاويري فيه وبدون تعب. التوازن فيه 100%.", verified: true },
+      { author: "عبدالعزيز المطيري", rating: 4, date: "2026-04-08", title: "ممتاز بس ثقيل شوي", text: "الجهاز ممتاز من ناحية الأمان والاستقرار، بس وزنه ثقيل شوي لما تبي تنقله بالسيارة. غير كذا كل شي تمام.", verified: true }
     ]
   },
   faqs: [
     { q: 'هل يحتاج لموازنة؟', a: 'لا، هو متوازن ذاتياً بثلاث عجلات، ما يحتاج منك أي مجهود في التوازن.' },
-    { q: 'كم يشيل وزن؟', a: 'يتحمل حتى 120 كجم بثبات تام.' }
+    { q: 'كم يشيل وزن؟', a: 'يتحمل حتى 120 كجم بثبات تام.' },
+    { q: 'هل يمشي على رمل أو أرض خشنة؟', a: 'مصمم بشكل أساسي للأسطح المستوية مثل الأرصفة والممرات. الرمل والأرض الخشنة ممكن تبطئ الحركة.' },
+    { q: 'كم يمشي بالشحنة الواحدة؟', a: 'يوفر مدى يصل إلى 35 كم بالشحنة الواحدة، وهذا يعتمد على وزن الراكب وطبيعة الأرض.' }
   ],
   faqsEn: [
     { q: 'Does it need balancing?', a: 'No, it is self-balancing with three wheels; no manual effort is required.' },
-    { q: 'What is the max weight?', a: 'It supports up to 120 kg with full stability.' }
+    { q: 'What is the max weight?', a: 'It supports up to 120 kg with full stability.' },
+    { q: 'Can it go on sand or rough terrain?', a: 'It is designed primarily for flat surfaces like sidewalks and pathways. Sand and rough terrain may slow it down.' },
+    { q: 'What is the range per charge?', a: 'It provides a range of up to 35 km per charge, depending on rider weight and terrain.' }
   ]
 };

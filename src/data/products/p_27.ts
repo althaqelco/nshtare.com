@@ -79,15 +79,20 @@ export const p_27 = {
     aggregateRating: { ratingValue: "4.7", reviewCount: "134" },
     reviews: [
       { author: "محمد السليم", rating: 5, date: "2026-03-22", title: "أداء جبار", text: "بدلت موتور السكوتر حقي بهذا النوع، صراحة العزم صار أقوى بكتير من الموتور الأصلي. جودة ممتازة.", verified: true },
-      { author: "خالد العمودي", rating: 5, date: "2026-04-10", title: "مطابق تماماً لشاومي", text: "ركب على سكوتر شاومي برو 2 بدون أي مشاكل. التوصيلات كانت سهلة والموتور هادئ جداً.", verified: true }
+      { author: "خالد العمودي", rating: 5, date: "2026-04-10", title: "مطابق تماماً لشاومي", text: "ركب على سكوتر شاومي برو 2 بدون أي مشاكل. التوصيلات كانت سهلة والموتور هادئ جداً.", verified: true },
+      { author: "فيصل القحطاني", rating: 4, date: "2026-04-28", title: "رجع السكوتر جديد", text: "الموتور القديم كان يطلع صوت ويسخن. هذا هادئ والعزم صار أقوى. بس التركيب يحتاج مفكات خاصة.", verified: true }
     ]
   },
   faqs: [
     { q: 'هل يركب على سكوتر درفت؟', a: 'لا، هذا المحرك مخصص للسكوترات الذكية (مثل شاومي) التي تستخدم عجلات 8.5 إنش.' },
-    { q: 'هل يجي معه الإطار؟', a: 'نعم، الموتور يجي مدمج داخل العجلة مع الإطار المطاطي جاهز للتركيب فوراً.' }
+    { q: 'هل يجي معه الإطار؟', a: 'نعم، الموتور يجي مدمج داخل العجلة مع الإطار المطاطي جاهز للتركيب فوراً.' },
+    { q: 'هل التركيب يحتاج فني؟', a: 'يفضل التركيب عند فني متخصص لأنه يحتاج فك العجلة القديمة وتوصيل الأسلاك بالكنترولر.' },
+    { q: 'كم عمره الافتراضي؟', a: 'التصميم Brushless يضمن عمراً افتراضياً يتجاوز 50,000 كم لأنه لا يحتوي على فرش قابلة للتآكل.' }
   ],
   faqsEn: [
     { q: 'Does it fit a drift scooter?', a: 'No, this motor is for smart scooters (like Xiaomi) using 8.5-inch wheels.' },
-    { q: 'Does it come with the tire?', a: 'Yes, the motor comes integrated within the wheel and rubber tire, ready for immediate installation.' }
+    { q: 'Does it come with the tire?', a: 'Yes, the motor comes integrated within the wheel and rubber tire, ready for immediate installation.' },
+    { q: 'Does installation need a technician?', a: 'Professional installation is recommended as it requires removing the old wheel and connecting wires to the controller.' },
+    { q: 'What is the expected lifespan?', a: 'The brushless design ensures a lifespan exceeding 50,000 km since it has no brushes that wear out.' }
   ]
 };

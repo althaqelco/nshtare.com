@@ -12,7 +12,9 @@ export const p_19 = {
     '/images/products/crazy-stunts/main.png',
     '/images/products/crazy-stunts/lifestyle.png',
     '/images/products/crazy-stunts/features.png',
-    '/images/products/crazy-stunts/dimensions.png'
+    '/images/products/crazy-stunts/dimensions.png',
+    '/images/products/crazy-stunts/angle1.png',
+    '/images/products/crazy-stunts/angle2.png'
   ],
   rating: 4.7,
   reviewsCount: 178,
@@ -85,15 +87,20 @@ export const p_19 = {
     aggregateRating: { ratingValue: "4.7", reviewCount: "178" },
     reviews: [
       { author: "بندر التميمي", rating: 5, date: "2026-04-12", title: "لعبة خرافية", text: "صراحة أفضل هدية جبتها لولدي. التفحيط فيه سهل وآمن والإضاءة بالليل شكلها بطل.", verified: true },
-      { author: "أم لؤي", rating: 5, date: "2026-03-30", title: "جودة ممتازة", text: "الجهاز ثقيل وماسك نفسه مو مثل الأنواع الرخيصة. بنتي طائرة فيه من الفرحة وتتعلم عليه حركات جديدة كل يوم.", verified: true }
+      { author: "أم لؤي", rating: 5, date: "2026-03-30", title: "جودة ممتازة", text: "الجهاز ثقيل وماسك نفسه مو مثل الأنواع الرخيصة. بنتي طائرة فيه من الفرحة وتتعلم عليه حركات جديدة كل يوم.", verified: true },
+      { author: "عبدالله الشمري", rating: 4, date: "2026-04-20", title: "ممتاز للاستراحات", text: "يجيب المتعة في الاستراحة والجمعات. الأرضية لازم تكون ناعمة عشان الدريفت يطلع حلو. بشكل عام ممتاز.", verified: true }
     ]
   },
   faqs: [
     { q: 'هل يحتاج لمكان واسع عشان يفحط؟', a: 'يقدر يدور في مكانه (360 درجة) فما يحتاج مساحة كبيرة، بس طبعاً في الحوش أو الساحة المفتوحة يكون أمتع بكتير.' },
-    { q: 'يناسب عمر كم؟', a: 'يناسب الأطفال واليافعين من عمر 6 سنوات وحتى وزن 80 كجم تقريباً.' }
+    { q: 'يناسب عمر كم؟', a: 'يناسب الأطفال واليافعين من عمر 6 سنوات وحتى وزن 80 كجم تقريباً.' },
+    { q: 'هل الإضاءة تجي معاه؟', a: 'نعم، نظام إضاءة LED RGB مدمج يعمل تلقائياً عند تشغيل الجهاز ويعطي شكل رهيب بالليل.' },
+    { q: 'كم يشحن وكم يعطي وقت لعب؟', a: 'الشحن يأخذ حوالي 5-6 ساعات ويوفر وقت لعب متواصل يصل إلى 50 دقيقة تقريباً.' }
   ],
   faqsEn: [
     { q: 'Does it need a large space?', a: 'It can spin 360° in place, so it works in smaller yards, but open spaces are definitely more fun for full drifting.' },
-    { q: 'What age group is this for?', a: 'Recommended for kids and teens from 6 years up to a maximum weight of 80 kg.' }
+    { q: 'What age group is this for?', a: 'Recommended for kids and teens from 6 years up to a maximum weight of 80 kg.' },
+    { q: 'Does the LED light come with it?', a: 'Yes, the built-in RGB LED system activates automatically when powered on for an amazing nighttime look.' },
+    { q: 'How long to charge and play?', a: 'Charging takes about 5-6 hours and provides up to 50 minutes of continuous play.' }
   ]
 };

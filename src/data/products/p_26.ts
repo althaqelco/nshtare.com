@@ -73,15 +73,20 @@ export const p_26 = {
     aggregateRating: { ratingValue: "4.4", reviewCount: "87" },
     reviews: [
       { author: "بندر الجعيد", rating: 5, date: "2026-02-28", title: "فرق كبير في العزم", text: "ركبته على سكوتر قديم عندي وبرمجته، العزم صار جبار والسرعة زادت. قطعة ممتازة جداً.", verified: true },
-      { author: "ورشة السكوتر", rating: 5, date: "2026-04-05", title: "جودة عالية للاستخدام المهني", text: "نعتمد عليه في الورشة للطلبات الخاصة بالتعديل. متوافق مع أغلب الموتورات الصينية والتايوانية.", verified: true }
+      { author: "ورشة السكوتر", rating: 5, date: "2026-04-05", title: "جودة عالية للاستخدام المهني", text: "نعتمد عليه في الورشة للطلبات الخاصة بالتعديل. متوافق مع أغلب الموتورات الصينية والتايوانية.", verified: true },
+      { author: "سعد الحربي", rating: 4, date: "2026-04-22", title: "ممتاز لكن يحتاج خبرة", text: "الكنترولر جودته عالية بس لازم تكون فاهم في التوصيلات. الأسلاك ملونة وواضحة وهذا مساعد.", verified: true }
     ]
   },
   faqs: [
     { q: 'هل يحتاج خبير عشان يركبه؟', a: 'يفضل تركيبه بواسطة فني متخصص إذا لم يكن لديك خبرة في الدوائر الكهربائية، لضمان التوصيل الصحيح.' },
-    { q: 'هل يركب على سكوتر درفت 36 فولت؟', a: 'نعم، متوافق تماماً مع سكوترات الدرفت ويحسن من أدائها بشكل ملحوظ.' }
+    { q: 'هل يركب على سكوتر درفت 36 فولت؟', a: 'نعم، متوافق تماماً مع سكوترات الدرفت ويحسن من أدائها بشكل ملحوظ.' },
+    { q: 'هل أقدر أبرمجه بنفسي؟', a: 'نعم، يدعم البرمجة عبر USB باستخدام برنامج مجاني. تقدر تضبط السرعة القصوى والتسارع حسب احتياجك.' },
+    { q: 'هل يتحمل حرارة الصيف؟', a: 'نعم، الغلاف الألمنيوم مع زعانف التبريد يضمن تبديد الحرارة بكفاءة حتى في أجواء الرياض الحارة.' }
   ],
   faqsEn: [
     { q: 'Does it need an expert to install?', a: 'Professional installation is recommended if you lack electrical experience to ensure correct wiring.' },
-    { q: 'Does it fit a 36V drift scooter?', a: 'Yes, it is fully compatible and significantly improves its performance.' }
+    { q: 'Does it fit a 36V drift scooter?', a: 'Yes, it is fully compatible and significantly improves its performance.' },
+    { q: 'Can I program it myself?', a: 'Yes, it supports USB programming with free software. You can adjust max speed and acceleration to your needs.' },
+    { q: 'Can it handle summer heat?', a: 'Yes, the aluminum housing with cooling fins ensures efficient heat dissipation even in Riyadh\'s hot climate.' }
   ]
 };

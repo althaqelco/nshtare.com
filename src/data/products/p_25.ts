@@ -73,15 +73,20 @@ export const p_25 = {
     aggregateRating: { ratingValue: "4.3", reviewCount: "198" },
     reviews: [
       { author: "تركي السعد", rating: 5, date: "2026-03-10", title: "شكلها رهيب بالليل", text: "ركبتها على سكوتر الدرفت وطلعت خرافية. الألوان واضحة وقوية والشحن يطول.", verified: true },
-      { author: "نوف", rating: 4, date: "2026-04-02", title: "جميلة جداً", text: "بنتي حبتها مرة، تخلي السكوتر ينور في الظلام. سهلة الفك والتركيب عشان أشحنها.", verified: true }
+      { author: "نوف", rating: 4, date: "2026-04-02", title: "جميلة جداً", text: "بنتي حبتها مرة، تخلي السكوتر ينور في الظلام. سهلة الفك والتركيب عشان أشحنها.", verified: true },
+      { author: "عبدالله الدوسري", rating: 5, date: "2026-04-20", title: "أفضل إكسسوار", text: "ركبتها على الدراجة والسكوتر والشكل طلع خرافي بالليل. البطارية تطول مرة.", verified: true }
     ]
   },
   faqs: [
     { q: 'تركب على أي سكوتر؟', a: 'نعم، تركب على جميع أنواع السكوترات (درفت، كهربائي، عادي) وحتى الدراجات الهوائية.' },
-    { q: 'كيف أشحنها؟', a: 'تجي مع سلك USB، تقدر تشحنها بشاحن الجوال أو اللابتوب أو حتى الباور بانك.' }
+    { q: 'كيف أشحنها؟', a: 'تجي مع سلك USB، تقدر تشحنها بشاحن الجوال أو اللابتوب أو حتى الباور بانك.' },
+    { q: 'هل تتحمل المطر؟', a: 'نعم، مقاومة للماء بمعيار IPX5، تتحمل رذاذ الماء والمطر الخفيف بدون مشاكل.' },
+    { q: 'كم لون فيها؟', a: '7 ألوان مختلفة مع أوضاع وميض متعددة. تقدر تختار اللون المفضل أو تخليها تتبدل تلقائياً.' }
   ],
   faqsEn: [
     { q: 'Does it fit any scooter?', a: 'Yes, it fits all types of scooters (drift, electric, kick) and even bicycles.' },
-    { q: 'How do I charge it?', a: 'It comes with a USB cable; you can charge it via phone charger, laptop, or power bank.' }
+    { q: 'How do I charge it?', a: 'It comes with a USB cable; you can charge it via phone charger, laptop, or power bank.' },
+    { q: 'Is it rain-resistant?', a: 'Yes, IPX5 water-resistant rating, it handles water splashes and light rain without issues.' },
+    { q: 'How many colors does it have?', a: '7 different colors with multiple flashing modes. You can pick a favorite or let it cycle automatically.' }
   ]
 };

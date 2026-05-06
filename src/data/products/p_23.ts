@@ -79,15 +79,20 @@ export const p_23 = {
     aggregateRating: { ratingValue: "4.6", reviewCount: "189" },
     reviews: [
       { author: "فهد الشهري", rating: 5, date: "2026-03-20", title: "رجعت السكوتر جديد", text: "البطارية ممتازة جداً، ركبتها ورجع السكوتر يشتغل بقوته الكاملة ويطول في اللعب. أنصح فيها.", verified: true },
-      { author: "خالد", rating: 5, date: "2026-04-05", title: "جودة عالية وسعر مناسب", text: "جربت أنواع أرخص وخربت بسرعة، لكن هذي باين جودتها ممتازة وتتحمل الشحن اليومي.", verified: true }
+      { author: "خالد", rating: 5, date: "2026-04-05", title: "جودة عالية وسعر مناسب", text: "جربت أنواع أرخص وخربت بسرعة، لكن هذي باين جودتها ممتازة وتتحمل الشحن اليومي.", verified: true },
+      { author: "محمد العنزي", rating: 4, date: "2026-04-22", title: "بطارية ممتازة", text: "البطارية تطول أكثر من الأصلية القديمة. فقط تأكد من الفولتية قبل الطلب عشان تكون متوافقة.", verified: true }
     ]
   },
   faqs: [
     { q: 'هل تركب على أي سكوتر درفت؟', a: 'تركب على جميع الموديلات التي تعمل بنظام 36 فولت (36V). تأكد من فولتية شاحنك قبل الطلب.' },
-    { q: 'كم تاخذ وقت عشان تشحن؟', a: 'تستغرق من 3 إلى 5 ساعات للشحن الكامل باستخدام الشاحن القياسي.' }
+    { q: 'كم تاخذ وقت عشان تشحن؟', a: 'تستغرق من 3 إلى 5 ساعات للشحن الكامل باستخدام الشاحن القياسي.' },
+    { q: 'كيف أعرف إن بطاريتي خربانة؟', a: 'إذا صارت مدة التشغيل أقل من 15 دقيقة أو السكوتر ما يشتغل أصلاً، فغالباً البطارية محتاجة تبديل.' },
+    { q: 'هل فيها ضمان؟', a: 'نعم، ضمان 6 أشهر ضد عيوب التصنيع والأداء. ما يشمل التلف الناتج عن سوء الاستخدام.' }
   ],
   faqsEn: [
     { q: 'Does it fit any drift scooter?', a: 'It fits all models using a 36V system. Please check your charger\'s voltage before ordering.' },
-    { q: 'How long does it take to charge?', a: 'It takes between 3 to 5 hours for a full charge using a standard charger.' }
+    { q: 'How long does it take to charge?', a: 'It takes between 3 to 5 hours for a full charge using a standard charger.' },
+    { q: 'How do I know if my battery is dead?', a: 'If the runtime has dropped below 15 minutes or the scooter won\'t start at all, the battery likely needs replacing.' },
+    { q: 'Is there a warranty?', a: 'Yes, 6-month warranty against manufacturing and performance defects. Does not cover misuse damage.' }
   ]
 };

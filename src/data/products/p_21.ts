@@ -12,7 +12,9 @@ export const p_21 = {
     '/images/products/kids-three-wheel-led/main.png',
     '/images/products/kids-three-wheel-led/lifestyle.png',
     '/images/products/kids-three-wheel-led/features.png',
-    '/images/products/kids-three-wheel-led/dimensions.png'
+    '/images/products/kids-three-wheel-led/dimensions.png',
+    '/images/products/kids-three-wheel-led/angle1.png',
+    '/images/products/kids-three-wheel-led/angle2.png'
   ],
   rating: 4.8,
   reviewsCount: 467,
@@ -79,15 +81,20 @@ export const p_21 = {
     aggregateRating: { ratingValue: "4.8", reviewCount: "467" },
     reviews: [
       { author: "نورة القحطاني", rating: 5, date: "2026-03-25", title: "ولدي مرة حبه", text: "أجمل سكوتر أطفال اشتريته. العجلات تنور بشكل رهيب واللون جميل جداً. سهل الطي وما ياخذ مكان.", verified: true },
-      { author: "أحمد الفوزان", rating: 5, date: "2026-04-10", title: "جودة ممتازة", text: "بنتي عمرها 3 سنوات وتعلمت عليه في دقائق. التوازن فيه بطل والفرامل آمنة. أنصح فيه وبشدة.", verified: true }
+      { author: "أحمد الفوزان", rating: 5, date: "2026-04-10", title: "جودة ممتازة", text: "بنتي عمرها 3 سنوات وتعلمت عليه في دقائق. التوازن فيه بطل والفرامل آمنة. أنصح فيه وبشدة.", verified: true },
+      { author: "منيرة السبيعي", rating: 4, date: "2026-04-25", title: "ممتاز بس يبي يكون أكبر", text: "ولدي عمره 6 سنوات والسكوتر صغير عليه شوي. الجودة ممتازة بس أتمنى لو كان فيه مقاس أكبر للأعمار الأكبر.", verified: true }
     ]
   },
   faqs: [
     { q: 'هل العجلات تحتاج بطاريات عشان تنور؟', a: 'لا، العجلات تضيء ذاتياً بمجرد الحركة بفضل الطاقة الحركية، يعني ما تشيل هم البطاريات أبداً.' },
-    { q: 'يناسب أي عمر؟', a: 'مثالي جداً للأطفال من عمر سنتين وحتى 7 سنوات تقريباً، بفضل إمكانية تعديل طول المقبض.' }
+    { q: 'يناسب أي عمر؟', a: 'مثالي جداً للأطفال من عمر سنتين وحتى 7 سنوات تقريباً، بفضل إمكانية تعديل طول المقبض.' },
+    { q: 'هل ينطوي بسهولة؟', a: 'نعم، ينطوي بلمسة واحدة وما ياخذ مكان في السيارة أو الخزانة. وزنه 2 كجم فقط.' },
+    { q: 'هل الفرامل آمنة للأطفال الصغار؟', a: 'نعم، الفرامل الخلفية مصممة بحيث يقدر الطفل يضغط عليها برجله بسهولة ويوقف السكوتر بشكل تدريجي وآمن.' }
   ],
   faqsEn: [
     { q: 'Do the wheels need batteries to light up?', a: 'No, the wheels light up automatically through kinetic energy when moving, so no batteries are required.' },
-    { q: 'What is the suitable age?', a: 'It is perfect for children aged 2 to 7 years, thanks to the adjustable handlebar height.' }
+    { q: 'What is the suitable age?', a: 'It is perfect for children aged 2 to 7 years, thanks to the adjustable handlebar height.' },
+    { q: 'Is it easy to fold?', a: 'Yes, it folds with one touch and takes minimal space in the car or closet. It weighs only 2 kg.' },
+    { q: 'Are the brakes safe for young children?', a: 'Yes, the rear brake is designed so children can press it with their foot easily, stopping the scooter gradually and safely.' }
   ]
 };
