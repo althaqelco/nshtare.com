@@ -82,7 +82,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         <div className="relative aspect-video rounded-2xl overflow-hidden mb-10 border border-border">
-          <Image src={post.image} alt={post.title} fill className="object-cover" priority />
+          <Image 
+            src={post.image} 
+            alt={post.title} 
+            fill 
+            className="object-cover" 
+            quality={100}
+            sizes="(max-width: 768px) 100vw, 800px"
+            priority 
+          />
         </div>
 
         {/* Article Body */}
