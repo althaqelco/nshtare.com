@@ -61,7 +61,8 @@ export default function CategoryGrid({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
                     alt={isEn ? cat.nameEn : cat.nameAr} 
                     fill 
                     className="object-contain"
-                    sizes="(max-width: 640px) 112px, 144px"
+                    sizes="(max-width: 640px) 200px, 300px"
+                    quality={95}
                     loading="lazy"
                   />
                 </div>

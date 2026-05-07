@@ -94,6 +94,7 @@ export default function HeroSection() {
               fill
               className="object-contain drop-shadow-2xl z-10 transform transition-transform hover:scale-105 duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
+              quality={100}
               priority
             />
           </div>
