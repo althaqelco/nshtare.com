@@ -68,6 +68,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               {post.readTime} دقائق قراءة
             </span>
           </div>
+          {post.author && (
+            <div className="mt-5 flex items-center gap-4 bg-surface border border-border rounded-2xl p-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-black text-lg shrink-0">
+                {post.author.charAt(post.author.indexOf('.') > -1 ? post.author.indexOf('.') + 2 : 0)}
+              </div>
+              <div>
+                <p className="font-bold text-text text-sm">{post.author}</p>
+                {post.authorTitle && <p className="text-xs text-text-secondary mt-0.5">{post.authorTitle}</p>}
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="relative aspect-video rounded-2xl overflow-hidden mb-10 border border-border">
