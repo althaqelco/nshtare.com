@@ -3,13 +3,15 @@ import { b_2 } from './b_2';
 import { b_3 } from './b_3';
 import { b_4 } from './b_4';
 import { b_5 } from './b_5';
+import { b_6 } from './b_6';
 
 export const blogPosts: any[] = [
   b_1,
   b_2,
   b_3,
   b_4,
-  b_5
+  b_5,
+  b_6
 ];
 
 // Helper functions for easy access
