@@ -7,12 +7,12 @@ export const p_24 = {
   nameEn: 'Fast Drift Scooter Charger 36V-48V Universal',
   price: 69,
   originalPrice: 99,
-  image: '/images/products/drift-charger-fast/main.png',
+  image: '/images/products/drift-charger-fast/main.webp',
   gallery: [
-    '/images/products/drift-charger-fast/main.png',
-    '/images/products/drift-charger-fast/lifestyle.png',
-    '/images/products/drift-charger-fast/features.png',
-    '/images/products/drift-charger-fast/dimensions.png'
+    '/images/products/drift-charger-fast/main.webp',
+    '/images/products/drift-charger-fast/lifestyle.webp',
+    '/images/products/drift-charger-fast/features.webp',
+    '/images/products/drift-charger-fast/dimensions.webp'
   ],
   rating: 4.5,
   reviewsCount: 267,

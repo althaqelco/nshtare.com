@@ -49,7 +49,7 @@ export default function FloatingWhatsApp() {
       >
         <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-white">
           <Image 
-            src="/images/ui/avatar_support_agent.png" 
+            src="/images/ui/avatar_support_agent.webp" 
             alt="Support Agent" 
             fill 
             className="object-cover"

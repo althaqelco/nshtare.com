@@ -7,12 +7,12 @@ export const p_3 = {
   nameEn: 'Drift Scooter 36V Upgraded',
   price: 599,
   originalPrice: 799,
-  image: '/images/products/drift-36v/main.png',
+  image: '/images/products/drift-36v/main.webp',
   gallery: [
-    '/images/products/drift-36v/main.png',
-    '/images/products/drift-36v/lifestyle.png',
-    '/images/products/drift-36v/features.png',
-    '/images/products/drift-36v/dimensions.png'
+    '/images/products/drift-36v/main.webp',
+    '/images/products/drift-36v/lifestyle.webp',
+    '/images/products/drift-36v/features.webp',
+    '/images/products/drift-36v/dimensions.webp'
   ],
   rating: 4.7,
   reviewsCount: 89,

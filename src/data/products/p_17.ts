@@ -7,12 +7,12 @@ export const p_17 = {
   nameEn: '3-Wheel Electric Scooter with Basket',
   price: 1599,
   originalPrice: 1999,
-  image: '/images/products/electric-three-wheel/main.png',
+  image: '/images/products/electric-three-wheel/main.webp',
   gallery: [
-    '/images/products/electric-three-wheel/main.png',
-    '/images/products/electric-three-wheel/lifestyle.png',
-    '/images/products/electric-three-wheel/features.png',
-    '/images/products/electric-three-wheel/dimensions.png'
+    '/images/products/electric-three-wheel/main.webp',
+    '/images/products/electric-three-wheel/lifestyle.webp',
+    '/images/products/electric-three-wheel/features.webp',
+    '/images/products/electric-three-wheel/dimensions.webp'
   ],
   rating: 4.6,
   reviewsCount: 89,

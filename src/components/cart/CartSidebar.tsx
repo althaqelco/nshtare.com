@@ -82,7 +82,7 @@ export default function CartSidebar() {
             <div className="h-full flex flex-col items-center justify-center space-y-6 text-center">
               <div className="relative w-48 h-48 opacity-80">
                 <Image
-                  src="/images/ui/empty-cart.png"
+                  src="/images/ui/empty-cart.webp"
                   alt="Empty Cart"
                   fill
                   className="object-contain"

@@ -7,12 +7,12 @@ export const p_5 = {
   nameEn: 'Ninebot Comfort Seat Electric Scooter',
   price: 2199,
   originalPrice: 2799,
-  image: '/images/products/ninebot-with-seat/main.png',
+  image: '/images/products/ninebot-with-seat/main.webp',
   gallery: [
-    '/images/products/ninebot-with-seat/main.png',
-    '/images/products/ninebot-with-seat/lifestyle.png',
-    '/images/products/ninebot-with-seat/features.png',
-    '/images/products/ninebot-with-seat/dimensions.png'
+    '/images/products/ninebot-with-seat/main.webp',
+    '/images/products/ninebot-with-seat/lifestyle.webp',
+    '/images/products/ninebot-with-seat/features.webp',
+    '/images/products/ninebot-with-seat/dimensions.webp'
   ],
   rating: 4.6,
   reviewsCount: 67,

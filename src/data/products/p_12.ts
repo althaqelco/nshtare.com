@@ -7,12 +7,12 @@ export const p_12 = {
   nameEn: 'Professional Scooter Safety Helmet',
   price: 129,
   originalPrice: 179,
-  image: '/images/products/scooter-helmet-pro/main.png',
+  image: '/images/products/scooter-helmet-pro/main.webp',
   gallery: [
-    '/images/products/scooter-helmet-pro/main.png',
-    '/images/products/scooter-helmet-pro/lifestyle.png',
-    '/images/products/scooter-helmet-pro/features.png',
-    '/images/products/scooter-helmet-pro/dimensions.png'
+    '/images/products/scooter-helmet-pro/main.webp',
+    '/images/products/scooter-helmet-pro/lifestyle.webp',
+    '/images/products/scooter-helmet-pro/features.webp',
+    '/images/products/scooter-helmet-pro/dimensions.webp'
   ],
   rating: 4.6,
   reviewsCount: 98,

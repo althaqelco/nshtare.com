@@ -6,12 +6,12 @@ export const p_1 = {
   nameEn: 'Ninebot Max Professional Electric Scooter',
   price: 1899,
   originalPrice: 2499,
-  image: '/images/products/ninebot-max/main.png',
+  image: '/images/products/ninebot-max/main.webp',
   gallery: [
-    '/images/products/ninebot-max/main.png',
-    '/images/products/ninebot-max/lifestyle.png',
-    '/images/products/ninebot-max/features.png',
-    '/images/products/ninebot-max/dimensions.png'
+    '/images/products/ninebot-max/main.webp',
+    '/images/products/ninebot-max/lifestyle.webp',
+    '/images/products/ninebot-max/features.webp',
+    '/images/products/ninebot-max/dimensions.webp'
   ],
   rating: 4.8,
   reviewsCount: 124,

@@ -6,12 +6,12 @@ export const p_11 = {
   nameEn: 'Smart GPS Bluetooth Connected Scooter',
   price: 2499,
   originalPrice: 2999,
-  image: '/images/products/smart-gps-pro/main.png',
+  image: '/images/products/smart-gps-pro/main.webp',
   gallery: [
-    '/images/products/smart-gps-pro/main.png',
-    '/images/products/smart-gps-pro/lifestyle.png',
-    '/images/products/smart-gps-pro/features.png',
-    '/images/products/smart-gps-pro/dimensions.png'
+    '/images/products/smart-gps-pro/main.webp',
+    '/images/products/smart-gps-pro/lifestyle.webp',
+    '/images/products/smart-gps-pro/features.webp',
+    '/images/products/smart-gps-pro/dimensions.webp'
   ],
   rating: 4.7,
   reviewsCount: 34,

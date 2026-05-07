@@ -7,12 +7,12 @@ export const p_23 = {
   nameEn: 'Original 36V Drift Scooter High-Performance Battery',
   price: 199,
   originalPrice: 279,
-  image: '/images/products/drift-battery-36v/main.png',
+  image: '/images/products/drift-battery-36v/main.webp',
   gallery: [
-    '/images/products/drift-battery-36v/main.png',
-    '/images/products/drift-battery-36v/lifestyle.png',
-    '/images/products/drift-battery-36v/features.png',
-    '/images/products/drift-battery-36v/dimensions.png'
+    '/images/products/drift-battery-36v/main.webp',
+    '/images/products/drift-battery-36v/lifestyle.webp',
+    '/images/products/drift-battery-36v/features.webp',
+    '/images/products/drift-battery-36v/dimensions.webp'
   ],
   rating: 4.6,
   reviewsCount: 189,

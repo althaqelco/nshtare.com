@@ -5,8 +5,8 @@ export const smart_scooter = {
   icon: '🧠',
   descAr: 'شاشات ديجيتال واتصال بالتطبيق',
   descEn: 'Digital display and app connectivity',
-  banner: '/images/categories/main/smart-scooter-banner.png',
-  thumbnail: '/images/categories/main/smart-scooter-thumb.png',
+  banner: '/images/categories/main/smart-scooter-banner.webp',
+  thumbnail: '/images/categories/main/smart-scooter-thumb.webp',
 
   longDescAr: `السكوترات الذكية تمثل مستقبل التنقل الشخصي في المملكة العربية السعودية. تتميز بشاشات LCD رقمية تعرض السرعة الحالية ونسبة البطارية والمسافة المقطوعة بشكل لحظي، مع إمكانية الاتصال بالهاتف الذكي عبر Bluetooth للتحكم الكامل في إعدادات السكوتر. في نشتري، نختار السكوترات الذكية التي تدعم أحدث بروتوكولات IoT (إنترنت الأشياء) — بما فيها القفل عن بعد، تحديد الموقع GPS، إرسال إشعارات الصيانة الدورية، وأنظمة تتبع مضادة للسرقة. تقنية الفرملة التجديدية (Regenerative Braking) المتوفرة في سكوتراتنا الذكية تحول طاقة الفرملة إلى شحن إضافي للبطارية، مما يزيد المدى بنسبة تصل إلى 15%. سواء كنت تبحث عن تجربة ركوب مستقبلية أو ترغب في أقصى درجات التحكم والأمان، فالسكوتر الذكي هو خيارك الأمثل.`,
 

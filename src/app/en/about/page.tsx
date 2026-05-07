@@ -72,7 +72,7 @@ export default function AboutPageEn() {
           </div>
           <div className="relative aspect-square rounded-3xl overflow-hidden border border-border shadow-xl">
             <Image
-              src="/images/ui/about_us_delivery_1777997907001.png"
+              src="/images/ui/about_us_delivery_1777997907001.webp"
               alt="Nshtare delivery team"
               fill
               className="object-cover"

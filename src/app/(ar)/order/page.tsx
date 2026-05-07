@@ -159,7 +159,7 @@ export default function CheckoutPage() {
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center p-8 text-center bg-surface" dir={isEn ? "ltr" : "rtl"}>
         <div className="relative w-48 h-48 mb-6 opacity-80">
-          <Image src="/images/ui/empty-cart.png" alt="Empty Cart" fill className="object-contain" />
+          <Image src="/images/ui/empty-cart.webp" alt="Empty Cart" fill className="object-contain" />
         </div>
         <h2 className="text-2xl font-bold text-text mb-4">{t.empty}</h2>
         <Link href={isEn ? "/en" : "/"} className="bg-primary text-white px-8 py-3 rounded-xl font-bold">

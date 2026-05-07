@@ -6,12 +6,12 @@ export const p_13 = {
   name: 'شنطة حمل سكوتر مقاومة للماء',
   nameEn: 'Waterproof Scooter Carry Bag',
   price: 89,
-  image: '/images/products/scooter-bag-carry/main.png',
+  image: '/images/products/scooter-bag-carry/main.webp',
   gallery: [
-    '/images/products/scooter-bag-carry/main.png',
-    '/images/products/scooter-bag-carry/lifestyle.png',
-    '/images/products/scooter-bag-carry/features.png',
-    '/images/products/scooter-bag-carry/dimensions.png'
+    '/images/products/scooter-bag-carry/main.webp',
+    '/images/products/scooter-bag-carry/lifestyle.webp',
+    '/images/products/scooter-bag-carry/features.webp',
+    '/images/products/scooter-bag-carry/dimensions.webp'
   ],
   rating: 4.5,
   reviewsCount: 156,

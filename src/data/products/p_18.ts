@@ -7,12 +7,12 @@ export const p_18 = {
   nameEn: 'Compact Foldable Mini Electric Scooter',
   price: 799,
   originalPrice: 999,
-  image: '/images/products/foldable-mini/main.png',
+  image: '/images/products/foldable-mini/main.webp',
   gallery: [
-    '/images/products/foldable-mini/main.png',
-    '/images/products/foldable-mini/lifestyle.png',
-    '/images/products/foldable-mini/features.png',
-    '/images/products/foldable-mini/dimensions.png'
+    '/images/products/foldable-mini/main.webp',
+    '/images/products/foldable-mini/lifestyle.webp',
+    '/images/products/foldable-mini/features.webp',
+    '/images/products/foldable-mini/dimensions.webp'
   ],
   rating: 4.4,
   reviewsCount: 213,

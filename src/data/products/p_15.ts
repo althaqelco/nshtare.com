@@ -6,12 +6,12 @@ export const p_15 = {
   name: 'إطار صلب 10 إنش مقاوم للثقب',
   nameEn: '10-inch Puncture-Proof Solid Tire',
   price: 49,
-  image: '/images/products/solid-tire-10inch/main.png',
+  image: '/images/products/solid-tire-10inch/main.webp',
   gallery: [
-    '/images/products/solid-tire-10inch/main.png',
-    '/images/products/solid-tire-10inch/lifestyle.png',
-    '/images/products/solid-tire-10inch/features.png',
-    '/images/products/solid-tire-10inch/dimensions.png'
+    '/images/products/solid-tire-10inch/main.webp',
+    '/images/products/solid-tire-10inch/lifestyle.webp',
+    '/images/products/solid-tire-10inch/features.webp',
+    '/images/products/solid-tire-10inch/dimensions.webp'
   ],
   rating: 4.7,
   reviewsCount: 423,

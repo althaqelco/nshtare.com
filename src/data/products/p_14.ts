@@ -7,12 +7,12 @@ export const p_14 = {
   nameEn: 'Universal Fast Electric Scooter Charger',
   price: 79,
   originalPrice: 119,
-  image: '/images/products/universal-charger/main.png',
+  image: '/images/products/universal-charger/main.webp',
   gallery: [
-    '/images/products/universal-charger/main.png',
-    '/images/products/universal-charger/lifestyle.png',
-    '/images/products/universal-charger/features.png',
-    '/images/products/universal-charger/dimensions.png'
+    '/images/products/universal-charger/main.webp',
+    '/images/products/universal-charger/lifestyle.webp',
+    '/images/products/universal-charger/features.webp',
+    '/images/products/universal-charger/dimensions.webp'
   ],
   rating: 4.4,
   reviewsCount: 234,

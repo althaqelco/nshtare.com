@@ -1,7 +1,7 @@
 export const b_2 = {
   slug: 'electric-scooter-vs-drift-scooter',
   title: 'السكوتر الكهربائي أم سكوتر الدرفت؟ دليل المقارنة الشامل لعام 2026',
-  image: '/images/ui/seo_article_kick_1777998364132.png',
+  image: '/images/ui/seo_article_kick_1777998364132.webp',
   category: 'مقارنة',
   date: '2026-04-25',
   readTime: 11,

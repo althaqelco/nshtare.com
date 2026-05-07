@@ -7,12 +7,12 @@ export const p_10 = {
   nameEn: 'Mini Budget Kids Electric Scooter',
   price: 249,
   originalPrice: 349,
-  image: '/images/products/kids-electric-mini/main.png',
+  image: '/images/products/kids-electric-mini/main.webp',
   gallery: [
-    '/images/products/kids-electric-mini/main.png',
-    '/images/products/kids-electric-mini/lifestyle.png',
-    '/images/products/kids-electric-mini/features.png',
-    '/images/products/kids-electric-mini/dimensions.png'
+    '/images/products/kids-electric-mini/main.webp',
+    '/images/products/kids-electric-mini/lifestyle.webp',
+    '/images/products/kids-electric-mini/features.webp',
+    '/images/products/kids-electric-mini/dimensions.webp'
   ],
   rating: 4.3,
   reviewsCount: 178,

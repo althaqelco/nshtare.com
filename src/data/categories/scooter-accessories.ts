@@ -5,8 +5,8 @@ export const scooter_accessories = {
   icon: '🔧',
   descAr: 'خوذات، شنط، وإضاءات',
   descEn: 'Helmets, bags, and lights',
-  banner: '/images/categories/main/accessories-banner.png',
-  thumbnail: '/images/categories/main/accessories-thumb.png',
+  banner: '/images/categories/main/accessories-banner.webp',
+  thumbnail: '/images/categories/main/accessories-thumb.webp',
 
   longDescAr: `إكسسوارات السكوتر ما هي رفاهية — هي ضرورة لتحسين تجربة الركوب وضمان سلامتك وسلامة أطفالك. في نشتري، نوفر تشكيلة شاملة من الإكسسوارات الاحترافية المصممة خصيصاً لجميع أنواع السكوترات الكهربائية وسكوترات الدرفت. من خوذات الحماية المعتمدة دولياً بمعيار EN1078، إلى أضواء LED متعددة الألوان تزيد الأمان ليلاً وتضفي مظهراً رائعاً، مروراً بشنط حمل مقاومة للماء لنقل السكوتر القابل للطي، وبطاريات بديلة عالية الأداء لإطالة وقت اللعب. كل إكسسوار عندنا مختبر ومتوافق مع السكوترات المباعة في متجرنا. نضمن التوافق التام ونوفر دعم فني مجاني عبر الواتساب لمساعدتك في اختيار وتركيب الإكسسوار المناسب.`,
 

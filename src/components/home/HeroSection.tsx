@@ -16,7 +16,7 @@ export default function HeroSection() {
       {/* Background Graphic (Flash Sale Banner) */}
       <div className="absolute inset-0 z-0 opacity-15">
         <Image 
-          src="/images/hero/flash-sale.png" 
+          src="/images/hero/flash-sale.webp" 
           alt="Background Pattern" 
           fill 
           className="object-cover"
@@ -75,7 +75,7 @@ export default function HeroSection() {
             <div className="pt-4 flex items-center gap-2 text-sm text-text-secondary font-medium">
               <div className="flex -space-x-2 rtl:space-x-reverse">
                 <div className="w-8 h-8 rounded-full border-2 border-surface overflow-hidden relative">
-                   <Image src="/images/ui/avatar_saudi_customer.png" alt="Customer" fill className="object-cover" />
+                   <Image src="/images/ui/avatar_saudi_customer.webp" alt="Customer" fill className="object-cover" />
                 </div>
                 <div className="w-8 h-8 rounded-full border-2 border-surface bg-primary text-white flex items-center justify-center text-xs font-bold z-10">
                   +1K
@@ -90,7 +90,7 @@ export default function HeroSection() {
           <div className="w-full md:w-1/2 flex justify-center relative min-h-[300px] sm:min-h-[400px]">
             <div className="absolute inset-0 bg-primary/5 rounded-full blur-3xl filter animate-pulse"></div>
             <Image 
-              src="/images/products/product_ninebot_max_1777998751040.png" 
+              src="/images/products/product_ninebot_max_1777998751040.webp" 
               alt="Premium Electric Kick Scooter" 
               fill
               className="object-contain drop-shadow-2xl z-10 transform transition-transform hover:scale-105 duration-700"

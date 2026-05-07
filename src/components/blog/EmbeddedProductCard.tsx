@@ -22,7 +22,7 @@ export default function EmbeddedProductCard({ product, lang }: EmbeddedProductCa
 
   const productUrl = isAr ? `/${categorySlug}/${product.slug}` : `/en/${categorySlug}/${product.slugEn}`;
   
-  const imageUrl = product.image || (product.gallery && product.gallery[0]) || '/images/placeholder.png';
+  const imageUrl = product.image || (product.gallery && product.gallery[0]) || '/images/placeholder.webp';
   const hasDiscount = product.originalPrice && product.originalPrice > product.price;
   const discountPercent = hasDiscount ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100) : 0;
 

@@ -84,7 +84,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href={prefix || '/'} className="flex items-center gap-2 mb-4">
               <div className="relative h-10 w-10">
-                <Image src="/images/logo/nshtare-logo.png" alt="Nshtare" fill className="object-contain" />
+                <Image src="/images/logo/nshtare-logo.webp" alt="Nshtare" fill className="object-contain" />
               </div>
               <span className="text-xl font-black text-primary">{isEn ? "NSHTARE" : "نشتري"}</span>
             </Link>

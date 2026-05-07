@@ -7,12 +7,12 @@ export const p_25 = {
   nameEn: 'Waterproof RGB LED Scooter Lights Kit',
   price: 59,
   originalPrice: 89,
-  image: '/images/products/led-lights-kit/main.png',
+  image: '/images/products/led-lights-kit/main.webp',
   gallery: [
-    '/images/products/led-lights-kit/main.png',
-    '/images/products/led-lights-kit/lifestyle.png',
-    '/images/products/led-lights-kit/features.png',
-    '/images/products/led-lights-kit/dimensions.png'
+    '/images/products/led-lights-kit/main.webp',
+    '/images/products/led-lights-kit/lifestyle.webp',
+    '/images/products/led-lights-kit/features.webp',
+    '/images/products/led-lights-kit/dimensions.webp'
   ],
   rating: 4.3,
   reviewsCount: 198,

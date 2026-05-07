@@ -7,14 +7,14 @@ export const p_22 = {
   nameEn: 'Electric Mobility Chair Scooter for Seniors',
   price: 2899,
   originalPrice: 3499,
-  image: '/images/products/mobility-chair-scooter/main.png',
+  image: '/images/products/mobility-chair-scooter/main.webp',
   gallery: [
-    '/images/products/mobility-chair-scooter/main.png',
-    '/images/products/mobility-chair-scooter/lifestyle.png',
-    '/images/products/mobility-chair-scooter/features.png',
-    '/images/products/mobility-chair-scooter/dimensions.png',
-    '/images/products/mobility-chair-scooter/angle1.png',
-    '/images/products/mobility-chair-scooter/angle2.png'
+    '/images/products/mobility-chair-scooter/main.webp',
+    '/images/products/mobility-chair-scooter/lifestyle.webp',
+    '/images/products/mobility-chair-scooter/features.webp',
+    '/images/products/mobility-chair-scooter/dimensions.webp',
+    '/images/products/mobility-chair-scooter/angle1.webp',
+    '/images/products/mobility-chair-scooter/angle2.webp'
   ],
   rating: 4.9,
   reviewsCount: 56,

@@ -61,7 +61,7 @@ export default function Header() {
             <Link href={isEn ? "/en" : "/"} className="flex items-center gap-2">
               <div className="relative h-10 w-10 sm:h-12 sm:w-12">
                 <Image 
-                  src="/images/logo/nshtare-logo.png" 
+                  src="/images/logo/nshtare-logo.webp" 
                   alt="Nshtare Logo" 
                   fill 
                   className="object-contain"

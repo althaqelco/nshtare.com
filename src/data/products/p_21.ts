@@ -7,14 +7,14 @@ export const p_21 = {
   nameEn: 'LED Light-Up 3-Wheel Kids Scooter',
   price: 119,
   originalPrice: 179,
-  image: '/images/products/kids-three-wheel-led/main.png',
+  image: '/images/products/kids-three-wheel-led/main.webp',
   gallery: [
-    '/images/products/kids-three-wheel-led/main.png',
-    '/images/products/kids-three-wheel-led/lifestyle.png',
-    '/images/products/kids-three-wheel-led/features.png',
-    '/images/products/kids-three-wheel-led/dimensions.png',
-    '/images/products/kids-three-wheel-led/angle1.png',
-    '/images/products/kids-three-wheel-led/angle2.png'
+    '/images/products/kids-three-wheel-led/main.webp',
+    '/images/products/kids-three-wheel-led/lifestyle.webp',
+    '/images/products/kids-three-wheel-led/features.webp',
+    '/images/products/kids-three-wheel-led/dimensions.webp',
+    '/images/products/kids-three-wheel-led/angle1.webp',
+    '/images/products/kids-three-wheel-led/angle2.webp'
   ],
   rating: 4.8,
   reviewsCount: 467,

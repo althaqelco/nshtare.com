@@ -7,12 +7,12 @@ export const p_7 = {
   nameEn: '48V Beast Drift Scooter',
   price: 899,
   originalPrice: 1199,
-  image: '/images/products/drift-48v-beast/main.png',
+  image: '/images/products/drift-48v-beast/main.webp',
   gallery: [
-    '/images/products/drift-48v-beast/main.png',
-    '/images/products/drift-48v-beast/lifestyle.png',
-    '/images/products/drift-48v-beast/features.png',
-    '/images/products/drift-48v-beast/dimensions.png'
+    '/images/products/drift-48v-beast/main.webp',
+    '/images/products/drift-48v-beast/lifestyle.webp',
+    '/images/products/drift-48v-beast/features.webp',
+    '/images/products/drift-48v-beast/dimensions.webp'
   ],
   rating: 4.8,
   reviewsCount: 156,

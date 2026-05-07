@@ -7,14 +7,14 @@ export const p_19 = {
   nameEn: 'Crazy Stunts Electric Drift Scooter',
   price: 749,
   originalPrice: 999,
-  image: '/images/products/crazy-stunts/main.png',
+  image: '/images/products/crazy-stunts/main.webp',
   gallery: [
-    '/images/products/crazy-stunts/main.png',
-    '/images/products/crazy-stunts/lifestyle.png',
-    '/images/products/crazy-stunts/features.png',
-    '/images/products/crazy-stunts/dimensions.png',
-    '/images/products/crazy-stunts/angle1.png',
-    '/images/products/crazy-stunts/angle2.png'
+    '/images/products/crazy-stunts/main.webp',
+    '/images/products/crazy-stunts/lifestyle.webp',
+    '/images/products/crazy-stunts/features.webp',
+    '/images/products/crazy-stunts/dimensions.webp',
+    '/images/products/crazy-stunts/angle1.webp',
+    '/images/products/crazy-stunts/angle2.webp'
   ],
   rating: 4.7,
   reviewsCount: 178,

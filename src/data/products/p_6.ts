@@ -7,12 +7,12 @@ export const p_6 = {
   nameEn: 'Pro Off-Road Fast Electric Scooter',
   price: 3499,
   originalPrice: 4299,
-  image: '/images/products/offroad-pro/main.png',
+  image: '/images/products/offroad-pro/main.webp',
   gallery: [
-    '/images/products/offroad-pro/main.png',
-    '/images/products/offroad-pro/lifestyle.png',
-    '/images/products/offroad-pro/features.png',
-    '/images/products/offroad-pro/dimensions.png'
+    '/images/products/offroad-pro/main.webp',
+    '/images/products/offroad-pro/lifestyle.webp',
+    '/images/products/offroad-pro/features.webp',
+    '/images/products/offroad-pro/dimensions.webp'
   ],
   rating: 4.9,
   reviewsCount: 45,

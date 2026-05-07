@@ -5,8 +5,8 @@ export const drift_scooter = {
   icon: '🏎️',
   descAr: 'وحش التفحيط والمتعة القصوى',
   descEn: 'Extreme drifting and fun',
-  banner: '/images/categories/main/drift-scooter-banner.png',
-  thumbnail: '/images/categories/main/drift-scooter-thumb.png',
+  banner: '/images/categories/main/drift-scooter-banner.webp',
+  thumbnail: '/images/categories/main/drift-scooter-thumb.webp',
 
   // ══════════════════════════════════════════════
   // SEMANTIC SEO CONTENT LAYER

@@ -134,13 +134,13 @@ export default function ProductDetails({ product }: { product: any }) {
             ) : (
               <div className="grid grid-cols-3 gap-4">
                 <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                   <Image src="/images/ui/feature_battery.png" alt="Battery" fill className="object-cover hover:scale-110 transition-transform" />
+                   <Image src="/images/ui/feature_battery.webp" alt="Battery" fill className="object-cover hover:scale-110 transition-transform" />
                 </div>
                 <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                   <Image src="/images/ui/feature_motor.png" alt="Motor" fill className="object-cover hover:scale-110 transition-transform" />
+                   <Image src="/images/ui/feature_motor.webp" alt="Motor" fill className="object-cover hover:scale-110 transition-transform" />
                 </div>
                 <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                   <Image src="/images/ui/feature_display.png" alt="Display" fill className="object-cover hover:scale-110 transition-transform" />
+                   <Image src="/images/ui/feature_display.webp" alt="Display" fill className="object-cover hover:scale-110 transition-transform" />
                 </div>
               </div>
             )}

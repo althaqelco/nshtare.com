@@ -5,8 +5,8 @@ export const xiaomi_scooter = {
   icon: '📱',
   descAr: 'أفضل سكوترات شاومي الأصلية بضمان الوكيل',
   descEn: 'Original Xiaomi scooters with warranty',
-  banner: '/images/categories/main/xiaomi-scooter-banner.png',
-  thumbnail: '/images/categories/main/xiaomi-scooter-thumb.png',
+  banner: '/images/categories/main/xiaomi-scooter-banner.webp',
+  thumbnail: '/images/categories/main/xiaomi-scooter-thumb.webp',
 
   longDescAr: `شاومي هي العلامة التجارية الأولى عالمياً في مجال السكوترات الكهربائية الذكية، ونشتري هو وكيلك المعتمد في السعودية لتوفير سكوترات شاومي الأصلية بضمان حقيقي. سكوترات شاومي تتميز بتقنية Kinetic Energy Recovery System (KERS) لاسترجاع الطاقة أثناء الفرملة، وتطبيق ذكي يتيح لك التحكم الكامل في الإعدادات ومتابعة حالة البطارية والمسافة المقطوعة. نوفر أحدث موديلات شاومي بما فيها Ninebot Max G2 الأفضل في المدى (حتى 65 كم)، و Ninebot بالمقعد للراحة القصوى. جميع السكوترات تجي مع كرتون أصلي وضمان وكيل معتمد. نقدم أيضاً قطع غيار أصلية وخدمة صيانة متخصصة لسكوترات شاومي حصرياً. شحن مجاني وسريع لجميع مناطق المملكة.`,
 

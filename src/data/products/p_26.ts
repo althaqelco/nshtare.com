@@ -7,12 +7,12 @@ export const p_26 = {
   nameEn: 'Universal Programmable Electric Scooter Controller 36V-48V',
   price: 149,
   originalPrice: 199,
-  image: '/images/products/controller-universal/main.png',
+  image: '/images/products/controller-universal/main.webp',
   gallery: [
-    '/images/products/controller-universal/main.png',
-    '/images/products/controller-universal/lifestyle.png',
-    '/images/products/controller-universal/features.png',
-    '/images/products/controller-universal/dimensions.png'
+    '/images/products/controller-universal/main.webp',
+    '/images/products/controller-universal/lifestyle.webp',
+    '/images/products/controller-universal/features.webp',
+    '/images/products/controller-universal/dimensions.webp'
   ],
   rating: 4.4,
   reviewsCount: 87,

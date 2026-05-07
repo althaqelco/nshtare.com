@@ -6,12 +6,12 @@ export const p_2 = {
   nameEn: 'Xiaomi Mi M365 Commuter Scooter',
   price: 1299,
   originalPrice: 1599,
-  image: '/images/products/xiaomi-m365/main.png',
+  image: '/images/products/xiaomi-m365/main.webp',
   gallery: [
-    '/images/products/xiaomi-m365/main.png',
-    '/images/products/xiaomi-m365/lifestyle.png',
-    '/images/products/xiaomi-m365/features.png',
-    '/images/products/xiaomi-m365/dimensions.png'
+    '/images/products/xiaomi-m365/main.webp',
+    '/images/products/xiaomi-m365/lifestyle.webp',
+    '/images/products/xiaomi-m365/features.webp',
+    '/images/products/xiaomi-m365/dimensions.webp'
   ],
   rating: 4.5,
   reviewsCount: 342,

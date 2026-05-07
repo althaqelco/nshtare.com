@@ -7,12 +7,12 @@ export const p_27 = {
   nameEn: '350W Brushless Hub Motor for Electric Scooter',
   price: 249,
   originalPrice: 349,
-  image: '/images/products/motor-350w-hub/main.png',
+  image: '/images/products/motor-350w-hub/main.webp',
   gallery: [
-    '/images/products/motor-350w-hub/main.png',
-    '/images/products/motor-350w-hub/lifestyle.png',
-    '/images/products/motor-350w-hub/features.png',
-    '/images/products/motor-350w-hub/dimensions.png'
+    '/images/products/motor-350w-hub/main.webp',
+    '/images/products/motor-350w-hub/lifestyle.webp',
+    '/images/products/motor-350w-hub/features.webp',
+    '/images/products/motor-350w-hub/dimensions.webp'
   ],
   rating: 4.7,
   reviewsCount: 134,

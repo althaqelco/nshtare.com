@@ -5,8 +5,8 @@ export const electric_scooter = {
   icon: '⚡',
   descAr: 'للمشاوير اليومية والتنقل السريع',
   descEn: 'For daily commuting and fast transport',
-  banner: '/images/categories/main/electric-scooter-banner.png',
-  thumbnail: '/images/categories/main/electric-scooter-thumb.png',
+  banner: '/images/categories/main/electric-scooter-banner.webp',
+  thumbnail: '/images/categories/main/electric-scooter-thumb.webp',
 
   // ══════════════════════════════════════════════
   // SEMANTIC SEO CONTENT LAYER

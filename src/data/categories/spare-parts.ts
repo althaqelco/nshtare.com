@@ -5,8 +5,8 @@ export const spare_parts = {
   icon: '⚙️',
   descAr: 'كفرات، فحمات، بطاريات',
   descEn: 'Tires, brakes, batteries',
-  banner: '/images/categories/main/spare-parts-banner.png',
-  thumbnail: '/images/categories/main/spare-parts-thumb.png',
+  banner: '/images/categories/main/spare-parts-banner.webp',
+  thumbnail: '/images/categories/main/spare-parts-thumb.webp',
 
   longDescAr: `قسم قطع الغيار في نشتري هو المرجع الأول في السعودية لقطع غيار السكوترات الكهربائية وسكوترات الدرفت. نوفر قطع غيار أصلية ومتوافقة بجودة عالية تشمل: محركات BLDC بقوات متعددة (250W-500W) متوافقة مع شاومي وسكوترات الدرفت، كنترولرات عالمية قابلة للبرمجة تحسن أداء السكوتر بشكل ملحوظ، إطارات وعجلات بجميع المقاسات (6.5/8.5/10 إنش)، وفحمات فرامل عالية الأداء. جميع القطع عندنا مفحوصة ومضمونة مع توافق مؤكد — نختبر كل قطعة قبل إدراجها في المتجر لضمان التوافق مع أشهر الموديلات في السوق السعودي. نوفر أيضاً أدلة تركيب مصورة وفيديو، ودعم فني مجاني عبر الواتساب من فنيينا المتخصصين لمساعدتك في التركيب الصحيح.`,
 

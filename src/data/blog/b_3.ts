@@ -1,7 +1,7 @@
 export const b_3 = {
   slug: 'electric-scooter-maintenance-tips',
   title: 'دليل صيانة السكوتر الكهربائي الشامل — 12 خطوة لإطالة عمره 3 أضعاف',
-  image: '/images/ui/hero_kick_scooter_1777998272875.png',
+  image: '/images/ui/hero_kick_scooter_1777998272875.webp',
   category: 'صيانة',
   date: '2026-04-18',
   readTime: 12,

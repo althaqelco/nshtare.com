@@ -6,12 +6,12 @@ export const p_16 = {
   name: 'طقم فرامل احترافي للسكوتر',
   nameEn: 'Professional Scooter Brake Pads Set',
   price: 35,
-  image: '/images/products/brake-pads-set/main.png',
+  image: '/images/products/brake-pads-set/main.webp',
   gallery: [
-    '/images/products/brake-pads-set/main.png',
-    '/images/products/brake-pads-set/lifestyle.png',
-    '/images/products/brake-pads-set/features.png',
-    '/images/products/brake-pads-set/dimensions.png'
+    '/images/products/brake-pads-set/main.webp',
+    '/images/products/brake-pads-set/lifestyle.webp',
+    '/images/products/brake-pads-set/features.webp',
+    '/images/products/brake-pads-set/dimensions.webp'
   ],
   rating: 4.5,
   reviewsCount: 312,

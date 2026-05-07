@@ -7,14 +7,14 @@ export const p_20 = {
   nameEn: 'Budget Starter Drift Scooter',
   price: 299,
   originalPrice: 449,
-  image: '/images/products/drift-budget-starter/main.png',
+  image: '/images/products/drift-budget-starter/main.webp',
   gallery: [
-    '/images/products/drift-budget-starter/main.png',
-    '/images/products/drift-budget-starter/lifestyle.png',
-    '/images/products/drift-budget-starter/features.png',
-    '/images/products/drift-budget-starter/dimensions.png',
-    '/images/products/drift-budget-starter/angle1.png',
-    '/images/products/drift-budget-starter/angle2.png'
+    '/images/products/drift-budget-starter/main.webp',
+    '/images/products/drift-budget-starter/lifestyle.webp',
+    '/images/products/drift-budget-starter/features.webp',
+    '/images/products/drift-budget-starter/dimensions.webp',
+    '/images/products/drift-budget-starter/angle1.webp',
+    '/images/products/drift-budget-starter/angle2.webp'
   ],
   rating: 4.2,
   reviewsCount: 345,

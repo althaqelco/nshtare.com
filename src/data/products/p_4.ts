@@ -6,12 +6,12 @@ export const p_4 = {
   name: 'سكوتر أطفال سبايدرمان 3 عجلات',
   nameEn: 'Spider-Man Kids 3-Wheel Scooter',
   price: 149,
-  image: '/images/products/kids-spider/main.png',
+  image: '/images/products/kids-spider/main.webp',
   gallery: [
-    '/images/products/kids-spider/main.png',
-    '/images/products/kids-spider/lifestyle.png',
-    '/images/products/kids-spider/features.png',
-    '/images/products/kids-spider/dimensions.png'
+    '/images/products/kids-spider/main.webp',
+    '/images/products/kids-spider/lifestyle.webp',
+    '/images/products/kids-spider/features.webp',
+    '/images/products/kids-spider/dimensions.webp'
   ],
   rating: 4.9,
   reviewsCount: 512,
