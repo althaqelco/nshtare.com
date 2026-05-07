@@ -59,16 +59,17 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href={isEn ? "/en" : "/"} className="flex items-center gap-2">
-              <div className="relative h-10 w-10 sm:h-12 sm:w-12">
+              <div className="relative h-14 w-14 sm:h-16 sm:w-16">
                 <Image 
-                  src="/images/logo/nshtare-logo.webp" 
+                  src="/images/logo/nshtare-logo-transparent.png" 
                   alt="Nshtare Logo" 
                   fill 
                   className="object-contain"
+                  sizes="(max-width: 640px) 56px, 64px"
                   priority
                 />
               </div>
-              <span className="text-lg sm:text-xl font-black text-primary tracking-tight">
+              <span className="text-xl sm:text-2xl font-black text-primary tracking-tight">
                 {isEn ? "NSHTARE" : "نشتري"}
               </span>
             </Link>

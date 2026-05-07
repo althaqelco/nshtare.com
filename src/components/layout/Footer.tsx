@@ -78,11 +78,11 @@ export default function Footer({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
           
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
-            <Link href={prefix || '/'} className="flex items-center gap-2 mb-4">
-              <div className="relative h-10 w-10">
-                <Image src="/images/logo/nshtare-logo.webp" alt="Nshtare" fill className="object-contain" sizes="40px" />
+            <Link href={prefix || '/'} className="flex items-center gap-2 mb-6">
+              <div className="relative h-14 w-14">
+                <Image src="/images/logo/nshtare-logo-transparent.png" alt="Nshtare" fill className="object-contain" sizes="56px" />
               </div>
-              <span className="text-xl font-black text-primary">{isEn ? "NSHTARE" : "نشتري"}</span>
+              <span className="text-2xl font-black text-primary">{isEn ? "NSHTARE" : "نشتري"}</span>
             </Link>
             <p className="text-text-secondary text-sm leading-relaxed mb-4 max-w-xs">
               {t.aboutDesc}
