@@ -55,7 +55,7 @@ export default function CategoryGrid({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
                   </span>
                 </div>
                 
-                <div className="absolute end-0 bottom-0 w-28 h-28 sm:w-36 sm:h-36 transform translate-x-1/4 translate-y-1/4 group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                <div className="absolute end-2 bottom-2 w-32 h-32 sm:w-40 sm:h-40 group-hover:scale-110 group-hover:-translate-y-2 transition-transform duration-500 opacity-90 group-hover:opacity-100">
                   <Image 
                     src={meta.image} 
                     alt={isEn ? cat.nameEn : cat.nameAr} 
