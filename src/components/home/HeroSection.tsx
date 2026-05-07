@@ -89,7 +89,7 @@ export default function HeroSection() {
           <div className="w-full md:w-1/2 flex justify-center relative min-h-[300px] sm:min-h-[400px]">
             <div className="absolute inset-0 bg-primary/5 rounded-full blur-3xl filter animate-pulse"></div>
             <Image 
-              src="/images/products/product_ninebot_max_1777998751040.webp" 
+              src="/images/products/product_ninebot_max_1777998751040.png" 
               alt="Premium Electric Kick Scooter" 
               fill
               className="object-contain drop-shadow-2xl z-10 transform transition-transform hover:scale-105 duration-700"
