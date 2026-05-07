@@ -5,8 +5,8 @@ export const p_22 = {
   subcategorySlug: 'with-seat',
   name: 'سكوتر كهربائي بكرسي متحرك لكبار السن والراحة',
   nameEn: 'Electric Mobility Chair Scooter for Seniors',
-  price: 2899,
-  originalPrice: 3499,
+  price: 3499,
+  originalPrice: 4499,
   image: '/images/products/mobility-chair-scooter/main.webp',
   gallery: [
     '/images/products/mobility-chair-scooter/main.webp',

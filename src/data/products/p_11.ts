@@ -4,8 +4,8 @@ export const p_11 = {
   categorySlug: 'smart-scooter',
   name: 'سكوتر ذكي بنظام GPS واتصال بلوتوث',
   nameEn: 'Smart GPS Bluetooth Connected Scooter',
-  price: 2399,
-  originalPrice: 3199,
+  price: 2699,
+  originalPrice: 3499,
   image: '/images/products/smart-gps-pro/main.webp',
   gallery: [
     '/images/products/smart-gps-pro/main.webp',

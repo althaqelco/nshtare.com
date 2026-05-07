@@ -5,8 +5,8 @@ export const p_8 = {
   subcategorySlug: '360',
   name: 'سكوتر درفت 360 درجة الدوار',
   nameEn: '360° Spin Drift Scooter',
-  price: 399,
-  originalPrice: 599,
+  price: 449,
+  originalPrice: 649,
   image: '/images/products/drift-360-spin/main.webp',
   gallery: [
     '/images/products/drift-360-spin/main.webp',

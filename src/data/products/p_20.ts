@@ -5,8 +5,8 @@ export const p_20 = {
   subcategorySlug: 'budget',
   name: 'سكوتر درفت رخيص للمبتدئين اقتصادي',
   nameEn: 'Budget Starter Drift Scooter',
-  price: 349,
-  originalPrice: 499,
+  price: 399,
+  originalPrice: 549,
   image: '/images/products/drift-budget-starter/main.webp',
   gallery: [
     '/images/products/drift-budget-starter/main.webp',

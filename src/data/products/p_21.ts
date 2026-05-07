@@ -5,8 +5,8 @@ export const p_21 = {
   subcategorySlug: 'three-wheel-kids',
   name: 'سكوتر أطفال ثلاث عجلات مضيء LED',
   nameEn: 'LED Light-Up 3-Wheel Kids Scooter',
-  price: 109,
-  originalPrice: 159,
+  price: 129,
+  originalPrice: 189,
   image: '/images/products/kids-three-wheel-led/main.webp',
   gallery: [
     '/images/products/kids-three-wheel-led/main.webp',

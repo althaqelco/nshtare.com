@@ -5,8 +5,8 @@ export const p_4 = {
   subcategorySlug: 'spider-man',
   name: 'سكوتر أطفال سبايدرمان 3 عجلات',
   nameEn: 'Spider-Man Kids 3-Wheel Scooter',
-  price: 849,
-  originalPrice: 1299,
+  price: 449,
+  originalPrice: 649,
   image: '/images/products/kids-spider/main.webp',
   gallery: [
     '/images/products/kids-spider/main.webp',

@@ -5,8 +5,8 @@ export const p_3 = {
   subcategorySlug: '36v',
   name: 'سكوتر درفت 36 فولت المطور',
   nameEn: 'Drift Scooter 36V Upgraded',
-  price: 549,
-  originalPrice: 799,
+  price: 599,
+  originalPrice: 849,
   image: '/images/products/drift-36v/main.webp',
   gallery: [
     '/images/products/drift-36v/main.webp',

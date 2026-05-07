@@ -5,8 +5,8 @@ export const p_7 = {
   subcategorySlug: '48v',
   name: 'سكوتر درفت 48 فولت الوحش',
   nameEn: '48V Beast Drift Scooter',
-  price: 3499,
-  originalPrice: 4499,
+  price: 1299,
+  originalPrice: 1699,
   image: '/images/products/drift-48v-beast/main.webp',
   gallery: [
     '/images/products/drift-48v-beast/main.webp',

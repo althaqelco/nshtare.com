@@ -5,8 +5,8 @@ export const p_24 = {
   subcategorySlug: 'chargers',
   name: 'شاحن سكوتر درفت سريع 36V-48V متوافق مع جميع الموديلات',
   nameEn: 'Fast Drift Scooter Charger 36V-48V Universal',
-  price: 59,
-  originalPrice: 99,
+  price: 69,
+  originalPrice: 109,
   image: '/images/products/drift-charger-fast/main.webp',
   gallery: [
     '/images/products/drift-charger-fast/main.webp',

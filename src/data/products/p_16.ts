@@ -5,8 +5,8 @@ export const p_16 = {
   subcategorySlug: 'brakes',
   name: 'طقم فرامل احترافي للسكوتر',
   nameEn: 'Professional Scooter Brake Pads Set',
-  price: 29,
-  originalPrice: 55,
+  price: 35,
+  originalPrice: 59,
   image: '/images/products/brake-pads-set/main.webp',
   gallery: [
     '/images/products/brake-pads-set/main.webp',

@@ -4,8 +4,8 @@ export const p_1 = {
   categorySlug: 'adult-scooter',
   name: 'سكوتر كهربائي للكبار ناينبوت ماكس احترافي',
   nameEn: 'Ninebot Max Professional Electric Scooter',
-  price: 1999,
-  originalPrice: 2699,
+  price: 3199,
+  originalPrice: 3999,
   image: '/images/products/ninebot-max/main.webp',
   gallery: [
     '/images/products/ninebot-max/main.webp',

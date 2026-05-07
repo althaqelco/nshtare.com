@@ -5,8 +5,8 @@ export const p_23 = {
   subcategorySlug: 'batteries',
   name: 'بطارية سكوتر درفت 36 فولت أصلية عالية الأداء',
   nameEn: 'Original 36V Drift Scooter High-Performance Battery',
-  price: 179,
-  originalPrice: 250,
+  price: 199,
+  originalPrice: 279,
   image: '/images/products/drift-battery-36v/main.webp',
   gallery: [
     '/images/products/drift-battery-36v/main.webp',

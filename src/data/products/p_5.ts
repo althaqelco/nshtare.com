@@ -5,8 +5,8 @@ export const p_5 = {
   subcategorySlug: 'with-seat',
   name: 'سكوتر كهربائي بمقعد ناينبوت المريح',
   nameEn: 'Ninebot Comfort Seat Electric Scooter',
-  price: 129,
-  originalPrice: 199,
+  price: 299,
+  originalPrice: 449,
   image: '/images/products/ninebot-with-seat/main.webp',
   gallery: [
     '/images/products/ninebot-with-seat/main.webp',

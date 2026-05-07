@@ -5,8 +5,8 @@ export const p_15 = {
   subcategorySlug: 'wheels',
   name: 'إطار صلب 10 إنش مقاوم للثقب',
   nameEn: '10-inch Puncture-Proof Solid Tire',
-  price: 59,
-  originalPrice: 89,
+  price: 49,
+  originalPrice: 79,
   image: '/images/products/solid-tire-10inch/main.webp',
   gallery: [
     '/images/products/solid-tire-10inch/main.webp',
