@@ -17,16 +17,37 @@ export default function RoiEstimator({ productPrice }: { productPrice: number })
 
   if (!mounted) return null;
 
-  // Uber/Taxi cost estimation in Saudi Arabia (approx 2 SAR per KM + base fare, let's say 2.5 SAR/KM avg)
-  const uberCostPerKm = 2.5;
-  const daysPerYear = 300; // Working days + some weekends
+  // Advanced KSA-specific ride-hailing estimation (Uber/Careem)
+  const tripsPerDay = 2; // Assuming a standard round trip (e.g., home to work/metro and back)
+  const kmPerTrip = dailyKm / tripsPerDay;
   
-  const annualUberCost = dailyKm * uberCostPerKm * daysPerYear;
+  const minFarePerTrip = 15; // Average minimum fare in SAR
+  const baseFare = 8;
+  const perKmRate = 2.5;
   
-  // Scooter electricity cost is negligible (approx 0.05 SAR per full charge for 30km) -> practically 0 for this estimation.
-  // We just subtract the product price to show net savings in Year 1.
-  const year1Savings = annualUberCost - productPrice;
-  const paybackDays = Math.ceil(productPrice / (dailyKm * uberCostPerKm));
+  // Calculate true ride cost factoring in the minimum fare trap for short distances
+  const costPerTrip = Math.max(minFarePerTrip, baseFare + (kmPerTrip * perKmRate));
+  const dailyRideCost = costPerTrip * tripsPerDay;
+  const daysPerYear = 300; // Assuming 300 active usage days
+  
+  const annualRideCost = dailyRideCost * daysPerYear;
+  
+  // Precise Scooter Running Costs
+  // KSA Tier 1 residential electricity = 0.18 SAR/kWh.
+  // Avg scooter (e.g., Ninebot) consumes ~1.5 kWh per 100km -> 0.015 kWh/km -> 0.0027 SAR/km
+  const electricityCostPerKm = 0.0027;
+  const annualElectricityCost = dailyKm * daysPerYear * electricityCostPerKm;
+  
+  // Annual maintenance (tires, brake pads) estimated at 5% of scooter price
+  const annualMaintenance = productPrice * 0.05;
+  const annualScooterRunningCost = annualElectricityCost + annualMaintenance;
+
+  // Real Net Savings for Year 1 (Subtracting the cost of buying the scooter itself and running it)
+  const year1Savings = annualRideCost - (productPrice + annualScooterRunningCost);
+  
+  // Payback period based on daily net savings vs Uber
+  const dailyNetSavings = dailyRideCost - (dailyKm * electricityCostPerKm);
+  const paybackDays = Math.ceil(productPrice / dailyNetSavings);
 
   const t = {
     title: isEn ? "ROI & Savings Calculator" : "حاسبة التوفير الذكية 💰",
@@ -82,7 +103,7 @@ export default function RoiEstimator({ productPrice }: { productPrice: number })
               <span className="text-sm font-bold">{t.vsUber}</span>
             </div>
             <span className="text-2xl font-black text-text line-through opacity-70">
-              {annualUberCost.toLocaleString()} {t.sar}
+              {Math.round(annualRideCost).toLocaleString()} {t.sar}
             </span>
           </div>
 
@@ -92,7 +113,7 @@ export default function RoiEstimator({ productPrice }: { productPrice: number })
               <span className="text-sm font-bold">{t.annualSavings}</span>
             </div>
             <span className="text-3xl font-black text-success">
-              {year1Savings > 0 ? `+${year1Savings.toLocaleString()}` : '0'} {t.sar}
+              {year1Savings > 0 ? `+${Math.round(year1Savings).toLocaleString()}` : '0'} {t.sar}
             </span>
           </div>
         </div>
