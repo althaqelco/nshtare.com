@@ -5,8 +5,8 @@ export const p_27 = {
   subcategorySlug: 'motors',
   name: 'موتور سكوتر كهربائي 350 واط بدون فرش عالي الكفاءة',
   nameEn: '350W Brushless Hub Motor for Electric Scooter',
-  price: 249,
-  originalPrice: 349,
+  price: 229,
+  originalPrice: 319,
   image: '/images/products/motor-350w-hub/main.webp',
   gallery: [
     '/images/products/motor-350w-hub/main.webp',

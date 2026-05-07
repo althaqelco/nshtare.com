@@ -5,8 +5,8 @@ export const p_25 = {
   subcategorySlug: 'lights',
   name: 'طقم إضاءة LED للسكوتر مقاوم للماء ملون',
   nameEn: 'Waterproof RGB LED Scooter Lights Kit',
-  price: 59,
-  originalPrice: 89,
+  price: 49,
+  originalPrice: 79,
   image: '/images/products/led-lights-kit/main.webp',
   gallery: [
     '/images/products/led-lights-kit/main.webp',

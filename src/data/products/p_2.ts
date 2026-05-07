@@ -4,8 +4,8 @@ export const p_2 = {
   categorySlug: 'xiaomi-scooter',
   name: 'سكوتر شاومي مي M365 العملي المطور',
   nameEn: 'Xiaomi Mi M365 Commuter Scooter',
-  price: 1299,
-  originalPrice: 1599,
+  price: 1349,
+  originalPrice: 1799,
   image: '/images/products/xiaomi-m365/main.webp',
   gallery: [
     '/images/products/xiaomi-m365/main.webp',

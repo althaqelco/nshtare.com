@@ -5,8 +5,8 @@ export const p_12 = {
   subcategorySlug: 'helmets',
   name: 'خوذة حماية احترافية للسكوتر',
   nameEn: 'Professional Scooter Safety Helmet',
-  price: 129,
-  originalPrice: 179,
+  price: 99,
+  originalPrice: 149,
   image: '/images/products/scooter-helmet-pro/main.webp',
   gallery: [
     '/images/products/scooter-helmet-pro/main.webp',

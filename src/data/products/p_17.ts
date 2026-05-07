@@ -5,8 +5,8 @@ export const p_17 = {
   subcategorySlug: 'three-wheel',
   name: 'سكوتر كهربائي ثلاث عجلات مع سلة للتسوق',
   nameEn: '3-Wheel Electric Scooter with Basket',
-  price: 1599,
-  originalPrice: 1999,
+  price: 1499,
+  originalPrice: 1899,
   image: '/images/products/electric-three-wheel/main.webp',
   gallery: [
     '/images/products/electric-three-wheel/main.webp',

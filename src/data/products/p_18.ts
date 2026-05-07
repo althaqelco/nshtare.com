@@ -5,8 +5,8 @@ export const p_18 = {
   subcategorySlug: 'foldable',
   name: 'سكوتر كهربائي صغير قابل للطي خفيف الوزن',
   nameEn: 'Compact Foldable Mini Electric Scooter',
-  price: 799,
-  originalPrice: 999,
+  price: 849,
+  originalPrice: 1199,
   image: '/images/products/foldable-mini/main.webp',
   gallery: [
     '/images/products/foldable-mini/main.webp',

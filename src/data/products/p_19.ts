@@ -5,7 +5,7 @@ export const p_19 = {
   subcategorySlug: 'electric',
   name: 'سكوتر كريزي للحركات الاستعراضية والتفحيط',
   nameEn: 'Crazy Stunts Electric Drift Scooter',
-  price: 749,
+  price: 699,
   originalPrice: 999,
   image: '/images/products/crazy-stunts/main.webp',
   gallery: [

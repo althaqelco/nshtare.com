@@ -5,8 +5,8 @@ export const p_6 = {
   subcategorySlug: 'fast',
   name: 'سكوتر كهربائي سريع للطرق الوعرة احترافي',
   nameEn: 'Pro Off-Road Fast Electric Scooter',
-  price: 3499,
-  originalPrice: 4299,
+  price: 2299,
+  originalPrice: 2999,
   image: '/images/products/offroad-pro/main.webp',
   gallery: [
     '/images/products/offroad-pro/main.webp',

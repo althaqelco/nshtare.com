@@ -5,8 +5,8 @@ export const p_26 = {
   subcategorySlug: 'controllers',
   name: 'كنترولر سكوتر كهربائي عالمي 36V-48V قابل للبرمجة',
   nameEn: 'Universal Programmable Electric Scooter Controller 36V-48V',
-  price: 149,
-  originalPrice: 199,
+  price: 129,
+  originalPrice: 189,
   image: '/images/products/controller-universal/main.webp',
   gallery: [
     '/images/products/controller-universal/main.webp',

@@ -5,8 +5,8 @@ export const p_10 = {
   subcategorySlug: 'budget-kids',
   name: 'سكوتر أطفال كهربائي ميني اقتصادي',
   nameEn: 'Mini Budget Kids Electric Scooter',
-  price: 249,
-  originalPrice: 349,
+  price: 199,
+  originalPrice: 299,
   image: '/images/products/kids-electric-mini/main.webp',
   gallery: [
     '/images/products/kids-electric-mini/main.webp',

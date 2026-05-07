@@ -5,8 +5,8 @@ export const p_14 = {
   subcategorySlug: 'chargers',
   name: 'شاحن سكوتر كهربائي عالمي سريع',
   nameEn: 'Universal Fast Electric Scooter Charger',
-  price: 79,
-  originalPrice: 119,
+  price: 89,
+  originalPrice: 149,
   image: '/images/products/universal-charger/main.webp',
   gallery: [
     '/images/products/universal-charger/main.webp',

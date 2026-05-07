@@ -5,7 +5,8 @@ export const p_9 = {
   subcategorySlug: 'girls',
   name: 'سكوتر بنات وردي فراشة 3 عجلات',
   nameEn: 'Pink Butterfly Girls 3-Wheel Scooter',
-  price: 139,
+  price: 129,
+  originalPrice: 189,
   image: '/images/products/kids-girls-pink/main.webp',
   gallery: [
     '/images/products/kids-girls-pink/main.webp',
