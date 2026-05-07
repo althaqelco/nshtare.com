@@ -1,17 +1,19 @@
 import { Tajawal } from "next/font/google";
 import "@/app/globals.css";
+import dynamic from "next/dynamic";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import { CartProvider } from "@/context/CartContext";
 import CartSidebar from "@/components/cart/CartSidebar";
 import OrganizationSchema from "@/components/seo/OrganizationSchema";
 import WebSiteSchema from "@/components/seo/WebSiteSchema";
 import SpeculationRules from "@/components/performance/SpeculationRules";
 
+const FloatingWhatsApp = dynamic(() => import("@/components/layout/FloatingWhatsApp"));
+
 const tajawal = Tajawal({
   subsets: ["arabic"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["400", "700"],
   variable: "--font-tajawal",
   display: "swap",
 });
@@ -83,8 +85,6 @@ export default function ArabicLayout({
         <OrganizationSchema />
         <WebSiteSchema />
         <SpeculationRules />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`${tajawal.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <CartProvider>
@@ -93,7 +93,7 @@ export default function ArabicLayout({
           <main className="flex-grow">
             {children}
           </main>
-          <Footer />
+          <Footer lang="ar" />
           <FloatingWhatsApp />
         </CartProvider>
       </body>

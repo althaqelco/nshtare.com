@@ -1,15 +1,11 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { Star, ShieldCheck, Zap, ArrowLeft, ArrowRight } from 'lucide-react';
 import { products } from '@/lib/data';
 
-export default function FeaturedProducts() {
-  const pathname = usePathname();
-  const isEn = pathname.startsWith('/en');
+export default function FeaturedProducts({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
+  const isEn = lang === 'en';
 
   // Show top 4 products (by rating)
   const featured = [...products]
@@ -59,6 +55,8 @@ export default function FeaturedProducts() {
                   alt={isEn ? product.nameEn : product.name}
                   fill
                   className="object-contain p-2 md:p-4 group-hover:scale-110 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  loading="lazy"
                 />
               </div>
 

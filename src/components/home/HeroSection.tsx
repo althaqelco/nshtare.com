@@ -20,7 +20,6 @@ export default function HeroSection() {
           alt="Background Pattern" 
           fill 
           className="object-cover"
-          priority
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent"></div>
@@ -94,6 +93,7 @@ export default function HeroSection() {
               alt="Premium Electric Kick Scooter" 
               fill
               className="object-contain drop-shadow-2xl z-10 transform transition-transform hover:scale-105 duration-700"
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
           </div>

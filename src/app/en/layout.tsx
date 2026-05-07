@@ -1,13 +1,15 @@
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
+import dynamic from "next/dynamic";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import { CartProvider } from "@/context/CartContext";
 import CartSidebar from "@/components/cart/CartSidebar";
 import OrganizationSchema from "@/components/seo/OrganizationSchema";
 import WebSiteSchema from "@/components/seo/WebSiteSchema";
 import SpeculationRules from "@/components/performance/SpeculationRules";
+
+const FloatingWhatsApp = dynamic(() => import("@/components/layout/FloatingWhatsApp"));
 
 const inter = Inter({
   subsets: ["latin"],
@@ -78,8 +80,6 @@ export default function EnglishLayout({
         <OrganizationSchema />
         <WebSiteSchema />
         <SpeculationRules />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <CartProvider>
@@ -88,7 +88,7 @@ export default function EnglishLayout({
           <main className="flex-grow">
             {children}
           </main>
-          <Footer />
+          <Footer lang="en" />
           <FloatingWhatsApp />
         </CartProvider>
       </body>

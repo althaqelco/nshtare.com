@@ -1,15 +1,11 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { ShieldCheck, Truck, CreditCard } from 'lucide-react';
 import { categories } from '@/lib/data';
 
-export default function Footer() {
-  const pathname = usePathname();
-  const isEn = pathname.startsWith('/en');
+export default function Footer({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
+  const isEn = lang === 'en';
   const prefix = isEn ? '/en' : '';
 
   const t = {
@@ -84,7 +80,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href={prefix || '/'} className="flex items-center gap-2 mb-4">
               <div className="relative h-10 w-10">
-                <Image src="/images/logo/nshtare-logo.webp" alt="Nshtare" fill className="object-contain" />
+                <Image src="/images/logo/nshtare-logo.webp" alt="Nshtare" fill className="object-contain" sizes="40px" />
               </div>
               <span className="text-xl font-black text-primary">{isEn ? "NSHTARE" : "نشتري"}</span>
             </Link>

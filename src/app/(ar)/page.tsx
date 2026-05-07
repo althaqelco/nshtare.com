@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <TrustBar />
-      <CategoryGrid />
-      <FeaturedProducts />
+      <TrustBar lang="ar" />
+      <CategoryGrid lang="ar" />
+      <FeaturedProducts lang="ar" />
       <HomeBottomCTA />
     </>
   );

@@ -1,12 +1,8 @@
-"use client";
-
 import React from 'react';
-import { usePathname } from 'next/navigation';
 import { ShieldCheck, Truck, CreditCard, Clock } from 'lucide-react';
 
-export default function TrustBar() {
-  const pathname = usePathname();
-  const isEn = pathname.startsWith('/en');
+export default function TrustBar({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
+  const isEn = lang === 'en';
 
   const features = [
     {

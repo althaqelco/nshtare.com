@@ -1,9 +1,6 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { categories } from '@/lib/data';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
@@ -16,9 +13,8 @@ const CATEGORY_META: Record<string, { image: string; colSpan: string; bg: string
   'spare-parts': { image: '/images/categories/spare-parts.webp', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-slate-50 to-gray-100' },
 };
 
-export default function CategoryGrid() {
-  const pathname = usePathname();
-  const isEn = pathname.startsWith('/en');
+export default function CategoryGrid({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
+  const isEn = lang === 'en';
   const prefix = isEn ? '/en' : '';
 
   return (
@@ -65,6 +61,8 @@ export default function CategoryGrid() {
                     alt={isEn ? cat.nameEn : cat.nameAr} 
                     fill 
                     className="object-contain"
+                    sizes="(max-width: 640px) 112px, 144px"
+                    loading="lazy"
                   />
                 </div>
               </Link>
