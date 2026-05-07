@@ -5,12 +5,12 @@ import { categories } from '@/lib/data';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const CATEGORY_META: Record<string, { image: string; colSpan: string; bg: string }> = {
-  'electric-scooter': { image: '/images/categories/electric-scooter.png', colSpan: 'col-span-1 md:col-span-2', bg: 'bg-gradient-to-br from-blue-50 to-indigo-50' },
-  'smart-scooter': { image: '/images/categories/smart-scooter.png', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-indigo-50 to-purple-50' },
-  'drift-scooter': { image: '/images/categories/drift-scooter.png', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-orange-50 to-amber-50' },
-  'kids-scooter': { image: '/images/categories/kids-scooter.png', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-pink-50 to-rose-50' },
-  'scooter-accessories': { image: '/images/categories/accessories.png', colSpan: 'col-span-1 md:col-span-2', bg: 'bg-gradient-to-br from-emerald-50 to-teal-50' },
-  'spare-parts': { image: '/images/categories/spare-parts.png', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-slate-50 to-gray-100' },
+  'electric-scooter': { image: '/images/categories/electric-scooter.webp', colSpan: 'col-span-1 md:col-span-2', bg: 'bg-gradient-to-br from-blue-50 to-indigo-50' },
+  'smart-scooter': { image: '/images/categories/smart-scooter.webp', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-indigo-50 to-purple-50' },
+  'drift-scooter': { image: '/images/categories/drift-scooter.webp', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-orange-50 to-amber-50' },
+  'kids-scooter': { image: '/images/categories/kids-scooter.webp', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-pink-50 to-rose-50' },
+  'scooter-accessories': { image: '/images/categories/accessories.webp', colSpan: 'col-span-1 md:col-span-2', bg: 'bg-gradient-to-br from-emerald-50 to-teal-50' },
+  'spare-parts': { image: '/images/categories/spare-parts.webp', colSpan: 'col-span-1', bg: 'bg-gradient-to-br from-slate-50 to-gray-100' },
 };
 
 export default function CategoryGrid({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
@@ -34,7 +34,7 @@ export default function CategoryGrid({ lang = 'ar' }: { lang?: 'ar' | 'en' }) {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" dir={isEn ? "ltr" : "rtl"}>
           {categories.map((cat) => {
-            const meta = CATEGORY_META[cat.slug] || { image: '/images/categories/electric-scooter.png', colSpan: 'col-span-1', bg: 'bg-gray-50' };
+            const meta = CATEGORY_META[cat.slug] || { image: '/images/categories/electric-scooter.webp', colSpan: 'col-span-1', bg: 'bg-gray-50' };
             return (
               <Link 
                 key={cat.slug} 

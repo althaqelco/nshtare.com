@@ -1,7 +1,7 @@
 export const b_1 = {
   slug: 'electric-scooter-buying-guide-saudi',
   title: 'دليل شراء السكوتر الكهربائي في السعودية 2026 — من الألف للياء',
-  image: '/images/ui/blog_guide_electric_scooter.png',
+  image: '/images/ui/blog_guide_electric_scooter.webp',
   category: 'دليل شراء',
   date: '2026-05-01',
   readTime: 14,

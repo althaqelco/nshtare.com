@@ -137,7 +137,7 @@ function CityPage({ category, city }: { category: any; city: any }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="bg-gradient-to-br from-primary to-primary-dark text-white rounded-3xl p-8 md:p-16 mb-12 flex flex-col md:flex-row items-center justify-between relative overflow-hidden shadow-xl gap-8">
-          <div className="absolute inset-0 bg-[url('/images/ui/banner_flash_sale.png')] bg-cover bg-center opacity-10"></div>
+          <div className="absolute inset-0 bg-[url('/images/ui/banner_flash_sale.webp')] bg-cover bg-center opacity-10"></div>
           <div className="flex-1 relative z-10 text-center md:text-start">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-bold mb-6">
               <MapPin className="h-4 w-4" />

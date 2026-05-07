@@ -1,7 +1,7 @@
 export const b_4 = {
   slug: 'electric-scooter-prices-saudi-2026',
   title: 'أسعار السكوترات الكهربائية في السعودية 2026 — تحليل شامل ومحدّث شهرياً',
-  image: '/images/ui/blog_scooter_cost_guide.png',
+  image: '/images/ui/blog_scooter_cost_guide.webp',
   category: 'أسعار',
   date: '2026-04-10',
   readTime: 13,

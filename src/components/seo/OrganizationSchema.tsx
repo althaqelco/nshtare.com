@@ -18,7 +18,7 @@ export default function OrganizationSchema() {
     "logo": {
       "@type": "ImageObject",
       "@id": "https://nshtare.com/#logo",
-      "url": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.png",
+      "url": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.webp",
       "width": "512",
       "height": "512",
       "caption": "نشتري - المتجر الأول للسكوترات الكهربائية في السعودية",
@@ -34,8 +34,8 @@ export default function OrganizationSchema() {
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.png",
-      "contentUrl": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.png",
+      "url": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.webp",
+      "contentUrl": "https://nshtare.com/images/brand/nshtare_logo_1777997576506.webp",
       "author": {
         "@type": "Organization",
         "name": "نشتري - Nshtare"

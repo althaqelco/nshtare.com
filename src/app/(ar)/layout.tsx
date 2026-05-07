@@ -43,7 +43,7 @@ export const metadata = {
     url: "https://nshtare.com",
     images: [
       {
-        url: "/images/brand/nshtare_logo_1777997576506.png",
+        url: "/images/brand/nshtare_logo_1777997576506.webp",
         width: 1200,
         height: 630,
         alt: "نشتري - المتجر الأول للسكوترات الكهربائية في السعودية",
@@ -55,7 +55,7 @@ export const metadata = {
     site: "@nshtare",
     title: "سكوترات نشتري | المتجر الأفضل في السعودية",
     description: "اكتشف أفضل السكوترات الكهربائية والدرفت في السعودية.",
-    images: ["/images/brand/nshtare_logo_1777997576506.png"],
+    images: ["/images/brand/nshtare_logo_1777997576506.webp"],
   },
   robots: {
     index: true,

@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
     // Dynamic params passed from the product page
     const title = searchParams.get('title') || 'سكوترات نشتري | المتجر الأول في السعودية';
     const price = searchParams.get('price');
-    const image = searchParams.get('image') || 'https://nshtare.com/images/brand/nshtare_logo_1777997576506.png';
+    const image = searchParams.get('image') || 'https://nshtare.com/images/brand/nshtare_logo_1777997576506.webp';
 
     return new ImageResponse(
       (

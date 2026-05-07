@@ -42,7 +42,7 @@ export const metadata = {
     url: "https://nshtare.com/en",
     images: [
       {
-        url: "/images/brand/nshtare_logo_1777997576506.png",
+        url: "/images/brand/nshtare_logo_1777997576506.webp",
         width: 1200,
         height: 630,
         alt: "Nshtare - The #1 Electric Scooter Store in Saudi Arabia",
@@ -54,7 +54,7 @@ export const metadata = {
     site: "@nshtare",
     title: "Nshtare Scooters | The Best Store in Saudi Arabia",
     description: "Discover the best electric and drift scooters in Saudi Arabia.",
-    images: ["/images/brand/nshtare_logo_1777997576506.png"],
+    images: ["/images/brand/nshtare_logo_1777997576506.webp"],
   },
   robots: {
     index: true,
