@@ -39,7 +39,7 @@ export default function BlogPageEn() {
           {blogPosts.map((post) => (
             <article key={post.slug} className="bg-surface border border-border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">
               <Link href={`/en/blog/${post.slug}`} className="relative aspect-video overflow-hidden">
-                <Image src={post.image} alt={post.titleEn} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src={post.image} alt={post.titleEn} fill quality={95} sizes="(max-width: 768px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-lg">
                   {post.categoryEn}
                 </div>

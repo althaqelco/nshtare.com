@@ -110,6 +110,8 @@ export default function ProductDetails({ product }: { product: any }) {
                 src={activeImage || product.image} 
                 alt={product.name} 
                 fill 
+                quality={95}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
                 priority
               />
@@ -127,20 +129,20 @@ export default function ProductDetails({ product }: { product: any }) {
                     onClick={() => setActiveImage(img)}
                     className={`relative aspect-square rounded-xl overflow-hidden border-2 transition-all ${activeImage === img ? 'border-primary shadow-md' : 'border-border hover:border-primary/50 opacity-70 hover:opacity-100'}`}
                   >
-                    <Image src={img} alt={`${product.name} view ${idx + 1}`} fill className="object-cover" />
+                    <Image src={img} alt={`${product.name} view ${idx + 1}`} fill quality={85} sizes="25vw" className="object-cover" />
                   </button>
                 ))}
               </div>
             ) : (
               <div className="grid grid-cols-3 gap-4">
                 <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                   <Image src="/images/ui/feature_battery.webp" alt="Battery" fill className="object-cover hover:scale-110 transition-transform" />
+                   <Image src="/images/ui/feature_battery.webp" alt="Battery" fill quality={90} sizes="33vw" className="object-cover hover:scale-110 transition-transform" />
                 </div>
                 <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                   <Image src="/images/ui/feature_motor.webp" alt="Motor" fill className="object-cover hover:scale-110 transition-transform" />
+                   <Image src="/images/ui/feature_motor.webp" alt="Motor" fill quality={90} sizes="33vw" className="object-cover hover:scale-110 transition-transform" />
                 </div>
                 <div className="relative aspect-square bg-bg rounded-xl border border-border overflow-hidden">
-                   <Image src="/images/ui/feature_display.webp" alt="Display" fill className="object-cover hover:scale-110 transition-transform" />
+                   <Image src="/images/ui/feature_display.webp" alt="Display" fill quality={90} sizes="33vw" className="object-cover hover:scale-110 transition-transform" />
                 </div>
               </div>
             )}

@@ -54,6 +54,7 @@ export default function FeaturedProducts({ lang = 'ar' }: { lang?: 'ar' | 'en' }
                   src={product.image}
                   alt={isEn ? product.nameEn : product.name}
                   fill
+                  quality={90}
                   className="object-contain p-2 md:p-4 group-hover:scale-110 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 25vw"
                   loading="lazy"

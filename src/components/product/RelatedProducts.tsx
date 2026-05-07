@@ -45,6 +45,8 @@ export default function RelatedProducts({
                 src={product.image}
                 alt={isEn ? (product.nameEn || product.name) : product.name}
                 fill
+                quality={90}
+                sizes="(max-width: 768px) 50vw, 25vw"
                 className="object-contain p-2 group-hover:scale-110 transition-transform duration-500"
               />
             </div>

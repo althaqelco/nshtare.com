@@ -45,3 +45,4 @@ old-links.md
 
 .firebase
 firebase-debug.log
+.venv/
